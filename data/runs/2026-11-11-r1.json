@@ -1,0 +1,958 @@
+{
+ "run": {
+  "id": "2026-11-11-r1",
+  "startedAt": "2026-11-11T10:28:00Z",
+  "finishedAt": "2026-11-11T11:40:00Z",
+  "window": {
+   "from": "2026-11-10T22:28:00Z",
+   "to": "2026-11-11T10:28:00Z"
+  },
+  "kind": "setup",
+  "notes": "Prima esecuzione (manuale). FT, Reuters, AP e Vogue Business bloccano il motore di ricerca di Claude: le loro notizie sono usate solo tramite copie ripubblicate da altre testate. La rete limitata impedisce di aprire le pagine: data e ora derivano dai risultati di ricerca e dagli URL."
+ },
+ "focus": [
+  {
+   "id": "luxury-ma",
+   "name": "M&A nel Luxury",
+   "type": "Trend",
+   "priority": "alta",
+   "status": "attivo",
+   "keywords": [
+    "luxury M&A",
+    "acquisizione brand moda",
+    "LVMH",
+    "Kering",
+    "Richemont",
+    "Prada",
+    "family business lusso",
+    "filiera lusso"
+   ],
+   "note": "Consolidamento dei gruppi, cessioni di marchi, integrazione verticale nella filiera italiana.",
+   "retro": "baseline"
+  },
+  {
+   "id": "luxury-financing",
+   "name": "Financing nel Luxury",
+   "type": "Argomento",
+   "priority": "alta",
+   "status": "attivo",
+   "keywords": [
+    "luxury bond",
+    "refinancing lusso",
+    "private credit moda",
+    "IPO lusso",
+    "minority stake",
+    "family office",
+    "fondi sovrani moda"
+   ],
+   "note": "Debito, private credit, IPO, quote di minoranza, family office e fondi sovrani nel lusso.",
+   "retro": "baseline"
+  },
+  {
+   "id": "pe-private-credit",
+   "name": "Private Equity & Private Credit",
+   "type": "Settore",
+   "priority": "alta",
+   "status": "attivo",
+   "keywords": [
+    "private equity",
+    "private credit",
+    "direct lending",
+    "fundraising",
+    "exit",
+    "redemption",
+    "NAV lending"
+   ],
+   "note": "Raccolta, exit, valutazioni, stress dei fondi semi-liquidi, regolazione.",
+   "retro": "baseline"
+  },
+  {
+   "id": "ai-finance",
+   "name": "AI in Finance & Dealmaking",
+   "type": "Tecnologia",
+   "priority": "alta",
+   "status": "attivo",
+   "keywords": [
+    "AI investment banking",
+    "AI due diligence",
+    "AI financing",
+    "compute financing",
+    "data center debt"
+   ],
+   "note": "Uso dell'AI nei deal e finanziamento dell'infrastruttura AI (SPV, leasing di compute).",
+   "retro": "baseline"
+  },
+  {
+   "id": "global-ma-ecm",
+   "name": "M&A globale ed Equity Capital Markets",
+   "type": "Trend",
+   "priority": "media",
+   "status": "attivo",
+   "keywords": [
+    "M&A volumes",
+    "takeover",
+    "OPA",
+    "OPS",
+    "IPO",
+    "ECM",
+    "consolidamento bancario"
+   ],
+   "note": "Volumi, multipli, pipeline; include il consolidamento bancario europeo e italiano.",
+   "retro": "baseline"
+  },
+  {
+   "id": "macro-central-banks",
+   "name": "Banche centrali e costo del capitale",
+   "type": "Argomento",
+   "priority": "media",
+   "status": "attivo",
+   "keywords": [
+    "Fed",
+    "BCE",
+    "BoJ",
+    "PBoC",
+    "tassi",
+    "rendimenti",
+    "spread",
+    "leveraged finance"
+   ],
+   "note": "Tassi e rendimenti letti come costo del capitale per deal e rifinanziamenti.",
+   "retro": "baseline"
+  },
+  {
+   "id": "eu-regulation",
+   "name": "Regolamentazione UE per Finance e Luxury",
+   "type": "Normativa",
+   "priority": "media",
+   "status": "attivo",
+   "keywords": [
+    "CSRD",
+    "CSDDD",
+    "AI Act",
+    "Digital Product Passport",
+    "ESPR",
+    "golden power",
+    "Consob"
+   ],
+   "note": "Norme UE e nazionali con impatto su deal, reporting e filiera del lusso.",
+   "retro": "da_avviare"
+  },
+  {
+   "id": "luxury-tech-markets",
+   "name": "Luxury Tech & nuovi mercati",
+   "type": "Trend",
+   "priority": "media",
+   "status": "attivo",
+   "keywords": [
+    "resale lusso",
+    "tracciabilità",
+    "domanda Cina lusso",
+    "Singles Day",
+    "Medio Oriente lusso",
+    "India lusso"
+   ],
+   "note": "Domanda per area geografica, resale, tracciabilità e canali digitali.",
+   "retro": "baseline"
+  }
+ ],
+ "news": [
+  {
+   "id": "2026-11-11-intesa-mps-mediobanca",
+   "runId": "2026-11-11-r1",
+   "tier": "alta",
+   "title": "Intesa–Mps: il documento d'offerta prevede un'OPA a cascata su Mediobanca; in Borsa Mediobanca sale",
+   "publishedAt": "2026-11-11 (mattina)",
+   "tz": "CET",
+   "timeVerified": "data verificata dall'URL; ora non verificata",
+   "source": "ANSA; Money.it",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/11/borsa-milano-gira-in-negativo-02-pesano-le-banche-corre-technoprobe_95ddfd63-7e4f-4a3b-a72f-394155235c10.html",
+   "extraUrls": [
+    "https://www.money.it/mediobanca-documento-offerta-intesa-mps-opa-a-cascata-11-11-2026",
+    "https://www.milanofinanza.it/news/intesa-sanpaolo-mps-l-opas-puo-passare-anche-col-50-piu-un-azione-opa-da-2-8-miliardi-su-mediobanca-e-202611101929378583"
+   ],
+   "summary": "Con la pubblicazione del documento d'offerta (sera del 10/11, fuori finestra) diventano note le condizioni dell'OPAS di Intesa Sanpaolo su Mps: periodo 24 novembre – 22 gennaio, concambio portato a 1,664 azioni dopo l'acconto sul dividendo, offerta efficace anche con il 50% più un'azione (obiettivo dichiarato 66,67%). Poiché Mps detiene circa l'86% di Mediobanca, il successo farebbe scattare un'OPA obbligatoria a cascata sulle azioni Mediobanca residue, con corrispettivo pari a 2,45 volte quello offerto per Mps (lo stesso rapporto della fusione Mps–Mediobanca respinta dall'assemblea). La stampa stima l'offerta a cascata in circa 2,8 miliardi. Stamattina, secondo ANSA, Mediobanca guadagna circa il 2% mentre il comparto bancario è in calo.",
+   "why": "È il deal bancario più grande in corso in Italia e mostra come una catena di controllo (Intesa → Mps → Mediobanca → partecipazione Generali) determini struttura e prezzo di un'operazione.",
+   "impact": "Breve periodo: arbitraggio sul titolo Mediobanca e attenzione dei soci di minoranza sul corrispettivo implicito. Medio periodo: ridisegno del sistema bancario italiano, possibili remedies antitrust (sportelli verso Bper) e destino della quota in Generali.",
+   "view": "La soglia del 50% più un'azione segnala che Intesa privilegia la certezza del controllo rispetto alla massimizzazione delle sinergie da fusione piena. Per i minoritari Mediobanca il corrispettivo agganciato a Mps trasferisce su di loro il rischio di esecuzione dell'offerta principale. Interpretazione, non fatto: va confermata sul documento approvato da Consob.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "links": [
+    "macro-central-banks"
+   ],
+   "facts": "Fatti: calendario, concambio, soglia, quota Mps in Mediobanca (fonti stampa sul documento d'offerta). Interpretazione: sezione 'Il mio punto di vista'."
+  },
+  {
+   "id": "2026-11-11-bonds-fed-hike",
+   "runId": "2026-11-11-r1",
+   "tier": "alta",
+   "title": "Obbligazioni globali in calo: dopo l'inflazione USA il mercato teme un rialzo Fed di 50 punti base",
+   "publishedAt": "2026-11-11 (sessione asiatica)",
+   "tz": "UTC",
+   "timeVerified": "copia sindacata con URL del 10/11 (ora USA); ora esatta non verificata",
+   "source": "Reuters (copia sindacata)",
+   "url": "https://www.933thedrive.com/2026/11/10/bonds-reel-as-hot-inflation-fuels-jumbo-fed-hike-fears/",
+   "extraUrls": [
+    "https://www.ilsole24ore.com/art/borsa-ultime-notizie-indici-mercoledi-11-novembre-2026-AJRZyLCC"
+   ],
+   "summary": "Nella sessione asiatica di mercoledì i titoli di Stato sono scesi e il dollaro è rimasto forte dopo un dato sull'inflazione USA sopra le attese e dichiarazioni restrittive di esponenti delle banche centrali: il mercato prezza il rischio di un rialzo Fed di mezzo punto a dicembre (riunione 8–9 dicembre). L'azionario ha tenuto: indice MSCI Asia-Pacifico +0,2%, Nikkei +0,6%. Rendimenti in rialzo anche in Giappone e Australia, con il decennale giapponese +7 pb al 2,755%. La Fed ha lasciato i tassi al 3,75–4,00% il 28 ottobre, con due voti contrari a favore di un rialzo.",
+   "why": "Il costo del capitale è la variabile che tiene insieme tutti i Focus: rifinanziamenti, valutazioni nei deal, leveraged finance e private credit.",
+   "impact": "Breve periodo: spread e costi di copertura più alti sui rifinanziamenti in corso, finestre di emissione più strette. Medio periodo: pressione sui borrower a tasso variabile del private credit e sui multipli di uscita del private equity.",
+   "view": "Per chi costruisce modelli di capital structure il punto non è solo il livello dei tassi ma la velocità del ciclo: un rialzo da 50 pb rende obsoleti gli scenari base costruiti sui tassi forward di poche settimane fa. Gli stress test vanno aggiornati anche sul tasso, non solo su ricavi e CapEx.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "links": [
+    "pe-private-credit",
+    "luxury-financing"
+   ],
+   "facts": "Il CPI USA di ottobre è salito dello 0,4% su base mensile, sopra le attese (Il Sole 24 Ore, 11/11). Dato da confermare sul comunicato BLS."
+  },
+  {
+   "id": "2026-11-11-singles-day",
+   "runId": "2026-11-11-r1",
+   "tier": "media",
+   "title": "Singles' Day sottotono in Cina: la domanda di beni costosi, lusso incluso, resta debole",
+   "publishedAt": "2026-11-11",
+   "tz": "CST",
+   "timeVerified": "data verificata dall'URL; ora non verificata",
+   "source": "Associated Press",
+   "url": "https://www.click2houston.com/business/2026/11/11/subdued-sales-for-singles-day-chinas-online-shopping-festival-signal-weak-appetite-for-spending/",
+   "extraUrls": [
+    "https://abcnews.com/Business/wireStory/subdued-sales-singles-day-chinas-online-shopping-festival-138035152"
+   ],
+   "summary": "Secondo AP, le vendite del festival di shopping online cinese sono deboli. Al 31 ottobre i dati Syntun indicavano poco più di 1.000 miliardi di yuan cumulati, sostanzialmente invariati sull'anno precedente; nel 2025 il totale aveva raggiunto quasi 1.700 miliardi. I beni di valore elevato, tra cui parte del lusso e le auto, sono i più colpiti; LVMH e Kering hanno segnalato un calo della domanda cinese negli ultimi mesi. Tengono le categorie legate alla salute.",
+   "why": "La Cina pesa circa un quarto delle vendite dei grandi gruppi del lusso: la sua debolezza entra direttamente nelle valutazioni e nei piani di finanziamento del settore.",
+   "impact": "Breve periodo: revisioni al ribasso delle stime sul quarto trimestre. Medio periodo: più chiusure di negozi, più attenzione a costi e filiera, valutazioni più basse che possono favorire operazioni di M&A.",
+   "view": "La debolezza cinese spinge i gruppi verso due leve che non dipendono dalla domanda: controllo dei costi e integrazione della filiera. È coerente con gli investimenti in Italia di LVMH e Chanel registrati in Knowledge Base.",
+   "focus": [
+    "luxury-tech-markets"
+   ],
+   "links": [
+    "luxury-ma",
+    "luxury-financing"
+   ],
+   "facts": "Manca il totale definitivo del festival: il dato finale va registrato quando sarà pubblicato."
+  },
+  {
+   "id": "2026-11-11-anthropic-ipo",
+   "runId": "2026-11-11-r1",
+   "tier": "breaking",
+   "title": "Anthropic avvia il roadshow dell'IPO: forchetta 70–78 dollari, valutazione intorno a 1.400 miliardi",
+   "publishedAt": "2026-11-10 sera / 2026-11-11",
+   "tz": "ET/CET",
+   "timeVerified": "roadshow lanciato il 10/11 (ora USA); ripreso da Il Sole 24 Ore l'11/11. Ora esatta non verificata",
+   "source": "Bloomberg; CNN; Il Sole 24 Ore",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-10/anthropic-targets-64-4-billion-ipo-nearing-spacex-s-record",
+   "extraUrls": [
+    "https://www.cnn.com/2026/11/10/investing/weve-never-seen-anything-like-anthropic-ipo",
+    "https://finance.yahoo.com/technology/ai/articles/anthropic-forges-ahead-ipo-roadshow-172211964.html"
+   ],
+   "summary": "Anthropic ha avviato il roadshow per la quotazione al Nasdaq (ticker ANT): circa 825 milioni di azioni nella forchetta 70–78 dollari. Al prezzo medio la raccolta sarebbe di circa 61 miliardi di dollari, con una valutazione fully diluted di circa 1.330 miliardi secondo CNN; la cifra più citata è 1.400 miliardi. Bloomberg, citando il Financial Times, riporta che i bookrunner si aspettano di alzare il prezzo sopra la forchetta e che il libro ordini era già coperto al lancio. Sette partner strategici (tra cui AMD, Broadcom, Google, Microsoft, Nvidia e TSMC) acquisteranno 26 miliardi di dollari in un collocamento privato parallelo.",
+   "why": "Sarebbe la più grande IPO di sempre o quasi, in un momento di forte volatilità sui titoli AI: è il test di quanto il mercato pubblico sia disposto a pagare per l'AI.",
+   "impact": "Breve periodo: riferimento per le valutazioni AI e per la finestra ECM di fine anno. Medio periodo: se il prezzo regge, apre la strada ad altre IPO tech di grandi dimensioni; se scende, rafforza la cautela su credito e valutazioni AI già emersa questa settimana.",
+   "view": "Il collocamento privato da 26 miliardi a fornitori di chip e cloud lega i fornitori al successo del cliente: è lo stesso intreccio visto nella SPV Broadcom da 63 miliardi. Chi valuta l'operazione dovrebbe leggere insieme IPO, accordi di fornitura e finanziamenti dell'hardware. Nota di trasparenza: Claude, il sistema che produce questa analisi, è sviluppato da Anthropic.",
+   "focus": [
+    "global-ma-ecm",
+    "ai-finance"
+   ],
+   "links": [
+    "macro-central-banks"
+   ],
+   "facts": "Le fonti differiscono sulla misura di valutazione (fully diluted, prezzo medio, possibile rialzo della forchetta): i numeri non sono direttamente confrontabili."
+  },
+  {
+   "id": "2026-11-11-italy-markets",
+   "runId": "2026-11-11-r1",
+   "tier": "media",
+   "title": "Piazza Affari sopra 52.000 punti; spread BTP-Bund a 104 punti base; Istat alza il PIL 2026 a +0,9%",
+   "publishedAt": "2026-11-11 (mattina)",
+   "tz": "CET",
+   "timeVerified": "data verificata dall'URL; ora non verificata",
+   "source": "Il Sole 24 Ore",
+   "url": "https://www.ilsole24ore.com/art/borsa-ultime-notizie-indici-mercoledi-11-novembre-2026-AJRZyLCC",
+   "extraUrls": [],
+   "summary": "Borse europee in rialzo con i tecnologici; il FTSE MIB torna sopra 52.000 punti con Technoprobe in testa, mentre le banche alternano rialzi e cali (ANSA). Spread BTP-Bund a 104 punti base, rendimento del BTP decennale al 4,34%. Euro sotto 1,12 dollari, Brent intorno a 92 dollari. Istat alza la stima di crescita del PIL 2026 a +0,9% e indica +0,6% per il 2027.",
+   "why": "Spread e rendimento del BTP sono il riferimento per il costo del debito delle aziende italiane, incluse quelle del lusso e delle infrastrutture.",
+   "impact": "Breve periodo: con lo spread a 104 pb il costo del debito delle aziende italiane resta competitivo rispetto ai picchi passati, nonostante il rialzo dei tassi globali. Medio periodo: crescita sotto l'1% limita i margini per la crescita organica e sostiene l'M&A come leva di crescita.",
+   "view": "Il dato da seguire non è lo spread in sé ma il rendimento assoluto al 4,34%: è quello che entra nei modelli di rifinanziamento delle aziende italiane.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "links": [
+    "global-ma-ecm"
+   ],
+   "facts": "Valori intraday, non di chiusura."
+  },
+  {
+   "id": "2026-11-11-nvidia-ai-selloff",
+   "runId": "2026-11-11-r1",
+   "tier": "media",
+   "title": "Nvidia perde circa 430 miliardi di dollari di capitalizzazione in due sedute",
+   "publishedAt": "2026-11-11",
+   "tz": "CET",
+   "timeVerified": "data verificata dall'URL di Il Sole 24 Ore che cita Reuters; ora non verificata",
+   "source": "Il Sole 24 Ore (citando Reuters)",
+   "url": "https://www.ilsole24ore.com/art/borsa-ultime-notizie-indici-mercoledi-11-novembre-2026-AJRZyLCC",
+   "extraUrls": [
+    "https://www.aol.com/articles/banks-investors-grow-wary-ai-110211000.html"
+   ],
+   "summary": "Secondo Reuters, ripreso da Il Sole 24 Ore, Nvidia ha perso circa 430 miliardi di dollari di valore di Borsa in due sedute. Si aggiunge alla correzione del Nasdaq 100 della scorsa settimana e alla maggiore cautela di banche e investitori sul debito legato all'AI (Reuters, 9/11).",
+   "why": "La volatilità dei titoli AI arriva proprio mentre partono la IPO di Anthropic e grandi finanziamenti di hardware AI.",
+   "impact": "Breve periodo: pressione sul pricing delle operazioni AI in corso. Medio periodo: se la correzione continua, più protezioni (garanzie sul valore residuo, covenant) nei finanziamenti di compute.",
+   "view": "Il mercato azionario sta facendo il lavoro che il credito fa più lentamente: riprezzare il rischio di obsolescenza. Il segnale da seguire è se le banche ritoccano spread e strutture delle prossime SPV.",
+   "focus": [
+    "ai-finance"
+   ],
+   "links": [
+    "global-ma-ecm",
+    "pe-private-credit"
+   ],
+   "facts": "Motivazioni del calo non verificate nella fonte disponibile."
+  },
+  {
+   "id": "2026-11-11-capri-ceo",
+   "runId": "2026-11-11-r1",
+   "tier": "monitor",
+   "title": "Capri Holdings (Michael Kors, Jimmy Choo): Justin Boxford verso la carica di CEO al posto di John Idol",
+   "publishedAt": "2026-11-10 (tarda serata, ora USA)",
+   "tz": "ET",
+   "timeVerified": "WWD indica 'late Tuesday'; rientra probabilmente nella finestra, ora esatta non verificata",
+   "source": "WWD",
+   "url": "https://wwd.com/business-news/human-resources/justin-boxford-capri-holdings-ceo-rumor-1239410053",
+   "extraUrls": [],
+   "summary": "Secondo più fonti sentite da WWD, Justin Boxford, ex dirigente di Estée Lauder, si prepara a succedere a John Idol, alla guida dal 2003. Capri ha riportato un calo delle vendite del 5,5% nel secondo trimestre fiscale, con margini lordi in miglioramento. Notizia non confermata ufficialmente.",
+   "why": "Un cambio al vertice dopo oltre vent'anni, in un gruppo che ha già venduto Versace, spesso precede una revisione del portafoglio marchi.",
+   "impact": "Breve periodo: attesa di conferma ufficiale. Medio periodo: possibili cessioni o riposizionamento di Jimmy Choo e Michael Kors.",
+   "view": "Da monitorare per il Focus M&A nel Luxury: nuovi CEO e asset non core sono spesso l'inizio di un processo di vendita.",
+   "focus": [
+    "luxury-ma"
+   ],
+   "links": [
+    "luxury-financing"
+   ],
+   "facts": "Indiscrezione di stampa, non confermata."
+  }
+ ],
+ "excluded": [
+  {
+   "title": "Morgan Stanley taglia i target price del lusso francese (MF, 10/11 15:54)",
+   "reason": "Fuori finestra: archiviata in Knowledge Base."
+  },
+  {
+   "title": "ASIC e i fondi di private credit (Australia)",
+   "reason": "Non sono riuscito a confermare una pubblicazione dell'11/11: archiviata come 'da verificare'."
+  },
+  {
+   "title": "ABI contro la legge di bilancio (costo stimato 22 miliardi nel 2027)",
+   "reason": "Vista solo in un estratto di ricerca, non confermata da una seconda fonte: archiviata come 'da verificare' alla prossima esecuzione."
+  }
+ ],
+ "kb": [
+  {
+   "id": "kb-intesa-offer-doc",
+   "focus": "global-ma-ecm",
+   "state": "valida",
+   "relevance": "alta",
+   "title": "Intesa Sanpaolo pubblica il documento d'offerta su Mps: soglia 50%+1, OPA a cascata su Mediobanca da circa 2,8 miliardi",
+   "source": "MF-Milano Finanza",
+   "url": "https://www.milanofinanza.it/news/intesa-sanpaolo-mps-l-opas-puo-passare-anche-col-50-piu-un-azione-opa-da-2-8-miliardi-su-mediobanca-e-202611101929378583",
+   "publishedAt": "2026-11-10T19:29+01:00",
+   "acquiredAt": "2026-11-11",
+   "summary": "OPAS 24/11–22/01; concambio 1,664 dopo acconto dividendo; efficace con 50%+1 (obiettivo 66,67%); OPA obbligatoria a cascata su Mediobanca (Mps ne detiene circa l'86%) con corrispettivo 2,45 volte quello Mps, non prima di fine gennaio 2027; paletti sulla quota Generali.",
+   "concepts": [
+    "OPAS",
+    "OPA a cascata",
+    "concambio",
+    "catena di controllo"
+   ],
+   "linksTo": [
+    "kb-mps-mediobanca-merger"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-mps-mediobanca-merger",
+   "focus": "global-ma-ecm",
+   "state": "superata",
+   "relevance": "media",
+   "title": "Fusione Mps–Mediobanca (concambio 2,45) non approvata dall'assemblea Mps",
+   "source": "Teleborsa; Advisor Online",
+   "url": "https://www.teleborsa.it/News/2026/11/10/intesa-mps-cosa-c-e-nel-documento-d-offerta-dalla-quota-generali-alla-newbank-per-unipol-267.html",
+   "publishedAt": "2026-11-10",
+   "acquiredAt": "2026-11-11",
+   "summary": "I consigli avevano approvato a inizio novembre la fusione con concambio 2,45; l'assemblea Mps non l'ha approvata. Il rapporto 2,45 sopravvive come moltiplicatore dell'OPA a cascata di Intesa.",
+   "concepts": [
+    "fusione",
+    "voto assembleare"
+   ],
+   "linksTo": [
+    "kb-intesa-offer-doc"
+   ],
+   "updates": "Cambiamento registrato l'11/11: la notizia 'fusione approvata' (Advisor Online) è superata dal voto contrario dell'assemblea."
+  },
+  {
+   "id": "kb-bpm-credit-agricole",
+   "focus": "global-ma-ecm",
+   "state": "valida",
+   "relevance": "alta",
+   "title": "Banco BPM: proposta di fusione amichevole con Crédit Agricole Italia, titolo +10,6% il 9/11",
+   "source": "ANSA; Borsa Italiana (Teleborsa)",
+   "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/borse-europee-deboli-milano-in-rialzo-trainata-dai-balzi-di-banco-bpm-e-unicredit-3_2026-11-09_TLB-BIT.html",
+   "publishedAt": "2026-11-09",
+   "acquiredAt": "2026-11-11",
+   "summary": "Proposta amichevole all'esame del CdA di Banco BPM; chiusura a 14,88 euro (+10,6%). Nello stesso giorno UniCredit sale sui risultati record dei nove mesi, con l'iter su Commerzbank in corso.",
+   "concepts": [
+    "consolidamento bancario",
+    "fusione amichevole"
+   ],
+   "linksTo": [
+    "kb-intesa-offer-doc"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-fed-oct",
+   "focus": "macro-central-banks",
+   "state": "valida",
+   "relevance": "alta",
+   "title": "Fed: tassi fermi al 3,75–4,00% il 28 ottobre, due voti per il rialzo; prossima riunione 8–9 dicembre",
+   "source": "Più fonti di mercato (da verificare su federalreserve.gov)",
+   "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+   "publishedAt": "2026-10-28",
+   "acquiredAt": "2026-11-11",
+   "summary": "Presidente Kevin Warsh senza impegni su dicembre, decisioni guidate dai dati. Probabilità di rialzo a dicembre prezzate tra 75% e 100% a seconda delle fonti dopo i dati su lavoro e inflazione.",
+   "concepts": [
+    "FOMC",
+    "forward guidance",
+    "OIS"
+   ],
+   "linksTo": [
+    "kb-ecb-oct"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-ecb-oct",
+   "focus": "macro-central-banks",
+   "state": "da_verificare",
+   "relevance": "media",
+   "title": "BCE: tassi invariati il 29 ottobre; prossima riunione 17 dicembre, il mercato prezza un rialzo",
+   "source": "Fonti di mercato contraddittorie",
+   "url": "https://www.ecb.europa.eu/press/govcdec/mopo/html/index.en.html",
+   "publishedAt": "2026-10-29",
+   "acquiredAt": "2026-11-11",
+   "summary": "Le fonti divergono sui livelli (tasso sui depositi 2,50% e rifinanziamento 2,65% secondo una fonte; 2,40% secondo un'altra) e sulla probabilità di rialzo (circa 90% secondo una fonte). Da verificare sul comunicato BCE.",
+   "concepts": [
+    "deposit facility rate",
+    "MRO"
+   ],
+   "linksTo": [
+    "kb-fed-oct"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-ms-luxury-targets",
+   "focus": "luxury-financing",
+   "state": "valida",
+   "relevance": "media",
+   "title": "Morgan Stanley taglia i target price di LVMH, Kering ed Hermès; overweight su Richemont",
+   "source": "MF-Milano Finanza; MarketScreener",
+   "url": "https://www.milanofinanza.it/fashion/morgan-stanley-lima-il-lusso-francese-202611101554281485",
+   "publishedAt": "2026-11-10T15:54+01:00",
+   "acquiredAt": "2026-11-11",
+   "summary": "Target LVMH a 415 euro da 420 (equal-weight). Motivo principale: debolezza della domanda cinese, circa il 25% delle vendite. Richemont resta overweight.",
+   "concepts": [
+    "target price",
+    "rating",
+    "esposizione Cina"
+   ],
+   "linksTo": [
+    "kb-luxury-ytd"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-luxury-supply-chain-italy",
+   "focus": "luxury-ma",
+   "state": "valida",
+   "relevance": "alta",
+   "title": "Da LVMH a Chanel, il lusso blinda la filiera italiana; Louis Vuitton sale al 60% di Mab manifatture",
+   "source": "MF-Milano Finanza",
+   "url": "https://www.milanofinanza.it/fashion/da-lvmh-a-chanel-il-lusso-blinda-la-filiera-italiana-202611091814333559",
+   "publishedAt": "2026-11-09T18:14+01:00",
+   "acquiredAt": "2026-11-11",
+   "summary": "LVMH investe circa 500 milioni l'anno in Italia; Chanel ha un progetto da circa 100 milioni nel pistoiese; Zegna investe alcune decine di milioni in un polo nel parmense. Louis Vuitton sarebbe salita dal 40% al 60% di Mab manifatture (ricami, Abruzzo), con passaggio di controllo a fine settembre. Prezzo non reso noto.",
+   "concepts": [
+    "integrazione verticale",
+    "filiera",
+    "acquisizione di know-how"
+   ],
+   "linksTo": [
+    "kb-luxury-new-ma-cycle"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-luxury-new-ma-cycle",
+   "focus": "luxury-ma",
+   "state": "ipotesi",
+   "relevance": "media",
+   "title": "Lusso, si prepara un nuovo ciclo di M&A (anche su competenze e filiera)",
+   "source": "MF-Milano Finanza",
+   "url": "https://www.milanofinanza.it/fashion/lusso-si-prepara-un-nuovo-ciclo-di-m-a-202609221226347223",
+   "publishedAt": "2026-09-22",
+   "acquiredAt": "2026-11-11",
+   "summary": "Previsione di operatori del settore: il prossimo ciclo di M&A riguarderà non solo il consolidamento tra marchi ma l'acquisizione di competenze e di filiera.",
+   "concepts": [
+    "ciclo di M&A",
+    "acqui-hiring industriale"
+   ],
+   "linksTo": [
+    "kb-luxury-supply-chain-italy"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-de-beers-consortium",
+   "focus": "luxury-ma",
+   "state": "ipotesi",
+   "relevance": "media",
+   "title": "Richemont e Signet in trattative per entrare nel consorzio favorito per l'acquisto di De Beers",
+   "source": "Business of Fashion",
+   "url": "https://www.businessoffashion.com/tags/tag/mergers-acquisitions/",
+   "publishedAt": "2026-10-29",
+   "acquiredAt": "2026-11-11",
+   "summary": "Secondo cinque persone informate, Richemont e Signet Jewelers discutono di unirsi a un consorzio in posizione di vantaggio per rilevare De Beers. Trattative, non accordo firmato.",
+   "concepts": [
+    "consorzio",
+    "integrazione a monte"
+   ],
+   "linksTo": [
+    "kb-luxury-supply-chain-italy"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-ebel",
+   "focus": "luxury-ma",
+   "state": "valida",
+   "relevance": "bassa",
+   "title": "Chanel e F.P. Journe tra gli acquirenti di Ebel: Movado cede il 95% per 66,5 milioni di dollari",
+   "source": "WWD",
+   "url": "https://wwd.com/business-news/mergers-acquisitions/",
+   "publishedAt": "2026-10 (data esatta non verificata)",
+   "acquiredAt": "2026-11-11",
+   "summary": "Movado ha accettato di vendere il 95% di Ebel a un trio che include Chanel e F.P. Journe, per 66,5 milioni di dollari.",
+   "concepts": [
+    "carve-out",
+    "orologeria"
+   ],
+   "linksTo": [],
+   "updates": ""
+  },
+  {
+   "id": "kb-golden-goose",
+   "focus": "luxury-financing",
+   "state": "valida",
+   "relevance": "media",
+   "title": "HSG completa l'acquisizione della maggioranza di Golden Goose, valutata quasi 2,5 miliardi di dollari",
+   "source": "The Fashion Law (tracker)",
+   "url": "https://www.thefashionlaw.com/a-running-timeline-of-fashion-and-luxury-mergers-acquisitions/",
+   "publishedAt": "2026-08 (circa, non verificata)",
+   "acquiredAt": "2026-11-11",
+   "summary": "Il fondo HSG diventa azionista di maggioranza di Golden Goose. Esempio di capitale asiatico che sostituisce l'IPO come via d'uscita per un marchio italiano.",
+   "concepts": [
+    "exit alternativa all'IPO",
+    "sponsor-to-sponsor"
+   ],
+   "linksTo": [],
+   "updates": ""
+  },
+  {
+   "id": "kb-kering-piccioli",
+   "focus": "luxury-ma",
+   "state": "da_verificare",
+   "relevance": "bassa",
+   "title": "Kering: Piccioli lascerebbe la maison parigina dopo meno di due anni, in un ampio rimpasto creativo",
+   "source": "Business of Fashion (solo estratto di ricerca)",
+   "url": "https://www.businessoffashion.com/topics/luxury/",
+   "publishedAt": "2026-11 (non verificata)",
+   "acquiredAt": "2026-11-11",
+   "summary": "Notizia vista solo come estratto di ricerca: da confermare su fonte primaria prima di usarla.",
+   "concepts": [
+    "direzione creativa",
+    "turnaround"
+   ],
+   "linksTo": [],
+   "updates": ""
+  },
+  {
+   "id": "kb-luxury-ytd",
+   "focus": "luxury-financing",
+   "state": "da_verificare",
+   "relevance": "media",
+   "title": "Titoli del lusso in forte calo da inizio anno (LVMH, Hermès, Kering)",
+   "source": "Retail News Asia; MF-Milano Finanza",
+   "url": "https://retailnews.asia/lvmh-hermes-and-kering-shares-fall-up-to-40-since-january",
+   "publishedAt": "2026-11",
+   "acquiredAt": "2026-11-11",
+   "summary": "Fonti in conflitto: una indica LVMH -40%, Hermès -39%, Kering -30% da gennaio con Richemont stabile; MF indica Kering circa -38% e LVMH oltre -35%. Da verificare sui prezzi di chiusura.",
+   "concepts": [
+    "de-rating",
+    "valutazioni"
+   ],
+   "linksTo": [
+    "kb-ms-luxury-targets"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-broadcom-anthropic-spv",
+   "focus": "ai-finance",
+   "state": "valida",
+   "relevance": "alta",
+   "title": "Bank of America, Citi, Morgan Stanley e Blackstone strutturano 63 miliardi di dollari per i chip Broadcom destinati ad Anthropic",
+   "source": "Khaleej Times (Reuters); Data Centre Magazine",
+   "url": "https://www.khaleejtimes.com/business/wall-street-banks-blackstone-line-up-63-billion-to-finance-broadcom-ai-chips-for-anthropic",
+   "publishedAt": "2026-10-26",
+   "acquiredAt": "2026-11-11",
+   "summary": "Una SPV acquista acceleratori e apparati di rete Broadcom e li concede in leasing ad Anthropic. Le tre banche organizzano il first lien (circa 43,5 miliardi secondo due fonti, il 69%); Blackstone fornisce l'intero second lien. Broadcom offre un supporto sul valore residuo pari al first lien. Consegne dal 2027. Moody's avverte che il rischio sale se molte operazioni simili si concentrano in poco tempo.",
+   "concepts": [
+    "SPV",
+    "leasing",
+    "first/second lien",
+    "residual value support"
+   ],
+   "linksTo": [
+    "kb-ai-debt-wary"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-ai-debt-wary",
+   "focus": "ai-finance",
+   "state": "valida",
+   "relevance": "alta",
+   "title": "Banche e investitori più cauti sul debito legato all'AI dopo il calo dei mercati",
+   "source": "Reuters (via AOL)",
+   "url": "https://www.aol.com/articles/banks-investors-grow-wary-ai-110211000.html",
+   "publishedAt": "2026-11-09",
+   "acquiredAt": "2026-11-11",
+   "summary": "Il Nasdaq 100 ha perso 2.500 miliardi di dollari di capitalizzazione in una seduta, entrando in correzione. Banche e investitori del credito aumentano le verifiche sui finanziamenti AI; un rallentamento dei data center potrebbe frenare crescita dei prestiti e commissioni di investment banking.",
+   "concepts": [
+    "rischio di concentrazione",
+    "credito AI"
+   ],
+   "linksTo": [
+    "kb-broadcom-anthropic-spv"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-apollo-european-credit",
+   "focus": "pe-private-credit",
+   "state": "valida",
+   "relevance": "media",
+   "title": "Apollo lancia European Credit Co, piattaforma di private credit da 10 miliardi di euro per le imprese europee",
+   "source": "CNBC; Private Equity Wire",
+   "url": "https://www.cnbc.com/private-equity/",
+   "publishedAt": "2026-11 (circa 5/11)",
+   "acquiredAt": "2026-11-11",
+   "summary": "Tra gli investitori l'Abu Dhabi Investment Council. Nello stesso periodo: Apollo e Partners Group hanno limitato i riscatti di fondi semi-liquidi; Blackstone ha raccolto 13 miliardi di euro per il direct lending europeo.",
+   "concepts": [
+    "direct lending",
+    "fondi semi-liquidi",
+    "gating"
+   ],
+   "linksTo": [
+    "kb-asic-private-credit"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-asic-private-credit",
+   "focus": "pe-private-credit",
+   "state": "da_verificare",
+   "relevance": "media",
+   "title": "Australia: ASIC intensifica controlli e azioni esecutive sul private credit",
+   "source": "Clayton Utz; Money Magazine",
+   "url": "https://www.claytonutz.com/insights/2026/october/private-credits-stress-test-from-developer-distress-to-fund-freezes-asics-enforcement-moment-arrives",
+   "publishedAt": "2026-10 / 2026-11",
+   "acquiredAt": "2026-11-11",
+   "summary": "Settore da 213 miliardi di dollari australiani con riscatti congelati, svalutazioni e indagini; report REP 846 sulla trasparenza verso gli investitori. Un avviso ASIC dell'11/11 è citato da una fonte ma non confermato.",
+   "concepts": [
+    "valutazioni",
+    "governance",
+    "enforcement"
+   ],
+   "linksTo": [
+    "kb-apollo-european-credit"
+   ],
+   "updates": ""
+  },
+  {
+   "id": "kb-deals-2026-11-10",
+   "focus": "global-ma-ecm",
+   "state": "valida",
+   "relevance": "media",
+   "title": "Deal del 9–10 novembre: Samsung F&M–Canopius, Blackstone–IIFL, Mitsui Chemicals–JSR, KPS–MM Packaging",
+   "source": "Reuters (via Boursorama)",
+   "url": "https://www.boursorama.com/bourse/actualites/offres-du-jour-fusions-et-acquisitions-8b75d902ac0cffefd843f59858282c1a",
+   "publishedAt": "2026-11-10T22:02+01:00",
+   "acquiredAt": "2026-11-11",
+   "summary": "Samsung Fire & Marine rileva il 60% residuo di Canopius (circa 2,47 miliardi di dollari); Blackstone compra circa il 16% di IIFL Finance per circa 535 milioni di dollari; Diamondback e KKR rilevano il 70% di Deep Blue Midland Basin; Germania pronta a pagare 6,6 miliardi per una quota di KNDS (fonti); Mitsui Chemicals acquista JSR per 11,61 miliardi di dollari (9/11); Mayr-Melnhof cede il 70% del packaging a KPS.",
+   "concepts": [
+    "cross-border M&A",
+    "carve-out",
+    "minority stake"
+   ],
+   "linksTo": [],
+   "updates": ""
+  },
+  {
+   "id": "kb-singles-day-pre",
+   "focus": "luxury-tech-markets",
+   "state": "valida",
+   "relevance": "media",
+   "title": "Singles' Day 2026: vendite cumulate al 31 ottobre stabili a circa 1.000 miliardi di yuan",
+   "source": "Associated Press (dati Syntun)",
+   "url": "https://abcnews.com/Business/wireStory/subdued-sales-singles-day-chinas-online-shopping-festival-138035152",
+   "publishedAt": "2026-11-10/11",
+   "acquiredAt": "2026-11-11",
+   "summary": "Dato parziale; il totale 2025 fu quasi 1.700 miliardi. Lusso e beni costosi tra le categorie più deboli. Taobao e Tmall integrati con l'AI Qwen di Alibaba.",
+   "concepts": [
+    "domanda Cina",
+    "e-commerce"
+   ],
+   "linksTo": [
+    "kb-ms-luxury-targets"
+   ],
+   "updates": "Da aggiornare con il totale finale."
+  },
+  {
+   "id": "kb-anthropic-ipo",
+   "focus": "global-ma-ecm",
+   "state": "valida",
+   "relevance": "alta",
+   "title": "IPO Anthropic: roadshow dal 10/11, forchetta 70–78 $, circa 825 mln di azioni, collocamento privato strategico da 26 mld $",
+   "source": "Bloomberg; CNN",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-10/anthropic-targets-64-4-billion-ipo-nearing-spacex-s-record",
+   "publishedAt": "2026-11-10",
+   "acquiredAt": "2026-11-11",
+   "summary": "Valutazione circa 1.330–1.500 miliardi a seconda della misura. Libro ordini coperto al lancio secondo Bloomberg. Da aggiornare con prezzo finale e primo giorno di quotazione.",
+   "concepts": [
+    "IPO",
+    "bookbuilding",
+    "collocamento privato"
+   ],
+   "linksTo": [
+    "kb-broadcom-anthropic-spv"
+   ],
+   "updates": "Da aggiornare al pricing."
+  },
+  {
+   "id": "kb-us-cpi-oct",
+   "focus": "macro-central-banks",
+   "state": "valida",
+   "relevance": "alta",
+   "title": "CPI USA di ottobre +0,4% su base mensile, sopra le attese",
+   "source": "Il Sole 24 Ore",
+   "url": "https://www.ilsole24ore.com/art/borsa-ultime-notizie-indici-mercoledi-11-novembre-2026-AJRZyLCC",
+   "publishedAt": "2026-11-10",
+   "acquiredAt": "2026-11-11",
+   "summary": "Rafforza le attese di un rialzo Fed a dicembre. Le previsioni di consenso indicavano circa +0,24–0,29%. Da confermare su BLS.",
+   "concepts": [
+    "CPI",
+    "sorpresa inflattiva"
+   ],
+   "linksTo": [
+    "kb-fed-oct"
+   ],
+   "updates": ""
+  }
+ ],
+ "posts": [
+  {
+   "id": "2026-11-11-p1",
+   "runId": "2026-11-11-r1",
+   "status": "bozza",
+   "lang": "EN",
+   "type": "Analisi di una notizia",
+   "hook": "A 50bp Fed hike would not change my base case. It would change my stress case.",
+   "topic": "Rate shock and refinancing models",
+   "focus": [
+    "macro-central-banks",
+    "luxury-financing"
+   ],
+   "audience": "CFO, lender, leveraged finance e PE: chiunque abbia un rifinanziamento nei prossimi 18 mesi.",
+   "message": "Il rischio per le capital structure non è il livello dei tassi ma la velocità con cui cambiano gli scenari.",
+   "thesis": "Molti modelli usano stress su ricavi e CapEx ma trattano il tasso come input fisso. Con la curva che si muove di decine di punti in una settimana, il tasso va stressato come una variabile operativa.",
+   "question": "When you stress-test a refinancing, do you shock the rate curve, or do you take the forward curve as given?",
+   "sourceName": "Reuters, 11/11/2026",
+   "sourceUrl": "https://www.933thedrive.com/2026/11/10/bonds-reel-as-hot-inflation-fuels-jumbo-fed-hike-fears/",
+   "body": "A 50bp Fed hike would not change my base case. It would change my stress case.\n\nOvernight, bonds sold off globally after a hotter US inflation print, and markets started pricing the risk of a half-point hike at the Fed's 8–9 December meeting. Japan's 10-year yield rose 7bp to 2.755%. Equities in Asia barely moved.\n\nThat split matters for anyone who builds capital-structure models.\n\nMost refinancing models I see stress revenue and CapEx hard (ARPU down, build costs up, delays) but treat the rate as an input: the forward curve on the day the model was built. That worked when curves moved slowly. It doesn't work when the curve reprices by tens of basis points in a week.\n\nThree things I'd put in every leveraged model right now:\n\n1. A rate shock as its own scenario, not buried inside the downside case. +100bp on the floating portion, held for the life of the facility.\n2. The hedge expiry date next to the debt maturity. The real cliff is often the swap rolling off, not the loan.\n3. Covenant headroom under the combined case: rate shock plus a mild operating miss. That's usually where the problem shows up.\n\n[Spazio per la tua esperienza: es. come avete costruito gli stress test nel rifinanziamento da 120 milioni, senza dettagli riservati.]\n\nNone of this predicts what the Fed will do. It just stops a board from approving a structure that only works if the curve stays where it was on the day of the model.\n\nWhen you stress-test a refinancing, do you shock the rate curve, or do you take the forward curve as given?\n\n#LeveragedFinance #CorporateFinance #Refinancing #InterestRates"
+  },
+  {
+   "id": "2026-11-11-p2",
+   "runId": "2026-11-11-r1",
+   "status": "bozza",
+   "lang": "IT",
+   "type": "Opinione ragionata",
+   "hook": "Nel risiko bancario italiano si compra il controllo prima delle sinergie.",
+   "topic": "Intesa–Mps–Mediobanca e l'OPA a cascata",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "audience": "Professionisti di finanza e banking in Italia, analisti, studenti di corporate finance.",
+   "message": "La struttura dell'offerta Intesa su Mps mostra che in Italia il valore passa dalle catene di controllo.",
+   "thesis": "La soglia del 50% più un'azione e l'OPA a cascata su Mediobanca dicono che l'obiettivo primario è il controllo della catena Mps → Mediobanca → Generali, prima della fusione piena e delle sinergie.",
+   "question": "Secondo voi, per i soci di minoranza di Mediobanca un corrispettivo agganciato a Mps è un'opportunità o un rischio?",
+   "sourceName": "ANSA, Money.it, MF-Milano Finanza (10–11/11/2026)",
+   "sourceUrl": "https://www.milanofinanza.it/news/intesa-sanpaolo-mps-l-opas-puo-passare-anche-col-50-piu-un-azione-opa-da-2-8-miliardi-su-mediobanca-e-202611101929378583",
+   "body": "Nel risiko bancario italiano si compra il controllo prima delle sinergie.\n\nIl documento d'offerta di Intesa Sanpaolo su Mps lo rende evidente. Tre dettagli:\n\n• L'OPAS è efficace anche con il 50% più un'azione, mentre l'obiettivo dichiarato resta il 66,67%.\n• Mps controlla circa l'86% di Mediobanca. Se l'offerta riesce, scatta un'OPA obbligatoria a cascata, stimata in circa 2,8 miliardi.\n• Il corrispettivo per Mediobanca è 2,45 volte quello offerto per Mps: lo stesso rapporto della fusione che l'assemblea Mps non ha approvato.\n\nLa mia lettura: una soglia così bassa ha senso se il valore principale sta nel controllo della catena (Mps → Mediobanca → partecipazione in Generali) più che nelle sinergie da integrazione completa, che con il 50% sono più difficili da realizzare.\n\nC'è poi un effetto meno discusso. Agganciando il prezzo di Mediobanca a quello di Mps, il rischio di esecuzione dell'offerta principale passa ai minoritari di Mediobanca: il loro corrispettivo dipende dal titolo Intesa e dall'esito di un'operazione su cui non hanno voce.\n\nÈ un'interpretazione, non un fatto: i termini definitivi sono quelli del documento approvato da Consob.\n\nSecondo voi, per i soci di minoranza di Mediobanca un corrispettivo agganciato a Mps è un'opportunità o un rischio?\n\n#MandA #Banche #CorporateFinance #Mediobanca #IntesaSanpaolo"
+  },
+  {
+   "id": "2026-11-11-p3",
+   "runId": "2026-11-11-r1",
+   "status": "bozza",
+   "lang": "EN",
+   "type": "Analisi di un trend",
+   "hook": "Chinese demand is soft. Luxury groups are answering by buying their suppliers.",
+   "topic": "Vertical integration as the next luxury M&A cycle",
+   "focus": [
+    "luxury-ma",
+    "luxury-tech-markets"
+   ],
+   "audience": "Operatori del lusso, M&A advisor, PE con focus consumer, imprenditori della filiera italiana.",
+   "message": "Il prossimo ciclo di M&A nel lusso sarà fatto di piccoli deal a monte, non di grandi fusioni tra marchi.",
+   "thesis": "Con la domanda cinese debole e valutazioni compresse, i gruppi investono dove controllano il risultato: costi, qualità e capacità produttiva. Per le PMI della filiera italiana si aprono exit e finanziamenti, ma anche una perdita di indipendenza.",
+   "question": "If you run a supplier in the luxury chain, would you rather sell a majority to one maison or stay independent and serve five?",
+   "sourceName": "AP (11/11/2026); MF-Milano Finanza (9/11/2026)",
+   "sourceUrl": "https://www.milanofinanza.it/fashion/da-lvmh-a-chanel-il-lusso-blinda-la-filiera-italiana-202611091814333559",
+   "body": "Chinese demand is soft. Luxury groups are answering by buying their suppliers.\n\nThis year's Singles' Day is flat, and big-ticket goods are among the weakest categories, according to AP. China is roughly a quarter of sales for the large groups, and brokers are cutting targets on that basis.\n\nAt the same time, in Italy:\n• Louis Vuitton has reportedly moved from 40% to 60% of Mab manifatture, an embroidery specialist in Abruzzo.\n• Chanel has a project of around €100m in the Pistoia area.\n• LVMH invests around €500m a year in Italy.\n(Source: MF-Milano Finanza)\n\nMy read: the next M&A cycle in luxury won't be about brand-on-brand mergers. It will be dozens of small deals upstream, where the buyer is paying for know-how, capacity and control over quality and cost. When you can't control demand, you control the things you can.\n\nThis has consequences for the Italian supply chain:\n→ Founders get an exit that didn't exist ten years ago, often at better multiples than a financial buyer would pay.\n→ They also lose the ability to work for competing maisons, which is how many of them grew.\n→ Lenders need to price customer concentration, not just margins.\n\n[Spazio per la tua esperienza: il lavoro sul business plan per un produttore del lusso e la riduzione dei costi di produzione di circa il 20%, senza dati riservati.]\n\nIf you run a supplier in the luxury chain, would you rather sell a majority to one maison or stay independent and serve five?\n\n#Luxury #MandA #SupplyChain #MadeInItaly"
+  },
+  {
+   "id": "2026-11-11-p4",
+   "runId": "2026-11-11-r1",
+   "status": "bozza",
+   "lang": "EN",
+   "type": "Domanda provocatoria",
+   "hook": "AI compute is now being financed like infrastructure. Is it infrastructure?",
+   "topic": "Compute-backed SPV and residual value risk",
+   "focus": [
+    "ai-finance",
+    "pe-private-credit"
+   ],
+   "audience": "Infrastructure e project finance, private credit, banche, tech investor.",
+   "message": "Gli strumenti di project finance funzionano sul compute solo se qualcuno prezza correttamente il valore residuo di un asset che invecchia in pochi anni.",
+   "thesis": "Il deal Broadcom/Anthropic da 63 miliardi usa lo schema delle infrastrutture: SPV, leasing, first e second lien, supporto sul valore residuo. La differenza è la vita utile: 30 anni per la fibra, pochi anni per un acceleratore. Il rischio vero è nella garanzia sul valore residuo.",
+   "question": "Who should carry residual value risk on AI hardware: the vendor, the lender, or the user?",
+   "sourceName": "Reuters via Khaleej Times (26/10/2026); Reuters (9/11/2026)",
+   "sourceUrl": "https://www.khaleejtimes.com/business/wall-street-banks-blackstone-line-up-63-billion-to-finance-broadcom-ai-chips-for-anthropic",
+   "body": "AI compute is now being financed like infrastructure. Is it infrastructure?\n\nLast month Bank of America, Citi, Morgan Stanley and Blackstone put together $63bn for Broadcom AI chips and networking gear destined for Anthropic. The structure looks very familiar to anyone in infrastructure finance:\n• An SPV buys the equipment and leases it to the user.\n• The banks arrange the first lien (about $43.5bn, according to two sources); Blackstone provides the whole second lien.\n• Broadcom provides residual value support equal to the first-lien amount.\n\nI work on fibre networks, where the same tools apply. But there is one big difference: useful life. A fibre network is financed over decades, while an accelerator can be overtaken by the next generation in a few years.\n\nThat moves the key risk from the user's credit to the residual value guarantee. If the hardware is worth less than expected when the lease ends, someone absorbs the gap, and here that someone is largely the vendor.\n\nReuters reported this week that banks and credit investors are looking harder at AI-related debt after the market sell-off. Moody's has warned that risk rises if many deals like this are done in a short period.\n\nI don't think the structure is wrong. I think the price of the residual value guarantee is the number to watch, more than the headline size.\n\nWho should carry residual value risk on AI hardware: the vendor, the lender, or the user?\n\n#AI #InfrastructureFinance #PrivateCredit #ProjectFinance"
+  }
+ ],
+ "insights": [
+  {
+   "id": "ins-ai-infra-finance",
+   "kind": "nuovo_focus",
+   "status": "proposta",
+   "title": "Nuovo Focus: AI Infrastructure Finance",
+   "body": "SPV per il compute, debito per i data center, leasing di hardware. Unisce le tue competenze di infrastructure e leveraged finance (fibra) con il Focus AI. È un mercato dove gli strumenti che usi già vengono applicati a un asset nuovo, e i professionisti che li capiscono entrambi sono pochi."
+  },
+  {
+   "id": "ins-italian-banking",
+   "kind": "nuovo_focus",
+   "status": "proposta",
+   "title": "Nuovo Focus: Consolidamento bancario italiano ed europeo",
+   "body": "Intesa–Mps–Mediobanca, Banco BPM–Crédit Agricole Italia, UniCredit–Commerzbank. Tre operazioni in corso nello stesso momento: è il cantiere di M&A più grande in Italia e un tema molto letto dal pubblico finanziario italiano."
+  },
+  {
+   "id": "ins-luxury-supply-chain",
+   "kind": "nuovo_focus",
+   "status": "proposta",
+   "title": "Nuovo Focus: Filiera del lusso e integrazione verticale",
+   "body": "LVMH, Chanel, Zegna e Louis Vuitton investono nella filiera italiana. È il punto dove si incontrano il tuo Focus M&A nel Luxury e la tua esperienza su business plan e costi di produzione di un produttore del lusso."
+  },
+  {
+   "id": "ins-rates-chain",
+   "kind": "connessione",
+   "status": "proposta",
+   "title": "Connessione: tassi → private credit → financing del lusso",
+   "body": "Se la Fed alza di 50 pb, il primo effetto si vede sui borrower a tasso variabile del private credit (già sotto pressione, vedi i limiti ai riscatti di Apollo e Partners Group). I marchi del lusso con debito acquisitivo, come Saks Global prima del chapter 11, sono il caso di studio da seguire."
+  },
+  {
+   "id": "ins-question-gcc",
+   "kind": "domanda",
+   "status": "proposta",
+   "title": "Domanda da porsi: chi sono i compratori del lusso e delle infrastrutture quando le banche si ritirano?",
+   "body": "Fondi sovrani del Golfo (ADIC in Apollo European Credit Co), capitale asiatico (HSG in Golden Goose) e family office stanno occupando lo spazio. Merita un Focus dedicato ai capitali sovrani e asiatici?"
+  }
+ ],
+ "radar": [
+  {
+   "title": "Vanguard raccoglie circa 4 miliardi di dollari di private debt per finanziare l'acquisizione di Altruist",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-10/vanguard-inks-4-billion-of-private-debt-to-fund-altruist-deal",
+   "publishedAt": "2026-11-10",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Anche gli acquirenti investment grade usano il private credit per le acquisizioni."
+  },
+  {
+   "title": "Fox prepara un'emissione obbligazionaria multi-tranche per rifinanziare il bridge da 8,4 miliardi usato per Roku",
+   "source": "Bloomberg; Econotimes",
+   "url": "https://bloomberg.com/news/articles/2026-11-10/fox-begins-high-grade-bond-sale-to-repay-debt-for-roku-deal",
+   "publishedAt": "2026-11-10",
+   "focus": [
+    "global-ma-ecm",
+    "macro-central-banks"
+   ],
+   "note": "Caso tipico di bridge-to-bond: la finestra investment grade resta aperta nonostante i tassi."
+  },
+  {
+   "title": "Intesa pubblica il documento d'offerta su Mps (OPA a cascata su Mediobanca da circa 2,8 miliardi)",
+   "source": "MF-Milano Finanza",
+   "url": "https://www.milanofinanza.it/news/intesa-sanpaolo-mps-l-opas-puo-passare-anche-col-50-piu-un-azione-opa-da-2-8-miliardi-su-mediobanca-e-202611101929378583",
+   "publishedAt": "2026-11-10T19:29+01:00",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Contesto della notizia Intesa–Mps nella finestra."
+  },
+  {
+   "title": "Morgan Stanley taglia i target price di LVMH, Kering ed Hermès",
+   "source": "MF-Milano Finanza",
+   "url": "https://www.milanofinanza.it/fashion/morgan-stanley-lima-il-lusso-francese-202611101554281485",
+   "publishedAt": "2026-11-10T15:54+01:00",
+   "focus": [
+    "luxury-financing"
+   ],
+   "note": "Motivo: debolezza della domanda cinese."
+  },
+  {
+   "title": "Reuters: Samsung F&M rileva il 60% di Canopius (2,47 mld $), Blackstone il 16% di IIFL Finance (535 mln $), KPS il 70% di MM Packaging",
+   "source": "Reuters via Boursorama",
+   "url": "https://www.boursorama.com/bourse/actualites/offres-du-jour-fusions-et-acquisitions-8b75d902ac0cffefd843f59858282c1a",
+   "publishedAt": "2026-11-10T22:02+01:00",
+   "focus": [
+    "global-ma-ecm",
+    "pe-private-credit"
+   ],
+   "note": "Rassegna Reuters delle operazioni del giorno."
+  },
+  {
+   "title": "Levine Leichtman Capital Partners acquisisce Five Star Franchising da Princeton Equity Group",
+   "source": "PR Newswire",
+   "url": "https://www.prnewswire.com/news-releases/levine-leichtman-capital-partners-and-management-acquire-five-star-franchising-302934007.html",
+   "publishedAt": "2026-11-10",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Secondary buyout, termini non divulgati."
+  }
+ ]
+}

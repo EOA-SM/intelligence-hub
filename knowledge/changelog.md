@@ -1,0 +1,3 @@
+- 2026-11-11 · `kb-mps-mediobanca-merger` · Superata: Cambiamento registrato l'11/11: la notizia 'fusione approvata' (Advisor Online) è superata dal voto contrario dell'assemblea.
+- 2026-11-11 · `kb-singles-day-pre` · Attualmente valida: Da aggiornare con il totale finale.
+- 2026-11-11 · `kb-anthropic-ipo` · Attualmente valida: Da aggiornare al pricing.

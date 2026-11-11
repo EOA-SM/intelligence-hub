@@ -1,0 +1,420 @@
+<title>Intelligence Hub</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+/* Layout: a deal-desk console. Sticky header with section tabs; one working column, cards only where an item is an object you act on. */
+:root{
+  --bg:#F3F4F6; --surface:#FFFFFF; --ink:#101828; --muted:#5A6375; --line:#DCE0E6;
+  --accent:#8A1C3F; --accent-ink:#FFFFFF; --accent-soft:#F6E7EC;
+  --breaking:#B42318; --alta:#B54708; --media:#1F5AA6; --monitor:#667085; --ok:#067647;
+  --f-display:"Space Grotesk","Segoe UI",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:8px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E131B; --surface:#161D28; --ink:#E7EAF0; --muted:#9AA3B2; --line:#283244;
+  --accent:#E3739A; --accent-ink:#1A0B11; --accent-soft:#3A1A27;
+  --breaking:#F97066; --alta:#FDB022; --media:#7CB2F2; --monitor:#98A2B3; --ok:#47CD89; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E131B; --surface:#161D28; --ink:#E7EAF0; --muted:#9AA3B2; --line:#283244;
+  --accent:#E3739A; --accent-ink:#1A0B11; --accent-soft:#3A1A27;
+  --breaking:#F97066; --alta:#FDB022; --media:#7CB2F2; --monitor:#98A2B3; --ok:#47CD89; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px 6px;flex-wrap:wrap}
+.brand{font-family:var(--f-display);font-weight:700;font-size:20px;letter-spacing:-.01em}
+.brand small{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;color:var(--muted);letter-spacing:.04em}
+.stamp{font-family:var(--f-mono);font-size:12px;color:var(--muted);text-align:right}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-bottom:0}
+nav a{flex:none;text-decoration:none;color:var(--muted);font-weight:500;font-size:14px;padding:8px 12px;border-bottom:2px solid transparent}
+nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{padding-block:24px 64px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;letter-spacing:-.01em;margin:0}
+h1{font-size:26px} h2{font-size:20px} h3{font-size:16.5px;line-height:1.35}
+.lede{color:var(--muted);max-width:68ch;margin:6px 0 0}
+.section{display:grid;gap:16px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.eyebrow{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+.kpi b{display:block;font-family:var(--f-display);font-size:28px;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:grid;gap:10px;min-width:0}
+.item{border-left:3px solid var(--line);padding-left:14px}
+.item[data-tier="breaking"]{border-left-color:var(--breaking)}
+.item[data-tier="alta"]{border-left-color:var(--alta)}
+.item[data-tier="media"]{border-left-color:var(--media)}
+.item[data-tier="monitor"]{border-left-color:var(--monitor)}
+.meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;gap:6px 14px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.t-breaking{color:var(--breaking)} .t-alta{color:var(--alta)} .t-media{color:var(--media)} .t-monitor{color:var(--monitor)}
+.s-valida{color:var(--ok)} .s-superata{color:var(--monitor)} .s-ipotesi{color:var(--media)} .s-da_verificare{color:var(--alta)} .s-storica{color:var(--muted)}
+.st-bozza{color:var(--monitor)} .st-approvato{color:var(--media)} .st-pubblicato{color:var(--ok)}
+.tag{font-size:12px;background:var(--accent-soft);color:var(--ink);padding:2px 8px;border-radius:999px}
+.k{font-weight:600}
+dl.an{display:grid;grid-template-columns:minmax(120px,170px) 1fr;gap:6px 14px;margin:0}
+dl.an dt{font-size:13px;color:var(--muted);font-weight:600} dl.an dd{margin:0;min-width:0}
+@media (max-width:620px){dl.an{grid-template-columns:1fr} dl.an dt{margin-top:6px}}
+details>summary{cursor:pointer;color:var(--accent);font-weight:500;font-size:14px}
+button,.btn{font:inherit;font-size:14px;font-weight:500;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 12px;cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button.ghost{border-color:transparent;color:var(--muted)}
+button.danger{color:var(--breaking);border-color:var(--breaking)}
+button:disabled{opacity:.5;cursor:default}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px;min-width:0}
+textarea{width:100%;min-height:120px;resize:vertical;line-height:1.5}
+.form{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+.form .full{grid-column:1/-1}
+@media (max-width:620px){.form{grid-template-columns:1fr}}
+label{display:grid;gap:4px;font-size:13px;color:var(--muted);font-weight:500}
+.empty{color:var(--muted);border:1px dashed var(--line);border-radius:var(--r);padding:18px;text-align:center}
+.post-body{white-space:pre-wrap;font-size:14.5px;background:var(--bg);border-radius:6px;padding:12px;max-height:340px;overflow:auto}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.note{font-size:13px;color:var(--muted);background:var(--bg);border-radius:6px;padding:10px 12px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:14px;z-index:20}
+.answer{white-space:pre-wrap}
+.tabs2{display:flex;gap:6px;flex-wrap:wrap}
+.tabs2 button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .15s}.card:hover{border-color:var(--muted)}}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">Intelligence Hub<small>FINANCE · TECH · LUXURY — M&amp;A &amp; FINANCING</small></div>
+      <div class="stamp" id="stamp">Connessione all'archivio…</div>
+    </div>
+    <nav id="nav" aria-label="Sezioni">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#focus">Focus</a>
+      <a href="#daily">Daily Intelligence</a>
+      <a href="#kb">Knowledge Base</a>
+      <a href="#library">Document Library</a>
+      <a href="#expert">Expert Mode</a>
+      <a href="#linkedin">LinkedIn Studio</a>
+      <a href="#insights">Insights</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="app"><div class="empty">Caricamento dei dati dall'archivio…</div></main>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const S={focus:[],news:[],radar:[],kb:[],posts:[],insights:[],runs:[],docs:[],questions:[],meta:null};
+let db=null, assets=null, sample=null, user=null, ready=false, failed=false;
+const COLS=["focus","news","radar","kb","posts","insights","runs","docs","questions"];
+const TIER={breaking:"Breaking News",alta:"Alta rilevanza",media:"Media rilevanza",monitor:"Da monitorare"};
+const STATE={valida:"Valida",storica:"Storica",superata:"Superata",ipotesi:"Ipotesi",da_verificare:"Da verificare"};
+const PST={bozza:"Bozza",approvato:"Approvato",pubblicato:"Pubblicato"};
+const ui={kbQ:"",kbFocus:"",kbState:"",run:"",postFilter:"bozza",editFocus:null,confirm:null,editPost:null,asking:false};
+
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fname=id=>(S.focus.find(f=>f.id===id)||{}).name||id;
+const fmtTime=iso=>{try{return new Date(iso).toLocaleString("it-IT",{timeZone:"Europe/Rome",day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"})+" (ora italiana)"}catch(e){return iso}};
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>t.hidden=true,2200)}
+const slug=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,60)||("f-"+Date.now());
+const latestRun=()=>[...S.runs].sort((a,b)=>String(b.id).localeCompare(String(a.id)))[0];
+
+function route(){return (location.hash||"#dashboard").slice(1)}
+function render(){
+  const r=route();
+  document.querySelectorAll("#nav a").forEach(a=>{if(a.getAttribute("href")==="#"+r)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  const lr=latestRun();
+  document.getElementById("stamp").innerHTML=failed?"Archivio non raggiungibile":(lr?`Ultimo aggiornamento<br>${esc(fmtTime(lr.finishedAt))}`:(ready?"Nessuna esecuzione registrata":"Connessione all'archivio…"));
+  const app=document.getElementById("app");
+  if(failed){app.innerHTML=`<div class="empty">Non riesco a leggere l'archivio. Apri la pagina da claude.ai con il tuo account: i dati sono salvati nel database di questa pagina.</div>`;return}
+  if(!ready){app.innerHTML=`<div class="empty">Caricamento dei dati dall'archivio…</div>`;return}
+  const views={dashboard:vDash,focus:vFocus,daily:vDaily,kb:vKb,library:vLib,expert:vExpert,linkedin:vLinked,insights:vIns};
+  app.innerHTML=(views[r]||vDash)();
+}
+
+function vDash(){
+  const lr=latestRun();
+  const active=S.focus.filter(f=>f.status!=="in_pausa");
+  const todayNews=lr?S.news.filter(n=>n.runId===lr.id):[];
+  const drafts=S.posts.filter(p=>p.status==="bozza");
+  const props=S.insights.filter(i=>i.status==="proposta");
+  const sched=(S.meta&&S.meta.schedule)||[];
+  return `<div class="section">
+  <div><span class="eyebrow">Dashboard</span><h1>Stato della ricerca</h1>
+  <p class="lede">${lr?`Ultima esecuzione <b>${esc(lr.id)}</b>, finestra ${esc(fmtTime(lr.window.from))} → ${esc(fmtTime(lr.window.to))}.`:"Nessuna esecuzione ancora."}</p></div>
+  <div class="kpis">
+    <div class="kpi"><b>${todayNews.length}</b><span>notizie nelle ultime 12 ore</span></div>
+    <div class="kpi"><b>${lr&&lr.counts?lr.counts.radar:0}</b><span>nel radar 12–36 ore</span></div>
+    <div class="kpi"><b>${active.length}</b><span>Focus attivi</span></div>
+    <div class="kpi"><b>${props.length}</b><span>trend e Focus suggeriti</span></div>
+    <div class="kpi"><b>${drafts.length}</b><span>post LinkedIn in bozza</span></div>
+    <div class="kpi"><b>${S.kb.length}</b><span>voci in Knowledge Base</span></div>
+  </div>
+  ${lr&&lr.notes?`<div class="note"><span class="k">Nota sull'esecuzione.</span> ${esc(lr.notes)}</div>`:""}
+  <div class="grid2">
+    <div class="card"><h2>In evidenza</h2>
+      ${todayNews.filter(n=>n.tier==="breaking"||n.tier==="alta").map(n=>`<div class="item" data-tier="${n.tier}"><span class="pill t-${n.tier}">${TIER[n.tier]}</span><h3><a href="#daily">${esc(n.title)}</a></h3><div class="meta"><span>${esc(n.source)}</span></div></div>`).join("")||`<div class="empty">Nessuna notizia ad alta rilevanza nell'ultima finestra.</div>`}
+    </div>
+    <div class="card"><h2>Prossime esecuzioni</h2>
+      ${sched.length?`<ul>${sched.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>`:`<div class="empty">Nessuna esecuzione programmata registrata.</div>`}
+      <p class="note">Le esecuzioni partono in automatico e aggiornano questa pagina. Per un aggiornamento immediato, chiedilo a Claude nella sessione del progetto.</p>
+    </div>
+  </div></div>`;
+}
+
+function vFocus(){
+  const list=[...S.focus].sort((a,b)=>(a.priority==="alta"?0:1)-(b.priority==="alta"?0:1)||a.name.localeCompare(b.name));
+  return `<div class="section">
+  <div><span class="eyebrow">Focus</span><h1>Centro di controllo</h1><p class="lede">Ogni Focus attivo entra nella ricerca di ogni esecuzione. I nuovi Focus ricevono la ricerca retroattiva alla prima esecuzione utile.</p></div>
+  <form class="card" id="focusForm">
+    <h2>Inserisci Focus</h2>
+    <div class="form">
+      <label>Nome del Focus<input id="fName" required placeholder="Es. Private credit nel lusso europeo"></label>
+      <label>Tipo<select id="fType"><option>Argomento</option><option>Trend</option><option>Settore</option><option>Azienda</option><option>Persona</option><option>Tecnologia</option><option>Normativa</option><option>Parola chiave</option></select></label>
+      <label>Priorità<select id="fPrio"><option value="alta">Alta</option><option value="media" selected>Media</option></select></label>
+      <label class="full">Parole chiave (separate da virgola)<input id="fKw" placeholder="Es. NAV lending, minority stake, family office"></label>
+      <label class="full">Note (cosa ti interessa capire)<input id="fNote" placeholder="Facoltativo"></label>
+    </div>
+    <div class="row"><button class="primary" type="submit">Aggiungi Focus</button></div>
+  </form>
+  ${list.map(f=>focusCard(f)).join("")||`<div class="empty">Nessun Focus. Aggiungi il primo con il modulo qui sopra.</div>`}
+  </div>`;
+}
+function focusCard(f){
+  if(ui.editFocus===f.id) return `<form class="card" data-editfocus="${esc(f.id)}"><div class="form">
+    <label>Nome<input name="name" value="${esc(f.name)}" required></label>
+    <label>Tipo<input name="type" value="${esc(f.type)}"></label>
+    <label>Priorità<select name="priority"><option value="alta" ${f.priority==="alta"?"selected":""}>Alta</option><option value="media" ${f.priority!=="alta"?"selected":""}>Media</option></select></label>
+    <label class="full">Parole chiave<input name="keywords" value="${esc((f.keywords||[]).join(", "))}"></label>
+    <label class="full">Note<input name="note" value="${esc(f.note||"")}"></label></div>
+    <div class="row"><button class="primary" type="submit">Salva</button><button type="button" class="ghost" data-act="cancelEdit">Annulla</button></div></form>`;
+  const retro={baseline:"Retroattiva: base iniziale",completa:"Retroattiva: completa",da_avviare:"Retroattiva: da avviare"}[f.retro]||"Retroattiva: da avviare";
+  const n=S.kb.filter(k=>k.focus===f.id).length;
+  return `<div class="card"><div class="row" style="justify-content:space-between"><h3>${esc(f.name)}</h3>
+    <div class="row"><span class="pill ${f.priority==="alta"?"t-alta":"t-monitor"}">${f.priority==="alta"?"Alta":"Media"}</span>${f.status==="in_pausa"?`<span class="pill t-monitor">In pausa</span>`:""}</div></div>
+    <div class="meta"><span>${esc(f.type)}</span><span>${esc(retro)}</span><span>${n} voci KB</span></div>
+    ${f.note?`<div>${esc(f.note)}</div>`:""}
+    <div class="row">${(f.keywords||[]).map(k=>`<span class="tag">${esc(k)}</span>`).join("")}</div>
+    <div class="row">
+      <button data-act="editFocus" data-id="${esc(f.id)}">Modifica</button>
+      <button data-act="toggleFocus" data-id="${esc(f.id)}">${f.status==="in_pausa"?"Riattiva":"Metti in pausa"}</button>
+      ${ui.confirm==="f:"+f.id?`<span>Eliminare questo Focus?</span><button class="danger" data-act="delFocus" data-id="${esc(f.id)}">Elimina</button><button class="ghost" data-act="noConfirm">Annulla</button>`:`<button class="ghost" data-act="askDel" data-id="f:${esc(f.id)}">Elimina</button>`}
+    </div></div>`;
+}
+
+function newsCard(n){
+  return `<article class="card item" data-tier="${n.tier}">
+    <div class="row"><span class="pill t-${n.tier}">${TIER[n.tier]}</span>${(n.focus||[]).map(x=>`<span class="tag">${esc(fname(x))}</span>`).join("")}</div>
+    <h3>${esc(n.title)}</h3>
+    <div class="meta"><span>${esc(n.publishedAt)} ${esc(n.tz)}</span><span>${esc(n.source)}</span><a href="${esc(n.url)}" target="_blank" rel="noopener">Fonte originale ↗</a>${(n.extraUrls||[]).map((u,i)=>`<a href="${esc(u)}" target="_blank" rel="noopener">Fonte ${i+2} ↗</a>`).join("")}</div>
+    <div><span class="k">Sintesi.</span> ${esc(n.summary)}</div>
+    <details><summary>Analisi completa</summary><dl class="an" style="margin-top:10px">
+      <dt>Perché è importante</dt><dd>${esc(n.why)}</dd>
+      <dt>Impatto potenziale</dt><dd>${esc(n.impact)}</dd>
+      <dt>Il mio punto di vista</dt><dd>${esc(n.view)}</dd>
+      <dt>Collegamenti</dt><dd>${(n.links||[]).map(fname).map(esc).join(", ")||"—"}</dd>
+      <dt>Fatti e verifiche</dt><dd>${esc(n.facts||"—")}<br><span class="meta">Verifica orario: ${esc(n.timeVerified||"—")}</span></dd>
+    </dl></details></article>`;
+}
+function vDaily(){
+  const runs=[...S.runs].sort((a,b)=>String(b.id).localeCompare(String(a.id)));
+  const run=runs.find(r=>r.id===ui.run)||runs[0];
+  if(!run) return `<div class="empty">Ancora nessuna Daily Intelligence. Comparirà qui dopo la prima esecuzione.</div>`;
+  const items=S.news.filter(n=>n.runId===run.id);
+  const radar=S.radar.filter(r=>r.runId===run.id);
+  return `<div class="section">
+  <div class="row" style="justify-content:space-between;align-items:end"><div><span class="eyebrow">Daily Intelligence</span><h1>Ultime 12 ore</h1>
+  <p class="lede">Finestra ${esc(fmtTime(run.window.from))} → ${esc(fmtTime(run.window.to))}. Fatti, interpretazioni e previsioni sono separati in ogni scheda.</p></div>
+  <label>Esecuzione<select id="runSel">${runs.map(r=>`<option value="${esc(r.id)}" ${r.id===run.id?"selected":""}>${esc(r.id)}</option>`).join("")}</select></label></div>
+  ${items.length?["breaking","alta","media","monitor"].map(t=>{const x=items.filter(n=>n.tier===t);return x.length?`<h2>${TIER[t]} <span class="meta" style="display:inline">${x.length}</span></h2>${x.map(newsCard).join("")}`:""}).join(""):`<div class="empty">Nessuna notizia rilevante pubblicata nelle ultime 12 ore per i Focus attivi.</div>`}
+  ${radar.length?`<div class="card"><h2>Radar 12–36 ore</h2><p class="note">Fuori dalla finestra delle 12 ore: solo contesto, non fa parte della rassegna.</p>
+    ${radar.map(r=>`<div><span class="k">${esc(r.title)}</span><div class="meta"><span>${esc(r.source)}</span><span>${esc(r.publishedAt)}</span><a href="${esc(r.url)}" target="_blank" rel="noopener">Fonte ↗</a></div><div>${esc(r.note||"")}</div></div>`).join("")}</div>`:""}
+  ${(run.excluded||[]).length?`<details class="card"><summary>Escluse e perché (${run.excluded.length})</summary><ul>${run.excluded.map(e=>`<li><span class="k">${esc(e.title)}</span>: ${esc(e.reason)}</li>`).join("")}</ul></details>`:""}
+  </div>`;
+}
+
+function vKb(){
+  const q=ui.kbQ.toLowerCase();
+  const list=S.kb.filter(k=>(!ui.kbFocus||k.focus===ui.kbFocus)&&(!ui.kbState||k.state===ui.kbState)&&(!q||(k.title+" "+k.summary+" "+(k.concepts||[]).join(" ")).toLowerCase().includes(q)))
+    .sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
+  return `<div class="section">
+  <div><span class="eyebrow">Knowledge Base</span><h1>Archivio</h1><p class="lede">Ogni voce ha uno stato. Le informazioni superate restano visibili con il motivo del cambiamento. Copia permanente in Markdown nel repository, cartella knowledge/.</p></div>
+  <div class="card"><div class="form">
+    <label>Cerca<input id="kbQ" value="${esc(ui.kbQ)}" placeholder="Es. OPA, private credit, Cina"></label>
+    <label>Focus<select id="kbFocus"><option value="">Tutti</option>${S.focus.map(f=>`<option value="${esc(f.id)}" ${ui.kbFocus===f.id?"selected":""}>${esc(f.name)}</option>`).join("")}</select></label>
+    <label>Stato<select id="kbState"><option value="">Tutti</option>${Object.entries(STATE).map(([k,v])=>`<option value="${k}" ${ui.kbState===k?"selected":""}>${v}</option>`).join("")}</select></label>
+  </div></div>
+  <div class="meta">${list.length} voci</div>
+  ${list.map(k=>`<div class="card"><div class="row"><span class="pill s-${k.state}">${STATE[k.state]||k.state}</span><span class="tag">${esc(fname(k.focus))}</span><span class="meta">Rilevanza ${esc(k.relevance)}</span></div>
+    <h3>${esc(k.title)}</h3>
+    <div class="meta"><span>Pubblicata ${esc(k.publishedAt)}</span><span>Acquisita ${esc(k.acquiredAt)}</span><span>${esc(k.source)}</span><a href="${esc(k.url)}" target="_blank" rel="noopener">Fonte ↗</a></div>
+    <div>${esc(k.summary)}</div>
+    ${(k.concepts||[]).length?`<div class="row">${k.concepts.map(c=>`<span class="tag">${esc(c)}</span>`).join("")}</div>`:""}
+    ${k.updates?`<div class="note"><span class="k">Aggiornamenti.</span> ${esc(k.updates)}</div>`:""}
+    ${(k.linksTo||[]).length?`<div class="meta">Collegata a: ${k.linksTo.map(id=>esc((S.kb.find(x=>x.id===id)||{}).title||id)).join(" · ")}</div>`:""}
+  </div>`).join("")||`<div class="empty">Nessuna voce corrisponde ai filtri.</div>`}
+  </div>`;
+}
+
+function vLib(){
+  return `<div class="section">
+  <div><span class="eyebrow">Document Library</span><h1>I tuoi documenti</h1><p class="lede">Carica PDF, report, white paper e presentazioni. Alla prossima esecuzione Claude li legge, estrae concetti e framework, li collega ai Focus e li confronta con le fonti online.</p></div>
+  <div class="card">
+    ${assets?`<label>Carica un documento (PDF, testo, Markdown, CSV; massimo 20 MB)<input type="file" id="docFile" accept=".pdf,.txt,.md,.csv,application/pdf"></label>
+      <label>Collega ai Focus (facoltativo)<select id="docFocus" multiple size="4">${S.focus.map(f=>`<option value="${esc(f.id)}">${esc(f.name)}</option>`).join("")}</select></label>
+      <div class="row"><button class="primary" data-act="upload">Carica</button></div>`
+    :`<div class="note">Il caricamento è disponibile solo al proprietario della pagina, aperta da claude.ai. In alternativa, metti i file nella cartella library/inbox del repository.</div>`}
+  </div>
+  ${S.docs.length?S.docs.sort((a,b)=>String(b.uploadedAt).localeCompare(String(a.uploadedAt))).map(d=>`<div class="card">
+    <div class="row"><span class="pill ${d.status==="analizzato"?"s-valida":"s-da_verificare"}">${d.status==="analizzato"?"Analizzato":"Da analizzare"}</span>${(d.focus||[]).map(x=>`<span class="tag">${esc(fname(x))}</span>`).join("")}</div>
+    <h3>${esc(d.name)}</h3><div class="meta"><span>Caricato ${esc(fmtTime(d.uploadedAt))}</span><span>${Math.round((d.size||0)/1024)} KB</span>${d.url?`<a href="${esc(d.url)}" target="_blank" rel="noopener">Apri ↗</a>`:""}</div>
+    ${d.analysis?`<details><summary>Analisi</summary><div class="answer">${esc(d.analysis)}</div></details>`:""}
+  </div>`).join(""):`<div class="empty">Nessun documento caricato. Il primo documento che carichi comparirà qui con lo stato «Da analizzare».</div>`}
+  </div>`;
+}
+
+function vExpert(){
+  return `<div class="section">
+  <div><span class="eyebrow">Expert Mode</span><h1>Domande e approfondimenti</h1><p class="lede">Fai una domanda: Claude risponde usando i Focus, la Knowledge Base e le notizie archiviate e indica da quale voce prende ogni informazione. Domande che richiedono nuove ricerche vengono riprese alla prossima esecuzione.</p></div>
+  <form class="card" id="askForm">
+    <label>La tua domanda<textarea id="askQ" placeholder="Es. Come si struttura un'OPA a cascata e quali tutele hanno i minoritari?" style="min-height:90px"></textarea></label>
+    <div class="row"><button class="primary" type="submit" ${ui.asking?"disabled":""}>${ui.asking?"Sto rispondendo…":"Chiedi ora"}</button><button type="button" data-act="queueQ">Approfondisci alla prossima esecuzione</button></div>
+    ${sample?"":`<div class="note">Le risposte immediate non sono disponibili in questa vista: la domanda viene salvata per la prossima esecuzione.</div>`}
+  </form>
+  ${[...S.questions].sort((a,b)=>String(b.askedAt).localeCompare(String(a.askedAt))).map(q=>`<div class="card"><h3>${esc(q.q)}</h3>
+    <div class="meta"><span>${esc(fmtTime(q.askedAt))}</span><span>${q.answer?(q.mode==="live"?"Risposta immediata":"Risposta da esecuzione"):"In coda per la prossima esecuzione"}</span></div>
+    ${q.answer?`<div class="answer">${esc(q.answer)}</div>`:""}</div>`).join("")||`<div class="empty">Nessuna domanda ancora.</div>`}
+  </div>`;
+}
+
+function vLinked(){
+  const counts=Object.fromEntries(Object.keys(PST).map(k=>[k,S.posts.filter(p=>p.status===k).length]));
+  const list=S.posts.filter(p=>p.status===ui.postFilter).sort((a,b)=>String(b.id).localeCompare(String(a.id)));
+  return `<div class="section">
+  <div><span class="eyebrow">LinkedIn Studio</span><h1>Proposte di post</h1><p class="lede">3–4 proposte per esecuzione. Niente viene pubblicato in automatico: approvi, copi, pubblichi su LinkedIn e poi segni il post come pubblicato. Le parti tra parentesi quadre sono spazi per la tua esperienza.</p></div>
+  <div class="tabs2">${Object.entries(PST).map(([k,v])=>`<button data-act="pf" data-id="${k}" aria-pressed="${ui.postFilter===k}">${v} (${counts[k]})</button>`).join("")}</div>
+  ${list.map(p=>`<div class="card">
+    <div class="row"><span class="pill st-${p.status}">${PST[p.status]}</span><span class="tag">${esc(p.lang)}</span><span class="tag">${esc(p.type)}</span>${(p.focus||[]).map(x=>`<span class="tag">${esc(fname(x))}</span>`).join("")}</div>
+    <h3>${esc(p.hook)}</h3>
+    <dl class="an"><dt>Argomento</dt><dd>${esc(p.topic)}</dd><dt>Per chi</dt><dd>${esc(p.audience)}</dd><dt>Messaggio</dt><dd>${esc(p.message)}</dd><dt>Tesi</dt><dd>${esc(p.thesis)}</dd><dt>Domanda finale</dt><dd>${esc(p.question)}</dd><dt>Fonte</dt><dd><a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener">${esc(p.sourceName)} ↗</a></dd></dl>
+    ${ui.editPost===p.id?`<textarea id="postEdit" style="min-height:280px">${esc(p.body)}</textarea><div class="row"><button class="primary" data-act="savePost" data-id="${esc(p.id)}">Salva testo</button><button class="ghost" data-act="cancelPost">Annulla</button></div>`
+      :`<div class="post-body">${esc(p.body)}</div>`}
+    <div class="row">
+      <button data-act="copy" data-id="${esc(p.id)}">Copia testo</button>
+      ${ui.editPost!==p.id?`<button data-act="editPost" data-id="${esc(p.id)}">Modifica</button>`:""}
+      ${p.status==="bozza"?`<button class="primary" data-act="setPost" data-id="${esc(p.id)}" data-v="approvato">Approva</button>`:""}
+      ${p.status==="approvato"?`<button class="primary" data-act="setPost" data-id="${esc(p.id)}" data-v="pubblicato">Segna come pubblicato</button><button class="ghost" data-act="setPost" data-id="${esc(p.id)}" data-v="bozza">Torna a bozza</button>`:""}
+      ${p.status==="pubblicato"&&p.publishedAt?`<span class="meta">Pubblicato ${esc(fmtTime(p.publishedAt))}</span>`:""}
+    </div></div>`).join("")||`<div class="empty">Nessun post in questo stato.</div>`}
+  </div>`;
+}
+
+function vIns(){
+  const KIND={nuovo_focus:"Nuovo Focus suggerito",connessione:"Connessione tra Focus",domanda:"Domanda da porsi",trend:"Trend emergente",lacuna:"Argomento trascurato"};
+  const list=[...S.insights].sort((a,b)=>(a.status==="proposta"?0:1)-(b.status==="proposta"?0:1)||String(b.date).localeCompare(String(a.date)));
+  return `<div class="section">
+  <div><span class="eyebrow">Insights &amp; Opportunities</span><h1>Proposte di Claude</h1><p class="lede">Trend, connessioni tra Focus, domande e nuovi Focus suggeriti. Accettando un nuovo Focus lo aggiungi subito alla ricerca.</p></div>
+  ${list.map(i=>`<div class="card"><div class="row"><span class="pill ${i.status==="proposta"?"t-media":i.status==="accettata"?"s-valida":"t-monitor"}">${esc(i.status==="proposta"?"Proposta":i.status==="accettata"?"Accettata":"Scartata")}</span><span class="tag">${esc(KIND[i.kind]||i.kind)}</span><span class="meta">${esc(i.date||"")}</span></div>
+    <h3>${esc(i.title)}</h3><div>${esc(i.body)}</div>
+    ${i.status==="proposta"?`<div class="row"><button class="primary" data-act="accIns" data-id="${esc(i.id)}">${i.kind==="nuovo_focus"?"Aggiungi come Focus":"Utile, tienilo"}</button><button class="ghost" data-act="rejIns" data-id="${esc(i.id)}">Scarta</button></div>`:""}
+  </div>`).join("")||`<div class="empty">Nessuna proposta per ora.</div>`}
+  </div>`;
+}
+
+/* ---------- actions ---------- */
+async function guard(p,okMsg){try{await p;if(okMsg)toast(okMsg)}catch(e){toast(e&&e.code==="permission_denied"?"Non hai i permessi per modificare.":"Salvataggio non riuscito. Riprova.")}}
+document.addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!db) return toast("Archivio non disponibile.");
+  if(e.target.id==="focusForm"){
+    const name=document.getElementById("fName").value.trim(); if(!name) return;
+    let id=slug(name); if(S.focus.some(f=>f.id===id)) id+="-"+Date.now().toString(36);
+    guard(db.collection("focus").doc(id).set({id,name,type:document.getElementById("fType").value,priority:document.getElementById("fPrio").value,
+      keywords:document.getElementById("fKw").value.split(",").map(s=>s.trim()).filter(Boolean),note:document.getElementById("fNote").value.trim(),
+      status:"attivo",retro:"da_avviare",createdAt:new Date().toISOString()}),"Focus aggiunto");
+    e.target.reset();
+  }
+  if(e.target.dataset.editfocus){
+    const id=e.target.dataset.editfocus,fd=new FormData(e.target);
+    ui.editFocus=null;
+    guard(db.collection("focus").doc(id).update({name:fd.get("name"),type:fd.get("type"),priority:fd.get("priority"),
+      keywords:String(fd.get("keywords")).split(",").map(s=>s.trim()).filter(Boolean),note:fd.get("note")}),"Focus aggiornato");
+  }
+  if(e.target.id==="askForm") ask(true);
+});
+async function ask(live){
+  const q=document.getElementById("askQ").value.trim(); if(!q||!db) return;
+  const ref=db.collection("questions").doc();
+  const base={q,askedAt:new Date().toISOString()};
+  if(!live||!sample){await guard(ref.set({...base,answer:"",mode:"queued"}),"Domanda salvata per la prossima esecuzione");document.getElementById("askQ").value="";return}
+  ui.asking=true;render();
+  const ctx={focus:S.focus.filter(f=>f.status!=="in_pausa").map(f=>({id:f.id,nome:f.name,note:f.note})),
+    knowledge_base:S.kb.slice(0,60).map(k=>({id:k.id,titolo:k.title,stato:k.state,fonte:k.source,data:k.publishedAt,sintesi:k.summary})),
+    notizie_recenti:S.news.slice(-20).map(n=>({titolo:n.title,fonte:n.source,data:n.publishedAt,sintesi:n.summary}))};
+  const prompt=`Sei l'analista di un professionista di corporate finance (M&A, leveraged e project finance, infrastrutture, lusso). Rispondi in italiano, in modo approfondito ma chiaro, separando fatti, interpretazioni e previsioni. Quando usi un'informazione dall'archivio, cita la voce tra parentesi quadre con il suo id o la fonte. Se l'archivio non basta, dillo e indica cosa andrebbe ricercato; non inventare dati, numeri o citazioni. Chiudi con 2-3 domande per approfondire.\n\nARCHIVIO (JSON):\n${JSON.stringify(ctx)}\n\nDOMANDA: ${q}`;
+  try{const r=await sample(prompt,{modelTier:"complex",cache:false});await ref.set({...base,answer:r.text,mode:"live"});document.getElementById("askQ")&&(document.getElementById("askQ").value="")}
+  catch(e){await guard(ref.set({...base,answer:"",mode:"queued"}),e&&e.code==="not_granted"?"Risposte immediate non consentite: domanda salvata per la prossima esecuzione":"Risposta non riuscita: domanda salvata per la prossima esecuzione")}
+  ui.asking=false;render();
+}
+document.addEventListener("input",e=>{
+  if(e.target.id==="kbQ"){ui.kbQ=e.target.value;const pos=e.target.selectionStart;render();const el=document.getElementById("kbQ");el.focus();el.setSelectionRange(pos,pos)}
+});
+document.addEventListener("change",e=>{
+  if(e.target.id==="kbFocus"){ui.kbFocus=e.target.value;render()}
+  if(e.target.id==="kbState"){ui.kbState=e.target.value;render()}
+  if(e.target.id==="runSel"){ui.run=e.target.value;render()}
+});
+document.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-act]"); if(!b) return;
+  const id=b.dataset.id, act=b.dataset.act;
+  if(act==="editFocus"){ui.editFocus=id;return render()}
+  if(act==="cancelEdit"){ui.editFocus=null;return render()}
+  if(act==="askDel"){ui.confirm=id;return render()}
+  if(act==="noConfirm"){ui.confirm=null;return render()}
+  if(act==="pf"){ui.postFilter=id;return render()}
+  if(act==="editPost"){ui.editPost=id;return render()}
+  if(act==="cancelPost"){ui.editPost=null;return render()}
+  if(act==="copy"){const p=S.posts.find(x=>x.id===id);try{await navigator.clipboard.writeText(p.body);toast("Testo copiato")}catch(err){ui.editPost=id;render();const t=document.getElementById("postEdit");t.focus();t.select();toast("Testo selezionato: copialo con Ctrl/Cmd+C")}return}
+  if(act==="queueQ") return ask(false);
+  if(!db) return toast("Archivio non disponibile.");
+  if(act==="toggleFocus"){const f=S.focus.find(x=>x.id===id);return guard(db.collection("focus").doc(id).update({status:f.status==="in_pausa"?"attivo":"in_pausa"}))}
+  if(act==="delFocus"){ui.confirm=null;return guard(db.collection("focus").doc(id).delete(),"Focus eliminato")}
+  if(act==="setPost"){const v=b.dataset.v;return guard(db.collection("posts").doc(id).update(v==="pubblicato"?{status:v,publishedAt:new Date().toISOString()}:v==="approvato"?{status:v,approvedAt:new Date().toISOString()}:{status:v}),"Stato aggiornato: "+PST[v])}
+  if(act==="savePost"){const body=document.getElementById("postEdit").value;ui.editPost=null;return guard(db.collection("posts").doc(id).update({body,editedAt:new Date().toISOString()}),"Testo salvato")}
+  if(act==="rejIns") return guard(db.collection("insights").doc(id).update({status:"scartata"}));
+  if(act==="accIns"){const i=S.insights.find(x=>x.id===id);
+    if(i.kind==="nuovo_focus"){const name=i.title.replace(/^Nuovo Focus:\s*/,"");let fid=slug(name);if(S.focus.some(f=>f.id===fid))fid+="-"+Date.now().toString(36);
+      await guard(db.collection("focus").doc(fid).set({id:fid,name,type:"Argomento",priority:"media",keywords:[],note:i.body,status:"attivo",retro:"da_avviare",createdAt:new Date().toISOString()}),"Focus aggiunto");}
+    return guard(db.collection("insights").doc(id).update({status:"accettata"}))}
+  if(act==="upload"){
+    const f=document.getElementById("docFile").files[0]; if(!f) return toast("Scegli prima un file.");
+    const focus=[...document.getElementById("docFocus").selectedOptions].map(o=>o.value);
+    b.disabled=true;b.textContent="Caricamento…";
+    try{const a=await assets.upload(f);await db.collection("docs").doc(a.id).set({id:a.id,name:f.name,url:a.url,size:a.sizeBytes,contentType:a.contentType||f.type,uploadedAt:new Date().toISOString(),status:"da_analizzare",focus});toast("Documento caricato")}
+    catch(err){toast("Caricamento non riuscito: "+(err&&err.message?err.message:"riprova"))}
+    b.disabled=false;b.textContent="Carica";
+  }
+});
+window.addEventListener("hashchange",render);
+
+/* ---------- boot ---------- */
+render();
+(async()=>{
+  const timer=setTimeout(()=>{if(!ready){failed=true;render()}},10000);
+  try{db=await window.claude?.use("db")}catch(e){db=null}
+  if(!db){clearTimeout(timer);failed=true;return render()}
+  let pending=new Set(COLS);
+  COLS.forEach(c=>db.collection(c).onSnapshot(s=>{
+    S[c]=s.docs.map(d=>({id:d.id,...d.data()}));
+    pending.delete(c); if(!pending.size&&!ready){ready=true;clearTimeout(timer)}
+    if(ready) render();
+  },()=>{pending.delete(c);if(!pending.size&&!ready){ready=true;clearTimeout(timer);render()}}));
+  db.doc("meta/schedule").onSnapshot(s=>{S.meta=s.exists?s.data():null;if(ready)render()},()=>{});
+  try{assets=await window.claude.use("assets")}catch(e){assets=null}
+  try{sample=await window.claude.use("sample")}catch(e){sample=null}
+  if(ready) render();
+})();
+</script>

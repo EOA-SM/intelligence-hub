@@ -1,0 +1,145 @@
+[
+ {
+  "id": "luxury-ma",
+  "name": "M&A nel Luxury",
+  "type": "Trend",
+  "priority": "alta",
+  "status": "attivo",
+  "keywords": [
+   "luxury M&A",
+   "acquisizione brand moda",
+   "LVMH",
+   "Kering",
+   "Richemont",
+   "Prada",
+   "family business lusso",
+   "filiera lusso"
+  ],
+  "note": "Consolidamento dei gruppi, cessioni di marchi, integrazione verticale nella filiera italiana.",
+  "retro": "baseline"
+ },
+ {
+  "id": "luxury-financing",
+  "name": "Financing nel Luxury",
+  "type": "Argomento",
+  "priority": "alta",
+  "status": "attivo",
+  "keywords": [
+   "luxury bond",
+   "refinancing lusso",
+   "private credit moda",
+   "IPO lusso",
+   "minority stake",
+   "family office",
+   "fondi sovrani moda"
+  ],
+  "note": "Debito, private credit, IPO, quote di minoranza, family office e fondi sovrani nel lusso.",
+  "retro": "baseline"
+ },
+ {
+  "id": "pe-private-credit",
+  "name": "Private Equity & Private Credit",
+  "type": "Settore",
+  "priority": "alta",
+  "status": "attivo",
+  "keywords": [
+   "private equity",
+   "private credit",
+   "direct lending",
+   "fundraising",
+   "exit",
+   "redemption",
+   "NAV lending"
+  ],
+  "note": "Raccolta, exit, valutazioni, stress dei fondi semi-liquidi, regolazione.",
+  "retro": "baseline"
+ },
+ {
+  "id": "ai-finance",
+  "name": "AI in Finance & Dealmaking",
+  "type": "Tecnologia",
+  "priority": "alta",
+  "status": "attivo",
+  "keywords": [
+   "AI investment banking",
+   "AI due diligence",
+   "AI financing",
+   "compute financing",
+   "data center debt"
+  ],
+  "note": "Uso dell'AI nei deal e finanziamento dell'infrastruttura AI (SPV, leasing di compute).",
+  "retro": "baseline"
+ },
+ {
+  "id": "global-ma-ecm",
+  "name": "M&A globale ed Equity Capital Markets",
+  "type": "Trend",
+  "priority": "media",
+  "status": "attivo",
+  "keywords": [
+   "M&A volumes",
+   "takeover",
+   "OPA",
+   "OPS",
+   "IPO",
+   "ECM",
+   "consolidamento bancario"
+  ],
+  "note": "Volumi, multipli, pipeline; include il consolidamento bancario europeo e italiano.",
+  "retro": "baseline"
+ },
+ {
+  "id": "macro-central-banks",
+  "name": "Banche centrali e costo del capitale",
+  "type": "Argomento",
+  "priority": "media",
+  "status": "attivo",
+  "keywords": [
+   "Fed",
+   "BCE",
+   "BoJ",
+   "PBoC",
+   "tassi",
+   "rendimenti",
+   "spread",
+   "leveraged finance"
+  ],
+  "note": "Tassi e rendimenti letti come costo del capitale per deal e rifinanziamenti.",
+  "retro": "baseline"
+ },
+ {
+  "id": "eu-regulation",
+  "name": "Regolamentazione UE per Finance e Luxury",
+  "type": "Normativa",
+  "priority": "media",
+  "status": "attivo",
+  "keywords": [
+   "CSRD",
+   "CSDDD",
+   "AI Act",
+   "Digital Product Passport",
+   "ESPR",
+   "golden power",
+   "Consob"
+  ],
+  "note": "Norme UE e nazionali con impatto su deal, reporting e filiera del lusso.",
+  "retro": "da_avviare"
+ },
+ {
+  "id": "luxury-tech-markets",
+  "name": "Luxury Tech & nuovi mercati",
+  "type": "Trend",
+  "priority": "media",
+  "status": "attivo",
+  "keywords": [
+   "resale lusso",
+   "tracciabilità",
+   "domanda Cina lusso",
+   "Singles Day",
+   "Medio Oriente lusso",
+   "India lusso"
+  ],
+  "note": "Domanda per area geografica, resale, tracciabilità e canali digitali.",
+  "retro": "baseline"
+ }
+]
