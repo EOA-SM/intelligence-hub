@@ -1,5 +1,7 @@
 # Fonti
 
+> L'elenco operativo delle fonti è nella dashboard (sezione Fonti, collezione `sources`), dove l'utente aggiunge, mette in pausa ed elimina le fonti. Questo file documenta i criteri e lo stato verificato l'11/11/2026.
+
 Verificato l'11/11/2026: alcune testate bloccano il motore di ricerca di Claude (anche su claude.ai). Le loro notizie si raggiungono solo tramite copie ripubblicate.
 
 ## Accessibili direttamente (usare con `allowed_domains`)

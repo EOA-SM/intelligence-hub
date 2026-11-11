@@ -93,7 +93,9 @@ label{display:grid;gap:4px;font-size:13px;color:var(--muted);font-weight:500}
     </div>
     <nav id="nav" aria-label="Sezioni">
       <a href="#dashboard">Dashboard</a>
+      <a href="#agent">Agente</a>
       <a href="#focus">Focus</a>
+      <a href="#sources">Fonti</a>
       <a href="#daily">Daily Intelligence</a>
       <a href="#kb">Knowledge Base</a>
       <a href="#library">Document Library</a>
@@ -107,13 +109,15 @@ label{display:grid;gap:4px;font-size:13px;color:var(--muted);font-weight:500}
 <div class="toast" id="toast" hidden></div>
 
 <script>
-const S={focus:[],news:[],radar:[],kb:[],posts:[],insights:[],runs:[],docs:[],questions:[],meta:null};
-let db=null, assets=null, sample=null, user=null, ready=false, failed=false;
-const COLS=["focus","news","radar","kb","posts","insights","runs","docs","questions"];
+const S={sources:[],directives:[],requests:[],focus:[],news:[],radar:[],kb:[],posts:[],insights:[],runs:[],docs:[],questions:[],meta:null};
+let db=null, assets=null, sample=null, mcp=null, canRun=false, user=null, ready=false, failed=false;
+const RUN_TRIGGER="trig_018nRPRZVcWKiQ3RUxqPoE4h", CCR="Claude Code Remote";
+const CATS=["Italia","Internazionale","Lusso","Deal e private markets","Istituzionale","Consulenza e report","Asia","Tecnologia","Altro"];
+const COLS=["sources","directives","requests","focus","news","radar","kb","posts","insights","runs","docs","questions"];
 const TIER={breaking:"Breaking News",alta:"Alta rilevanza",media:"Media rilevanza",monitor:"Da monitorare"};
 const STATE={valida:"Valida",storica:"Storica",superata:"Superata",ipotesi:"Ipotesi",da_verificare:"Da verificare"};
 const PST={bozza:"Bozza",approvato:"Approvato",pubblicato:"Pubblicato"};
-const ui={kbQ:"",kbFocus:"",kbState:"",run:"",postFilter:"bozza",editFocus:null,confirm:null,editPost:null,asking:false};
+const ui={kbQ:"",kbFocus:"",kbState:"",run:"",postFilter:"bozza",editFocus:null,confirm:null,editPost:null,asking:false,running:false};
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fname=id=>(S.focus.find(f=>f.id===id)||{}).name||id;
@@ -131,7 +135,7 @@ function render(){
   const app=document.getElementById("app");
   if(failed){app.innerHTML=`<div class="empty">Non riesco a leggere l'archivio. Apri la pagina da claude.ai con il tuo account: i dati sono salvati nel database di questa pagina.</div>`;return}
   if(!ready){app.innerHTML=`<div class="empty">Caricamento dei dati dall'archivio…</div>`;return}
-  const views={dashboard:vDash,focus:vFocus,daily:vDaily,kb:vKb,library:vLib,expert:vExpert,linkedin:vLinked,insights:vIns};
+  const views={agent:vAgent,sources:vSources,dashboard:vDash,focus:vFocus,daily:vDaily,kb:vKb,library:vLib,expert:vExpert,linkedin:vLinked,insights:vIns};
   app.innerHTML=(views[r]||vDash)();
 }
 
@@ -324,6 +328,70 @@ function vIns(){
   </div>`;
 }
 
+function vAgent(){
+  const dirs=[...S.directives].sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt)));
+  const reqs=[...S.requests].sort((a,b)=>String(b.at).localeCompare(String(a.at))).slice(0,6);
+  const lr=latestRun();
+  return `<div class="section">
+  <div><span class="eyebrow">Agente</span><h1>Il tuo analista</h1><p class="lede">L'agente lavora da solo alle 6:40 e alle 8:40 (ora italiana). Qui gli dai istruzioni permanenti e puoi chiedergli una ricerca in qualsiasi momento.</p></div>
+  <div class="grid2">
+  <form class="card" id="runForm">
+    <h2>Avvia ricerca ora</h2>
+    <label>Cosa vuoi che approfondisca (facoltativo)<textarea id="runText" style="min-height:90px" placeholder="Es. Concentrati sui finanziamenti delle maison italiane e sui fondi del Golfo"></textarea></label>
+    <div class="row"><button class="primary" type="submit" ${(!canRun||ui.running)?"disabled":""}>${ui.running?"Invio…":"Avvia ricerca"}</button></div>
+    ${canRun?`<p class="note">La ricerca parte in una nuova sessione e richiede circa 15–30 minuti. Quando finisce ricevi una notifica e questa pagina si aggiorna da sola.</p>`
+      :`<p class="note">Per avviare ricerche da qui serve il collegamento a Claude Code Remote: alla prima richiesta la pagina chiede il permesso. Se il pulsante resta disattivato, puoi chiedere un aggiornamento a Claude in una sessione del progetto.</p>`}
+    ${reqs.length?`<div class="meta" style="display:grid;gap:4px">${reqs.map(r=>`<span>${esc(fmtTime(r.at))} · ${esc(r.status)}${r.text?` · “${esc(r.text.slice(0,80))}”`:""}</span>`).join("")}</div>`:""}
+  </form>
+  <div class="card"><h2>Stato</h2>
+    <dl class="an"><dt>Ultima esecuzione</dt><dd>${lr?esc(lr.id)+" · "+esc(fmtTime(lr.finishedAt)):"—"}</dd>
+    <dt>Focus attivi</dt><dd>${S.focus.filter(f=>f.status!=="in_pausa").length}</dd>
+    <dt>Fonti attive</dt><dd>${S.sources.filter(x=>x.status!=="in_pausa"&&x.check!=="bloccata").length} (${S.sources.filter(x=>x.check==="da_verificare").length} da verificare)</dd>
+    <dt>Istruzioni attive</dt><dd>${S.directives.filter(d=>d.active!==false).length}</dd></dl>
+  </div></div>
+  <form class="card" id="dirForm">
+    <h2>Istruzioni permanenti</h2>
+    <p class="note">Preferenze che l'agente applica a ogni esecuzione: temi da seguire di più o di meno, aree geografiche, stile dei post. Valgono sempre dentro le regole di qualità (fonti verificate, finestra di 12 ore, nessuna invenzione).</p>
+    <div class="form">
+      <label class="full">Istruzione<input id="dirText" required placeholder="Es. Dai più spazio ai deal nel Golfo; meno notizie sulle trimestrali USA"></label>
+      <label>Ambito<select id="dirScope"><option value="ricerca">Ricerca e notizie</option><option value="fonti">Fonti</option><option value="linkedin">Post LinkedIn</option><option value="formato">Formato e analisi</option></select></label>
+    </div>
+    <div class="row"><button class="primary" type="submit">Aggiungi istruzione</button></div>
+  </form>
+  ${dirs.map(d=>`<div class="card"><div class="row" style="justify-content:space-between"><div class="row"><span class="pill ${d.active===false?"t-monitor":"s-valida"}">${d.active===false?"Disattivata":"Attiva"}</span><span class="tag">${esc(d.scope)}</span></div><span class="meta">${esc(fmtTime(d.createdAt))}${d.appliedAt?" · applicata "+esc(fmtTime(d.appliedAt)):""}</span></div>
+    <div>${esc(d.text)}</div>
+    <div class="row"><button data-act="toggleDir" data-id="${esc(d.id)}">${d.active===false?"Riattiva":"Disattiva"}</button>
+    ${ui.confirm==="d:"+d.id?`<span>Eliminare?</span><button class="danger" data-act="delDir" data-id="${esc(d.id)}">Elimina</button><button class="ghost" data-act="noConfirm">Annulla</button>`:`<button class="ghost" data-act="askDel" data-id="d:${esc(d.id)}">Elimina</button>`}</div></div>`).join("")||`<div class="empty">Nessuna istruzione. Esempio: «Segnala sempre le operazioni sopra 1 miliardo nel lusso, anche se fuori dai miei Focus».</div>`}
+  </div>`;
+}
+
+function vSources(){
+  const CHK={ok:["s-valida","Verificata"],da_verificare:["s-da_verificare","Da verificare"],bloccata:["t-breaking","Bloccata al motore di ricerca"]};
+  const groups=CATS.map(c=>[c,S.sources.filter(x=>(x.category||"Altro")===c).sort((a,b)=>a.name.localeCompare(b.name))]).filter(g=>g[1].length);
+  return `<div class="section">
+  <div><span class="eyebrow">Fonti</span><h1>Dove cerca l'agente</h1><p class="lede">Ogni fonte attiva viene interrogata a ogni esecuzione. Le nuove fonti vengono verificate alla prima esecuzione: se un sito blocca il motore di ricerca di Claude, viene segnato come bloccato e l'agente cerca le sue notizie tramite copie ripubblicate da altre testate.</p></div>
+  <form class="card" id="srcForm">
+    <h2>Aggiungi fonte</h2>
+    <div class="form">
+      <label>Nome<input id="sName" required placeholder="Es. Il Foglio, Les Echos, Debtwire"></label>
+      <label>Sito (dominio o link)<input id="sDom" required placeholder="Es. lesechos.fr"></label>
+      <label>Categoria<select id="sCat">${CATS.map(c=>`<option>${c}</option>`).join("")}</select></label>
+      <label class="full">Per quali Focus (facoltativo)<select id="sFocus" multiple size="3">${S.focus.map(f=>`<option value="${esc(f.id)}">${esc(f.name)}</option>`).join("")}</select></label>
+      <label class="full">Note (cosa cercare lì)<input id="sNote" placeholder="Es. Rubrica sul private equity francese"></label>
+    </div>
+    <div class="row"><button class="primary" type="submit">Aggiungi fonte</button></div>
+  </form>
+  ${groups.map(([c,list])=>`<div class="card"><h2>${esc(c)} <span class="meta" style="display:inline">${list.length}</span></h2>
+    ${list.map(x=>`<div class="row" style="justify-content:space-between;border-top:1px solid var(--line);padding-top:10px">
+      <div style="min-width:0;flex:1 1 260px"><span class="k">${esc(x.name)}</span> <span class="meta" style="display:inline">${esc((x.domains||[]).join(", "))}</span>
+        <div class="row" style="margin-top:4px"><span class="pill ${CHK[x.check]?CHK[x.check][0]:"t-monitor"}">${CHK[x.check]?CHK[x.check][1]:"—"}</span>${x.status==="in_pausa"?`<span class="pill t-monitor">In pausa</span>`:""}${(x.focus||[]).map(f=>`<span class="tag">${esc(fname(f))}</span>`).join("")}</div>
+        ${x.note||x.checkNote?`<div class="meta" style="margin-top:4px">${esc([x.note,x.checkNote].filter(Boolean).join(" · "))}</div>`:""}</div>
+      <div class="row"><button data-act="toggleSrc" data-id="${esc(x.id)}">${x.status==="in_pausa"?"Riattiva":"Pausa"}</button>
+      ${ui.confirm==="s:"+x.id?`<button class="danger" data-act="delSrc" data-id="${esc(x.id)}">Conferma</button><button class="ghost" data-act="noConfirm">Annulla</button>`:`<button class="ghost" data-act="askDel" data-id="s:${esc(x.id)}">Elimina</button>`}</div>
+    </div>`).join("")}</div>`).join("")||`<div class="empty">Nessuna fonte. Aggiungi la prima con il modulo qui sopra.</div>`}
+  </div>`;
+}
+
 /* ---------- actions ---------- */
 async function guard(p,okMsg){try{await p;if(okMsg)toast(okMsg)}catch(e){toast(e&&e.code==="permission_denied"?"Non hai i permessi per modificare.":"Salvataggio non riuscito. Riprova.")}}
 document.addEventListener("submit",e=>{
@@ -344,6 +412,22 @@ document.addEventListener("submit",e=>{
       keywords:String(fd.get("keywords")).split(",").map(s=>s.trim()).filter(Boolean),note:fd.get("note")}),"Focus aggiornato");
   }
   if(e.target.id==="askForm") ask(true);
+  if(e.target.id==="srcForm"){
+    const name=document.getElementById("sName").value.trim();
+    const domains=document.getElementById("sDom").value.split(/[\s,]+/).map(d=>d.trim().toLowerCase().replace(/^https?:\/\//,"").replace(/^www\./,"").split("/")[0]).filter(d=>d.includes("."));
+    if(!name||!domains.length) return toast("Inserisci un nome e un dominio valido, es. lesechos.fr");
+    let id=slug(domains[0]); if(S.sources.some(x=>x.id===id)) return toast("Questa fonte è già presente.");
+    guard(db.collection("sources").doc(id).set({id,name,domains,category:document.getElementById("sCat").value,
+      focus:[...document.getElementById("sFocus").selectedOptions].map(o=>o.value),note:document.getElementById("sNote").value.trim(),
+      status:"attiva",check:"da_verificare",checkNote:"",addedBy:"utente",addedAt:new Date().toISOString()}),"Fonte aggiunta: verrà verificata alla prossima esecuzione");
+    e.target.reset();
+  }
+  if(e.target.id==="dirForm"){
+    const text=document.getElementById("dirText").value.trim(); if(!text) return;
+    guard(db.collection("directives").add({text,scope:document.getElementById("dirScope").value,active:true,createdAt:new Date().toISOString()}),"Istruzione salvata");
+    e.target.reset();
+  }
+  if(e.target.id==="runForm") runNow();
 });
 async function ask(live){
   const q=document.getElementById("askQ").value.trim(); if(!q||!db) return;
@@ -384,6 +468,10 @@ document.addEventListener("click",async e=>{
   if(act==="delFocus"){ui.confirm=null;return guard(db.collection("focus").doc(id).delete(),"Focus eliminato")}
   if(act==="setPost"){const v=b.dataset.v;return guard(db.collection("posts").doc(id).update(v==="pubblicato"?{status:v,publishedAt:new Date().toISOString()}:v==="approvato"?{status:v,approvedAt:new Date().toISOString()}:{status:v}),"Stato aggiornato: "+PST[v])}
   if(act==="savePost"){const body=document.getElementById("postEdit").value;ui.editPost=null;return guard(db.collection("posts").doc(id).update({body,editedAt:new Date().toISOString()}),"Testo salvato")}
+  if(act==="toggleSrc"){const x=S.sources.find(y=>y.id===id);return guard(db.collection("sources").doc(id).update({status:x.status==="in_pausa"?"attiva":"in_pausa"}))}
+  if(act==="delSrc"){ui.confirm=null;return guard(db.collection("sources").doc(id).delete(),"Fonte eliminata")}
+  if(act==="toggleDir"){const d=S.directives.find(y=>y.id===id);return guard(db.collection("directives").doc(id).update({active:d.active===false}))}
+  if(act==="delDir"){ui.confirm=null;return guard(db.collection("directives").doc(id).delete(),"Istruzione eliminata")}
   if(act==="rejIns") return guard(db.collection("insights").doc(id).update({status:"scartata"}));
   if(act==="accIns"){const i=S.insights.find(x=>x.id===id);
     if(i.kind==="nuovo_focus"){const name=i.title.replace(/^Nuovo Focus:\s*/,"");let fid=slug(name);if(S.focus.some(f=>f.id===fid))fid+="-"+Date.now().toString(36);
@@ -400,6 +488,21 @@ document.addEventListener("click",async e=>{
 });
 window.addEventListener("hashchange",render);
 
+async function runNow(){
+  if(!mcp||!db) return toast("Avvio non disponibile in questa vista.");
+  const text=document.getElementById("runText").value.trim();
+  ui.running=true;render();
+  const ref=db.collection("requests").doc();
+  try{
+    await mcp.callTool(CCR,"fire_trigger",{trigger_id:RUN_TRIGGER,...(text?{text:"Richiesta dell'utente dalla dashboard: "+text}:{})},{cache:false});
+    await ref.set({at:new Date().toISOString(),text,status:"avviata"});toast("Ricerca avviata: riceverai una notifica al termine");
+  }catch(e){
+    const msg=e&&e.code==="not_granted"?"Permesso negato: la ricerca non è partita.":e&&e.code==="server_not_connected"?"Connettore Claude Code Remote non collegato.":"La ricerca non è partita. Riprova tra poco.";
+    await ref.set({at:new Date().toISOString(),text,status:"non partita ("+(e&&e.code||"errore")+")"}).catch(()=>{});toast(msg);
+  }
+  ui.running=false;render();
+}
+
 /* ---------- boot ---------- */
 render();
 (async()=>{
@@ -415,6 +518,7 @@ render();
   db.doc("meta/schedule").onSnapshot(s=>{S.meta=s.exists?s.data():null;if(ready)render()},()=>{});
   try{assets=await window.claude.use("assets")}catch(e){assets=null}
   try{sample=await window.claude.use("sample")}catch(e){sample=null}
+  try{mcp=await window.claude.use("mcp");if(mcp){const t=await mcp.listTools(CCR).catch(()=>null);const sv=t&&t.servers&&t.servers.find(x=>x.server===CCR);canRun=!sv||sv.authStatus==="unknown"||(sv.tools||[]).some(x=>x.name==="fire_trigger")}}catch(e){mcp=null}
   if(ready) render();
 })();
 </script>
