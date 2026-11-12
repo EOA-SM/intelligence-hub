@@ -1,20 +1,20 @@
 ---
 id: kb-kering-piccioli
 focus: luxury-ma
-state: da_verificare
+state: valida
 relevance: bassa
-published: "2026-11 (non verificata)"
-acquired: "2026-11-11"
-source: "Business of Fashion (solo estratto di ricerca)"
-url: https://www.businessoffashion.com/topics/luxury/
+published: "2026-11-05"
+acquired: "2026-11-12"
+source: "FashionUnited; The Star (AFP)"
+url: https://fashionunited.com/news/people/balenciaga-concludes-picciolis-tenure-after-less-than-two-years/2026110575591
 links: []
 ---
-# Kering: Piccioli lascerebbe la maison parigina dopo meno di due anni, in un ampio rimpasto creativo
+# Kering conferma: Pierpaolo Piccioli lascia la direzione creativa di Balenciaga dopo meno di due anni (5/11/2026)
 
-**Stato:** Da verificare
+**Stato:** Attualmente valida
 
-Notizia vista solo come estratto di ricerca: da confermare su fonte primaria prima di usarla.
+Annuncio di Kering del 5/11/2026; il CEO di Balenciaga Gianfranco Gianangeli lo ringrazia; nuova direzione creativa da annunciare. Si aggiunge alle uscite di Vaccarello (Saint Laurent) e McGirr (McQueen). Indiscrezioni (Hypebeast, BoF) su Martine Rose come successore: non confermate.
 
-**Concetti chiave:** direzione creativa, turnaround
+**Concetti chiave:** direzione creativa, turnaround, rischio di esecuzione
 
-**Aggiornamenti:** —
+**Aggiornamenti:** 12/11/2026 (m1): verificata. Stato da 'da_verificare' a 'valida' grazie alla conferma di Kering riportata da FashionUnited e AFP. Il titolo originale ('maison parigina') si riferiva a Balenciaga.

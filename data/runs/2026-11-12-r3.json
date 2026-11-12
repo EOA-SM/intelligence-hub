@@ -1,0 +1,725 @@
+{
+ "run": {
+  "counts": {
+   "kb": 21,
+   "news": 21,
+   "posts": 0,
+   "radar": 9,
+   "scanned": 2405,
+   "shortlisted": 195
+  },
+  "finishedAt": "2026-11-12T15:20:00Z",
+  "id": "2026-11-12-r3",
+  "kind": "daily",
+  "notes": "PUSH RIFIUTATO (quarta esecuzione di fila oggi): il proxy git nega l'accesso (403) perché EOA-SM/intelligence-hub non è tra i repository autorizzati della sessione; lo strumento add_repo non è disponibile. Il commit 'Daily Intelligence 2026-11-12-r3' esiste solo nel container e andrà perso; il database della dashboard è aggiornato. Per risolvere: aggiungere il repository alle fonti della routine/ambiente intelligence-hub. — Esecuzione r3 (15:40, priorità apertura di Wall Street, dati USA delle 14:30 e notizie europee del pomeriggio). Raccolta collect.py riuscita: 225 richieste, 6.165 titoli, 2.405 in finestra, lista ristretta di 195 + 60 radar letta per intero. Non ripetute le notizie di r1, r2 e m1; Nvidia e Singles' Day riproposte solo come aggiornamenti sostanziali (dimissioni di Huang; totale finale del festival). Dati USA delle 14:30: oggi solo le richieste di sussidi (PPI di ottobre domani 13/11). Apertura di Wall Street: rilevazione dei primi minuti, non dati di chiusura. Chiusure europee e FTSE MIB fuori finestra (dopo le 14:40 UTC). Esito dei cda Banco BPM e Mps non trovato. Rete: WebFetch non raggiunge vari host (es. thestandard.com.hk non risolto); gli articoli sono stati letti via curl dove consentito (ANSA, Teleborsa, Milano Finanza, Yahoo Finance); alcuni domini sono bloccati dal proxy (403) e quelle notizie restano 'solo titolo'. Copertura Focus: luxury-ma senza notizie nuove verificabili in finestra (Richemont–De Beers solo da aggregatore debole: esclusa); luxury-financing coperto da Cucinelli (rating ESG); gli altri Focus hanno almeno una notizia. Ricerca retroattiva: AI in Finance & Dealmaking (finanziamento dell'infrastruttura AI). Voce KB da verificare kb-asic-private-credit ricontrollata: nessuna fonte di novembre 2026 trovata, resta da verificare. Nessun post LinkedIn (r3, come richiesto). Nessuna istruzione permanente, nessun documento, nessuna domanda Expert Mode in attesa. Archivio: i commit di r1, r2 e m1 non sono mai arrivati su GitHub (push rifiutati); il repository è stato clonato di nuovo in questa esecuzione.",
+  "pushStatus": "rifiutato (403, repository non autorizzato nella sessione)",
+  "startedAt": "2026-11-12T14:40:00Z",
+  "window": {
+   "from": "2026-11-12T02:40:00Z",
+   "to": "2026-11-12T14:40:00Z"
+  }
+ },
+ "focus": [],
+ "news": [
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Cifre dichiarate dalla società (AFP).",
+   "focus": [
+    "ai-finance"
+   ],
+   "id": "2026-11-12-r3-agile-robots",
+   "impact": "Conferma che il capitale per l'AI applicata alla manifattura continua ad arrivare anche con il mercato nervoso.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12 12:15",
+   "runId": "2026-11-12-r3",
+   "source": "AFP (copia Yahoo Finance); Reuters (titolo)",
+   "summary": "La società di Monaco, attiva nei robot umanoidi e nei bracci robotici per la \"physical AI\", ha raccolto 500 milioni di dollari in un round guidato da SoftBank, con Nvidia e Hitachi; la valutazione è di 8,5 miliardi di dollari. I fondi serviranno all'espansione negli Stati Uniti e alla capacità produttiva in Germania. L'azienda dichiara circa 20.000 robot installati e una fabbrica vicino a Monaco con capacità fino a 10.000 umanoidi l'anno.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Germania: Agile Robots raccoglie 500 milioni di dollari con SoftBank, Nvidia e Hitachi; valutazione 8,5 miliardi",
+   "tz": "UTC",
+   "url": "https://finance.yahoo.com/technology/ai/articles/german-ai-robotics-start-valued-121529942.html",
+   "view": "Interpretazione: Nvidia resta investitore in decine di round privati; con il cambio al vertice va seguito se la strategia di investimenti minoritari prosegue.",
+   "why": "Uno dei round più grandi dell'AI industriale europea, nello stesso giorno della crisi di vertice di Nvidia, che è tra gli investitori."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Citazioni riportate da ANSA (data e ora verificate sulla pagina: 15:14 ora italiana). L'entità dell'impatto non è quantificata.",
+   "focus": [
+    "macro-central-banks",
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-bankitalia-superbonus",
+   "impact": "Possibile revisione al ribasso degli utili 2026 delle banche con grandi portafogli di crediti fiscali; tema da seguire nelle prossime presentazioni dei risultati.",
+   "links": [
+    "eu-regulation"
+   ],
+   "publishedAt": "2026-11-12 14:14",
+   "runId": "2026-11-12-r3",
+   "source": "ANSA",
+   "summary": "In audizione sulla manovra, Andrea Brandolini (capo del dipartimento economia e statistica della Banca d'Italia) ha detto che la norma che rateizza in dieci rate annuali i crediti del superbonus 2023 \"contribuisce a contenere la dinamica del debito pubblico nel 2027\" ma \"potrebbe produrre impatti significativi sul conto economico\" delle banche nel bilancio 2026; vanno valutati gli effetti sui contratti di rivendita dei crediti acquistati in eccesso, e per le imprese non finanziarie la rateizzazione potrebbe pesare sulla liquidità. Il maggior prelievo su banche e assicurazioni incide su comparti solidi, ma \"modifiche frequenti o inattese della tassazione accrescono l'incertezza\". La presidente dell'UPB Lilia Cavallari ha detto che la manovra usa tutto lo spazio di bilancio del triennio con interventi frammentati.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Banca d'Italia: la rateizzazione in dieci anni dei crediti del superbonus 2023 prevista in manovra potrebbe avere \"impatti significativi\" sul conto economico 2026 delle banche",
+   "tz": "UTC",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/bankitalia-dalle-norme-sul-superbonus-in-manovra-impatto-significativo-sulle-banche_34036427-d24c-48c0-93dd-77fe323e671b.html",
+   "view": "Interpretazione: per chi valuta un'offerta di scambio bancaria, un onere una tantum sul 2026 cambia il confronto tra concambio e utili attesi; è un elemento che le banche bersaglio possono usare nelle loro valutazioni di congruità.",
+   "why": "Tocca direttamente utili e capitale delle banche nel pieno delle offerte in corso (Intesa-Mps, Banco BPM-Crédit Agricole)."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.ansa.it/sito/notizie/economia/2026/11/12/lo-spread-tra-btp-e-bund-si-allarga-a-105-punti-base_d4565ac4-ef12-4132-9c8d-a24ce087af25.html"
+   ],
+   "facts": "Cifre dal comunicato riportato da Teleborsa (12:09 UTC, data e ora verificate sulla pagina) e da ANSA (13:54 UTC, verificate sulla pagina).",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-12-r3-btp-auction-spread",
+   "impact": "Rendimenti in calo all'emissione riducono il costo di raccolta delle banche italiane e il riferimento per i bond corporate domestici.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12 12:09 / 13:54",
+   "runId": "2026-11-12-r3",
+   "source": "Teleborsa; ANSA",
+   "summary": "Asta di metà mese: BTP settembre 2029 per 2,5 miliardi (domanda 3,84 miliardi) al 3,58% (-11 pb); BTP settennale settembre 2033 per 3,25 miliardi (domanda 5 miliardi) al 4,04% (-21 pb); BTP Green aprile 2046 per 1,5 miliardi (domanda 2,54 miliardi) al 4,73%. Regolamento il 16 novembre. A metà giornata (ANSA, 14:54 ora italiana) lo spread BTP-Bund si allarga a 105 punti base con il decennale al 4,37%; l'OAT francese rende il 4,82%, a 150 punti dal Bund.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "BTP: il Tesoro colloca 7,25 miliardi con rendimenti in calo (settennale al 4,04%, -21 punti base); nel pomeriggio lo spread con il Bund si allarga a 105 punti",
+   "tz": "UTC",
+   "url": "https://www.teleborsa.it/News/2026/11/12/tesoro-collocati-btp-per-7-25-miliardi-con-rendimenti-in-calo-137.html",
+   "view": "Interpretazione: il differenziale Italia-Francia (circa 45 punti a favore dell'Italia) resta un dato strutturale da inserire nei confronti di costo del capitale tra operazioni italiane e francesi.",
+   "why": "Asta coperta con rendimenti in calo nonostante i Treasury al 5%: la domanda per la carta italiana tiene."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Data e ora verificate sulla pagina (10:58 ora italiana).",
+   "focus": [
+    "luxury-financing",
+    "eu-regulation"
+   ],
+   "id": "2026-11-12-r3-cucinelli-esg",
+   "impact": "Potenziale effetto su indici ESG e investitori vincolati; nessun effetto diretto sul debito della società (non riportato).",
+   "links": [
+    "luxury-ma"
+   ],
+   "publishedAt": "2026-11-12 09:58",
+   "runId": "2026-11-12-r3",
+   "source": "Milano Finanza",
+   "summary": "L'agenzia Standard Ethics porta il rating di Brunello Cucinelli a E+ dal precedente EE-, con outlook negativo. Riconosce politiche ambientali e sociali e una rendicontazione non finanziaria avanzata, ma pesa la governance: presenza di un azionista di controllo e del voto maggiorato. Con assetti di questo tipo, secondo le linee guida internazionali citate, servono un organo di vertice indipendente e ulteriori presidi a tutela delle minoranze.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Lusso: Standard Ethics abbassa il rating ESG di Brunello Cucinelli a E+ (da EE-), outlook negativo, per la governance",
+   "tz": "UTC",
+   "url": "https://www.milanofinanza.it/fashion/brunello-cucinelli-standard-ethics-abbassa-il-rating-esg-a-e-202611121141586354",
+   "view": "Interpretazione: per le famiglie che valutano IPO o quote di minoranza, il voto maggiorato ha un costo reputazionale misurabile presso gli investitori ESG.",
+   "why": "Il voto maggiorato è diffuso tra le società familiari italiane del lusso e ora entra nei giudizi ESG."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.ansa.it/sito/notizie/economia/2026/11/12/la-bce-pungola-la-francia-spread-alti-hanno-contribuito-al-calo-delleuro_1d14e36f-ac49-4b99-8887-c71708131902.html",
+    "https://it.marketscreener.com/notizie/bce-pronta-ad-alzare-i-tassi-per-l-ultima-volta-a-dicembre-ma-i-rischi-d-inflazione-tengono-aperta-ce785ed8dd8df22d"
+   ],
+   "facts": "Citazioni dal bollettino riportate da ANSA. Il dettaglio del titolo MarketScreener non è stato letto (solo titolo).",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-12-r3-ecb-bulletin",
+   "impact": "Per i finanziamenti a tasso variabile in euro (leveraged loan, project finance) il rialzo di dicembre si somma allo spread sovrano più alto in Francia.",
+   "links": [
+    "eu-regulation"
+   ],
+   "publishedAt": "2026-11-12 09:30 e 09:53",
+   "runId": "2026-11-12-r3",
+   "source": "ANSA; MarketScreener Italia (titolo)",
+   "summary": "Nel bollettino economico la BCE scrive che gli indicatori anticipatori del quarto trimestre (PMI) \"segnalano una crescita che continua, per quanto moderata\", ma che \"le incertezze sono molto alte\" per le guerre in Medio Oriente e Ucraina. Un'interruzione prolungata delle forniture energetiche potrebbe spingere i prezzi dell'energia più in alto e più a lungo. Lo shock energetico farà salire ancora l'inflazione dell'area euro, già al 4,8% a ottobre. Sulle finanze pubbliche, la dispersione degli spread sovrani rispetto all'OIS è rimasta contenuta con \"l'eccezione dello spread sovrano francese\", allargatosi di 59 punti base; il recente deprezzamento dell'euro riflette soprattutto l'attesa di una stretta USA ma anche preoccupazioni per i conti pubblici e l'incertezza politica in vari paesi. Un titolo di MarketScreener Italia (11:28 UTC) indica la BCE pronta ad alzare i tassi \"per l'ultima volta\" a dicembre.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "BCE, bollettino economico: crescita moderata ma incertezze molto alte; inflazione al 4,8% a ottobre; lo spread francese sull'OIS si è allargato di 59 punti base",
+   "tz": "UTC",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/bce-la-crescita-ue-tiene-fra-i-rischi-faro-sulle-incertezze-di-bilancio_624eec6c-44c4-468c-a6d1-320505c60d9d.html",
+   "view": "Interpretazione: il richiamo esplicito alla Francia sposta l'attenzione dal rischio Italia al rischio Francia; per le società italiane con BTP-Bund stabile intorno a 100–105 punti è un vantaggio relativo.",
+   "why": "Inflazione al 4,8% e BCE orientata al rialzo: il costo del debito in euro non scenderà a breve."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Indiscrezione di stampa da fonti anonime, non decisione ufficiale.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-12-r3-ecb-succession",
+   "impact": "Una presidenza de Cos è letta dal mercato come più attenta ai paesi del Sud; un capo economista tedesco come più restrittivo. L'effetto netto sulla curva è incerto.",
+   "links": [
+    "eu-regulation"
+   ],
+   "publishedAt": "2026-11-12 14:30",
+   "runId": "2026-11-12-r3",
+   "source": "Milano Finanza (che cita Le Monde e Financial Times)",
+   "summary": "Secondo Le Monde e il Financial Times, che citano fonti anonime, la Francia avrebbe indicato la disponibilità a sostenere Pablo Hernández de Cos, oggi direttore generale della BRI, per la presidenza della BCE. In quel caso la Germania sceglierebbe il capo economista e la Francia assumerebbe il portafoglio mercati; Merz e Macron ne avrebbero discusso nel fine settimana. Lagarde lascerà a febbraio, Isabel Schnabel a gennaio (verso il FMI), il mandato di Philip Lane scade a maggio. L'olandese Klaas Knot è l'altro candidato.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "BCE, successione a Lagarde: la Francia potrebbe sostenere lo spagnolo Hernández de Cos (Le Monde, FT); alla Germania il capo economista, a Parigi il portafoglio mercati",
+   "tz": "UTC",
+   "url": "https://www.milanofinanza.it/news/bce-la-francia-potrebbe-sostenere-lo-spagnolo-de-cos-alla-guida-di-francoforte-202611121530155679",
+   "view": "Interpretazione: è un accordo a pacchetto ancora non ufficiale. Il segnale utile per chi fa financing è la probabile continuità: nessun candidato in corsa ha posizioni lontane dalla linea attuale.",
+   "why": "La composizione del Comitato esecutivo nel 2027 decide la funzione di reazione della BCE nel ciclo di rialzi."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://ww.fashionnetwork.com/news/Superdry-mulls-ipo-tests-womenswear-stores-in-europe-teen-focused-store-in-london,1884351.html"
+   ],
+   "facts": "Visto solo nei titoli: dettagli non verificati.",
+   "focus": [
+    "luxury-tech-markets",
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-ecm-resale-ipo",
+   "impact": "Se l'IPO di Zhuanzhuan va a buon fine, fornirà un riferimento di valutazione per le piattaforme di resale.",
+   "links": [
+    "luxury-financing"
+   ],
+   "publishedAt": "2026-11-12 09:36 / 09:22",
+   "runId": "2026-11-12-r3",
+   "source": "Bloomberg; FashionNetwork (titoli)",
+   "summary": "Bloomberg riporta, citando fonti, che Zhuanzhuan, piattaforma cinese di compravendita dell'usato, ha depositato la domanda per un'IPO da circa 500 milioni di dollari a Hong Kong. FashionNetwork titola che il marchio britannico Superdry valuta una quotazione e sperimenta nuovi formati di negozio in Europa e a Londra.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "ECM consumer: la piattaforma cinese dell'usato Zhuanzhuan avrebbe depositato la domanda per un'IPO da 500 milioni di dollari a Hong Kong; Superdry valuta un'IPO",
+   "tz": "UTC",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/china-s-zhuanzhuan-is-said-to-have-filed-for-500-million-hk-ipo",
+   "view": "Interpretazione: segnali da monitorare, non ancora operazioni.",
+   "why": "Il mercato dell'usato (resale) è uno dei temi del Focus sui nuovi canali del lusso."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Notizia da fonte anonima; cifre dall'articolo.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-fairfax-iifl-idbi",
+   "impact": "Possibile pressione sul titolo IIFL Finance durante il collocamento.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-12 12:02",
+   "runId": "2026-11-12-r3",
+   "source": "Yahoo Finance (che cita un'agenzia di stampa)",
+   "summary": "Secondo una fonte citata, Fairfax Financial venderà presto la quota dell'11% in IIFL Finance, che ai prezzi correnti vale circa 30 miliardi di rupie (320 milioni di dollari), probabilmente sul mercato secondario. I proventi serviranno a finanziare in parte l'acquisto del 60% di IDBI Bank, valutato 528,78 miliardi di rupie (5,56 miliardi di dollari), ceduto dal governo indiano e dal maggiore assicuratore del paese.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "India: Fairfax prepara la vendita dell'11% di IIFL Finance (circa 320 milioni di dollari) per finanziare l'acquisto del 60% di IDBI Bank",
+   "tz": "UTC",
+   "url": "https://finance.yahoo.com/news/fairfax-prepares-iifl-finance-stake-120237138.html",
+   "view": "Interpretazione: è un caso tipico di finanziamento di un'acquisizione con dismissioni invece che con debito, coerente con tassi alti.",
+   "why": "È la più grande privatizzazione bancaria indiana e mostra come un investitore finanzi un deal vendendo partecipazioni non strategiche."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Dichiarazioni di un gestore: non sono dati di mercato indipendenti.",
+   "focus": [
+    "pe-private-credit",
+    "ai-finance"
+   ],
+   "id": "2026-11-12-r3-gs-abf",
+   "impact": "Più offerta di capitale privato per infrastrutture ed energia, con possibile compressione degli spread su questi progetti.",
+   "links": [
+    "luxury-financing"
+   ],
+   "publishedAt": "2026-11-12 04:30",
+   "runId": "2026-11-12-r3",
+   "source": "Yahoo Finance (intervista CNBC)",
+   "summary": "Vivek Bantwal, co-responsabile globale del private credit di Goldman Sachs Asset Management, ha detto a CNBC che l'asset-backed finance è una delle aree di crescita più attraenti del private credit: centrali elettriche, reti di trasmissione, data center e impianti manifatturieri creano domanda di capitale, e i debitori pagano un premio per riservatezza, personalizzazione e certezza. Un sondaggio Goldman Sachs indica che il 58% degli intervistati vuole aumentare gli impegni in asset-backed finance. Bantwal paragona la fase a quella del direct lending di dieci anni fa.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Goldman Sachs AM: l'asset-backed finance è la prossima grande opportunità del private credit, trainata da data center, energia e manifattura",
+   "tz": "UTC",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/forget-direct-lending-goldman-sachs-043007484.html",
+   "view": "Interpretazione: per chi struttura project finance e rifinanziamenti di infrastrutture (fibra, rinnovabili) significa più controparti non bancarie, ma anche documentazione più complessa.",
+   "why": "Sposta il baricentro del private credit dal finanziamento delle acquisizioni al finanziamento degli asset fisici."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.sec.gov/Archives/edgar/data/0000750577/000119312526457037/hwc-ex99_1.htm"
+   ],
+   "facts": "Cifre dal comunicato depositato in SEC (visto tramite estratto di ricerca). Nessuna copertura indipendente trovata.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-hancock-trustmark",
+   "impact": "Altri accordi tra banche regionali USA sono probabili; per l'Europa è un termine di confronto su accrescimento e periodo di recupero della diluizione.",
+   "links": [],
+   "publishedAt": "2026-11-12 13:00",
+   "runId": "2026-11-12-r3",
+   "source": "Business Wire (comunicato); SEC (8-K, allegato 99.1)",
+   "summary": "Hancock Whitney Corporation ha annunciato l'acquisizione di Trustmark Corporation con una fusione interamente in azioni: 0,7463 azioni Hancock Whitney per ogni azione Trustmark, per un valore di circa 3,2 miliardi di dollari sulla base della chiusura dell'11 novembre. La società stima un'accrescimento di circa il 7% sull'utile per azione 2028 atteso, una diluizione di circa il 7% sul valore contabile tangibile per azione e un effetto leggermente diluitivo sul capitale regolamentare alla chiusura.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "USA, consolidamento bancario regionale: Hancock Whitney acquisisce Trustmark per circa 3,2 miliardi di dollari in azioni",
+   "tz": "UTC",
+   "url": "http://www.businesswire.com/news/home/20261112831229/en/Hancock-Whitney-Corporation-to-Acquire-Trustmark-Corporation/",
+   "view": "Interpretazione: una diluizione del 7% sul valore tangibile per azione accettata a fronte del 7% di accrescimento sugli utili è un compromesso tipico delle fusioni tra pari in azioni; il mercato giudicherà soprattutto il periodo di recupero.",
+   "why": "È una delle maggiori fusioni bancarie regionali USA dell'anno e conferma il clima regolamentare più favorevole alle aggregazioni."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Visto solo nel titolo: struttura e finanziamento non verificati.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-ibp-old-dominion",
+   "impact": "Nessun impatto rilevante per i Focus oltre al conteggio dei volumi M&A.",
+   "links": [],
+   "publishedAt": "2026-11-12 14:33",
+   "runId": "2026-11-12-r3",
+   "source": "MarketScreener (titolo)",
+   "summary": "Secondo il titolo di MarketScreener, Installed Building Products ha annunciato l'acquisizione di Old Dominion Group per 698 milioni di dollari.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "USA: Installed Building Products acquisisce Old Dominion Group per 698 milioni di dollari",
+   "tz": "UTC",
+   "url": "https://www.marketscreener.com/news/installed-building-products-acquires-old-dominion-group-in-698-million-deal-ce785ed8de88f327",
+   "view": "Nessuna interpretazione: dati insufficienti.",
+   "why": "Operazione strategica di medie dimensioni nei servizi all'edilizia USA."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.khaleejtimes.com/world/asia/india-to-ban-private-equity-firms-controlling-multiple-non-bank-lenders"
+   ],
+   "facts": "Visto solo nei titoli (Reuters, Khaleej Times, MarketScreener): dettagli non verificati. Da confermare.",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "id": "2026-11-12-r3-india-pe-nbfc",
+   "impact": "Se confermato, limiterebbe le strategie di consolidamento dei fondi nel settore.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12 08:14",
+   "runId": "2026-11-12-r3",
+   "source": "Reuters (esclusiva); Khaleej Times; MarketScreener Italia",
+   "summary": "Secondo un'esclusiva Reuters basata su fonti, l'India intende vietare ai fondi di private equity di controllare più di un istituto di credito non bancario (NBFC). Un titolo collegato (Free Press Journal) parla di nuove regole della RBI che potrebbero alleggerire i controlli sulle quote sotto una certa soglia.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "India: secondo fonti Reuters il governo vieterà ai fondi di private equity di controllare più società finanziarie non bancarie",
+   "tz": "UTC",
+   "url": "https://www.reuters.com/legal/government/india-ban-private-equity-firms-controlling-multiple-non-bank-lenders-sources-say-2026-11-12/",
+   "view": "Interpretazione: segnale da monitorare sulla tendenza dei regolatori a limitare il controllo dei fondi su più intermediari finanziari.",
+   "why": "Il credito non bancario indiano è uno dei principali mercati di destinazione del private equity finanziario in Asia."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.borsaitaliana.it/borsa/notizie/radiocor/prima-pagina/dettaglio/terna-81-ricavi-9-mesi-a-311-mld-utile-netto-a-8572-mln-05-rco-nRC_12112026_1242_380147380.html",
+    "https://www.ansa.it/sito/notizie/economia/2026/11/12/per-mondadori-nei-primi-nove-mesi-ricavi-36-lutile-a-48-milioni_c1ad2c0a-c883-4521-897b-50a5392b71c0.html"
+   ],
+   "facts": "Terna solo dal titolo Radiocor; Diasorin e Mondadori dagli articoli ANSA (orari verificati sulle pagine).",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-italy-results",
+   "impact": "Nessun effetto di mercato rilevante atteso; dati utili come comparabili.",
+   "links": [
+    "macro-central-banks"
+   ],
+   "publishedAt": "2026-11-12 11:42 / 13:17 / 14:17",
+   "runId": "2026-11-12-r3",
+   "source": "Radiocor (Borsa Italiana, titolo); ANSA",
+   "summary": "Terna: ricavi dei nove mesi +8,1% a 3,11 miliardi, utile netto 857,2 milioni (+0,5%) (titolo Radiocor). Diasorin: ricavi del terzo trimestre +10% a 308 milioni, EBITDA rettificato +16% a 103 milioni, utile netto +10% a 42,2 milioni; nei nove mesi ricavi +3% a cambi costanti a 910 milioni; il debito netto sale da 580 a 782 milioni dopo 237 milioni di azioni proprie e 65 milioni di dividendi; guida 2026 confermata (ANSA). Mondadori: ricavi dei nove mesi 729,5 milioni (+3,6%), utile netto 48,2 milioni (da 51,7), guida confermata con cash flow ordinario 65–70 milioni (ANSA).",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Piazza Affari, conti del giorno: Terna ricavi nove mesi +8,1% a 3,11 miliardi; Diasorin trimestre +10% ma debito netto a 782 milioni dopo i riacquisti; Mondadori conferma la guida",
+   "tz": "UTC",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/diasorin-chiude-il-terzo-trimestre-con-ricavi-per-308-milioni-utile_7d5d7b42-08d0-4f16-a021-30d71435adf5.html",
+   "view": "Interpretazione: il caso Diasorin (debito netto +35% per riacquisti) è un esempio di ricapitalizzazione con leva mentre i tassi salgono, scelta da confrontare con il rendimento delle azioni riacquistate.",
+   "why": "Terna è il riferimento per le infrastrutture regolate italiane; Diasorin mostra una scelta esplicita di leva per remunerare gli azionisti."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Dal comunicato riportato da Teleborsa (ora verificata sulla pagina, 14:35 ora italiana).",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-metriks-workgroup",
+   "impact": "Nessun impatto di mercato rilevante.",
+   "links": [
+    "ai-finance"
+   ],
+   "publishedAt": "2026-11-12 13:35",
+   "runId": "2026-11-12-r3",
+   "source": "Teleborsa",
+   "summary": "Metriks AI e Mare Group hanno firmato l'accordo definitivo per la cessione a Metriks AI del 95% di Workgroup (piattaforme software per le imprese); il restante 5%, detenuto da WGS, sarà trasferito a Metriks AI, che arriverà al 100%. L'accordo conferma i termini economici annunciati il 29 luglio 2026; il closing è soggetto a condizioni sospensive.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Italia, M&A tech: firmato l'accordo definitivo per la cessione di Workgroup da Mare Group a Metriks AI",
+   "tz": "UTC",
+   "url": "https://www.teleborsa.it/News/2026/11/12/metriks-ai-mare-group-accordo-definitivo-per-la-cessione-di-workgroup-169.html",
+   "view": "Interpretazione: conferma l'attività delle PMI quotate italiane nel software, senza indicazioni di valutazione nuove.",
+   "why": "Piccola operazione di consolidamento nel software italiano legato all'AI."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.cityam.com/metro-bank-puts-itself-up-for-sale-after-turnaround/",
+    "https://londonlovesbusiness.com/metro-bank-puts-itself-up-for-sale-after-turnaround/"
+   ],
+   "facts": "Orario dal feed (12:21 UTC per Global Banking & Finance); l'annuncio della banca è della mattina UK. Valutazione da un solo resoconto: da confermare.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-metro-bank-sale",
+   "impact": "Se l'acquirente è un fondo, l'operazione darà un riferimento sui multipli che il private equity paga per le banche retail europee.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-12 (mattina UK)",
+   "runId": "2026-11-12-r3",
+   "source": "Global Banking & Finance Review (copia Reuters); City AM; London Loves Business",
+   "summary": "Metro Bank ha messo in vendita l'intera società e invita manifestazioni d'interesse; il processo è guidato da Morgan Stanley. La banca dice di non essere in trattativa con nessun potenziale acquirente e di non aver ricevuto offerte; il processo non ha una scadenza per un'offerta vincolante. Il miliardario colombiano Jaime Gilinski Bacal controlla circa il 53% dal salvataggio del 2023. Un resoconto valuta la banca circa 1,2 miliardi di sterline; un analista di Shore Capital indica una vendita in contanti a un fondo di private equity come esito più semplice.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Regno Unito: Metro Bank avvia un processo formale di vendita, con Morgan Stanley come advisor; nessuna trattativa in corso",
+   "tz": "UTC",
+   "url": "https://www.globalbankingandfinance.com/uks-metro-bank-up-sale-part-strategic-review/",
+   "view": "Interpretazione: la scelta di un processo aperto senza scadenza indica che il venditore cerca il prezzo più che la velocità; i candidati naturali sono banche specializzate britanniche e fondi già attivi nel settore.",
+   "why": "È un nuovo dossier di consolidamento bancario europeo, con probabile interesse di fondi e banche specializzate."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.bloomberg.com/news/articles/2026-11-12/jensen-huang-face-of-the-ai-boom-ousted-by-nvidia-board-as-ceo",
+    "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html",
+    "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html",
+    "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/"
+   ],
+   "facts": "Fatti: dimissioni, cariche lasciate, nomina di Kress, ricerca del successore (comunicato riportato da più testate). Il presidente del board e l'ampiezza del calo all'apertura variano tra le fonti: non riportati come certi. Orario 14:00 UTC dal feed Reuters; Bloomberg 14:04 UTC.",
+   "focus": [
+    "ai-finance",
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-nvidia-huang-resigns",
+   "impact": "Breve periodo: volatilità su chip, neocloud (CoreWeave, Nebius) e debito AI; pressione sul collocamento dell'IPO di Anthropic previsto la prossima settimana. Medio periodo: la ricerca del CEO e l'eventuale revisione degli accordi di investimento di Nvidia (OpenAI, CoreWeave) diventano variabili per il credito dei clienti più indebitati.",
+   "links": [
+    "pe-private-credit",
+    "macro-central-banks"
+   ],
+   "publishedAt": "2026-11-12 14:00",
+   "runId": "2026-11-12-r3",
+   "source": "Reuters (copia Khaleej Times); Bloomberg; Yahoo Finance (live); CNBC (live)",
+   "summary": "Aggiornamento sostanziale rispetto a r1, r2 e m1: arriva la decisione. Giovedì mattina (ora USA) Nvidia ha annunciato che Jensen Huang \"ha rassegnato le dimissioni da presidente, amministratore delegato e membro del consiglio, con effetto immediato\" (testo riportato da Yahoo Finance). Il board ha nominato la CFO Colette Kress CEO ad interim; Kress resta anche direttrice finanziaria fino alla nomina di un successore permanente, che sarà cercato tra candidati interni ed esterni. Le dimissioni seguono le notizie su due relazioni extraconiugali, una con una persona che l'intelligence USA ritiene un'agente cinese e una con una dirigente di Nvidia (New York Times, citato da Yahoo Finance). Bloomberg titola che Huang è stato \"rimosso\" dal board. Nei primi minuti di seduta il titolo perde oltre il 10% (Yahoo Finance; un'altra fonte riporta -13,4% all'apertura).",
+   "tier": "breaking",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Nvidia, aggiornamento: Jensen Huang si dimette da CEO, presidente e consigliere con effetto immediato; la CFO Colette Kress è CEO ad interim",
+   "tz": "UTC",
+   "url": "https://www.khaleejtimes.com/business/nvidia-ceo-jensen-huang-to-step-down-cheating-scandal-big-blow-ai-boom",
+   "view": "Interpretazione: per chi fa leveraged finance su asset AI il punto non è la governance di Nvidia in sé, ma la tenuta degli impegni commerciali che sostengono i modelli di rifinanziamento dei clienti (garanzie di capacità, acquisti di cloud). Finché Kress è sia CEO ad interim sia CFO, è improbabile che vengano annunciati nuovi impegni di rilievo. Nota di trasparenza: Claude è sviluppato da Anthropic, citata qui per l'IPO.",
+   "why": "Nvidia è il fornitore e, attraverso partecipazioni e accordi di capacità, anche un finanziatore dell'ecosistema AI. L'uscita del fondatore senza un piano di successione pubblico è un caso di rischio legato a una persona chiave su una società da migliaia di miliardi di capitalizzazione."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html",
+    "https://finance.yahoo.com/markets/commodities/articles/gold-declines-3-973-us-101129832.html",
+    "https://www.marketscreener.com/news/bitcoin-sinks-below-73-000-on-fresh-ai-jitters-tighter-fed-policy-update-ce785ed8dc81f52d"
+   ],
+   "facts": "Livelli e orari da Reuters, CNBC e Investing.com; il valore del bitcoin solo dal titolo.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-12-r3-rates-dollar-gold",
+   "impact": "Più alto il tasso base, più cari i rifinanziamenti del 2027 (data center, leveraged loan) e più bassi i multipli d'acquisto.",
+   "links": [
+    "pe-private-credit",
+    "luxury-financing"
+   ],
+   "publishedAt": "2026-11-12 12:57",
+   "runId": "2026-11-12-r3",
+   "source": "Reuters (copia Yahoo Finance); CNBC; Investing.com (copia Yahoo Finance); MarketScreener",
+   "summary": "Secondo Reuters (Londra, 12/11) il rendimento del Treasury USA è tornato a toccare il 5% e il dollaro ha raggiunto il livello più alto da aprile 2025, con un rialzo di oltre l'1,5% dopo il dato sull'inflazione di inizio settimana. Una settimana fa il mercato attribuiva una probabilità su tre a una Fed ferma a dicembre. CNBC (07:38 UTC) titola sul decennale tornato sopra il 5% con petrolio in rialzo (Brent oltre 92 dollari secondo Reuters). L'oro spot è sceso a 3.973 dollari l'oncia alle 05:16 GMT; il bitcoin è sceso sotto i 73.000 dollari (titolo MarketScreener). Il presidente della Fed di Chicago Goolsbee ha definito il dato d'inflazione di ottobre \"quasi preoccupante\".",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Costo del capitale: Treasury decennale di nuovo al 5%, dollaro ai massimi da 19 mesi, oro sotto i 4.000 dollari; il mercato prezza un rialzo Fed a dicembre",
+   "tz": "UTC",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-fragile-nvidia-plummets-015524144.html",
+   "view": "Interpretazione: il movimento del dollaro è un fattore spesso trascurato per chi ha ricavi in euro e debito in dollari, soprattutto nel lusso e nelle infrastrutture con fornitori USA.",
+   "why": "Il decennale USA al 5% è il riferimento per il costo del debito a lungo termine e per i tassi di sconto nelle valutazioni."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.businessoffashion.com/news/china/chinas-singles-day-sales-near-18-trillion/"
+   ],
+   "facts": "Cifre solo dai titoli: unità di misura (dollari o yuan) e metodologia da verificare sul testo completo.",
+   "focus": [
+    "luxury-tech-markets"
+   ],
+   "id": "2026-11-12-r3-singles-day-final",
+   "impact": "Crescita modesta e trainata da servizi: nessun segnale di ripresa della domanda di beni costosi.",
+   "links": [
+    "luxury-ma"
+   ],
+   "publishedAt": "2026-11-12 09:35",
+   "runId": "2026-11-12-r3",
+   "source": "Reuters; Business of Fashion (titoli)",
+   "summary": "Aggiornamento sostanziale rispetto alla notizia dell'11/11 (dato parziale): secondo il titolo Reuters le vendite del Singles' Day 2026 sono salite del 4,8% a 1.780 miliardi di dollari, con un ruolo maggiore dell'AI; Business of Fashion titola su vendite vicine a 1.800 miliardi. Il South China Morning Post titola che i servizi, dall'AI alle pulizie domestiche, guidano la crescita.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Cina, Singles' Day: vendite totali in crescita del 4,8% a 1.780 miliardi di dollari; l'AI ha un ruolo maggiore",
+   "tz": "UTC",
+   "url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-sales-rise-48-178-trillion-ai-takes-larger-role-2026-11-12/",
+   "view": "Interpretazione: senza il dettaglio per categoria non si può dire nulla sul lusso; il dato totale non contraddice la debolezza segnalata da LVMH e Kering.",
+   "why": "È il principale indicatore della domanda dei consumatori cinesi, rilevante per il lusso."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926"
+   ],
+   "facts": "Cifre dal comunicato riportato da Reuters e FXStreet; consenso e calendario del PPI da FXStreet.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-12-r3-us-jobless-claims",
+   "impact": "Un mercato del lavoro solido toglie alla Fed un motivo per frenare il rialzo; il PPI di domani è il prossimo dato da guardare.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-12 13:30",
+   "runId": "2026-11-12-r3",
+   "source": "Dipartimento del Lavoro USA, via Reuters (Investing.com) e FXStreet",
+   "summary": "Nella settimana chiusa il 7 novembre le richieste iniziali di sussidi di disoccupazione sono salite di 9.000 a 200.000 (dato destagionalizzato), da 191.000 rivisto. Il consenso Reuters era di circa 195.000. La media a quattro settimane è ferma a 195.250. Le richieste continuative (settimana al 31 ottobre) sono scese di 20.000 a 1,697 milioni. Dal mese di settembre le richieste restano pari o inferiori a 200.000. Il prezzo alla produzione (PPI) di ottobre esce domani, venerdì 13, alle 13:30 GMT.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "USA, dato delle 14:30: richieste iniziali di sussidi a 200.000 (+9.000), sopra le attese di circa 195.000; continuano a restare a livelli bassi",
+   "tz": "UTC",
+   "url": "https://www.fxstreet.com/news/us-initial-jobless-claims-rose-to-200k-last-week-202611121337",
+   "view": "Interpretazione: un dato in linea non cambia lo scenario di rialzo a dicembre; la discussione resta tra 25 e 50 punti base.",
+   "why": "Con l'inflazione di ottobre sopra le attese, il mercato del lavoro è l'altra variabile che decide se la Fed alzerà i tassi a dicembre, e di quanto."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html",
+    "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-fragile-nvidia-plummets-015524144.html",
+    "https://www.cnbc.com/2026/11/12/amd-upgraded-because-it-will-benefit-from-nvidias-leadership-vacuum.html"
+   ],
+   "facts": "Dati intraday dei primi minuti, non di chiusura; le percentuali cambiano tra fonti e orari. La rilevazione delle 9:44 ET (14:44 UTC) è di pochi minuti successiva all'inizio di questa esecuzione.",
+   "focus": [
+    "ai-finance",
+    "macro-central-banks"
+   ],
+   "id": "2026-11-12-r3-wall-street-open",
+   "impact": "Se la rotazione verso AMD e Broadcom tiene, il mercato tratta il caso come redistribuzione della spesa AI e non come suo arresto; se cedono anche loro, il tema diventa il finanziamento della catena.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12 14:21 (aggiornato 14:44)",
+   "runId": "2026-11-12-r3",
+   "source": "Yahoo Finance; Reuters (copia Yahoo Finance)",
+   "summary": "All'apertura (rilevazione Yahoo Finance delle 9:44 ET) l'S&P 500 cede lo 0,6%, il Nasdaq Composite lo 0,9%, il Dow Jones è invariato. Nvidia perde oltre il 10%. Salgono i concorrenti AMD e Broadcom (CNBC: AMD promosso da un analista perché beneficerebbe del \"vuoto di leadership\"). Scendono le società in cui Nvidia ha investito o che dipendono dai suoi chip: CoreWeave -12% (dopo il rialzo di mercoledì), Nebius -19%, TSMC oltre -2%, Sandisk -7%, Micron e SK Hynix circa -3%, Intel -3%. In mattinata Reuters segnalava a Hong Kong Alibaba -6,7% e Tencent -2,6% per il timore di restrizioni USA sull'accesso ai chip.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Wall Street apre in calo per il caso Nvidia: S&P 500 -0,6%, Nasdaq -0,9%, Dow invariato; salgono AMD e Broadcom, crollano CoreWeave e Nebius",
+   "tz": "UTC",
+   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-but-rivals-amd-broadcom-rise-133910081.html",
+   "view": "Interpretazione: il calo molto più forte di CoreWeave e Nebius rispetto ai produttori di chip indica che il mercato prezza soprattutto il rischio sul lato finanziario (clienti indebitati, sostenuti da Nvidia) più che su quello tecnologico.",
+   "why": "È la prima seduta dopo la decisione su Huang e la prima prova di quanto il mercato separi Nvidia dal resto del commercio AI."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Fatti dal comunicato di Western Union riportato da Yahoo Finance; la posizione di Intermex è riportata nello stesso articolo.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-r3-wu-intermex",
+   "impact": "Possibile contenzioso tra le parti; il caso entra nella casistica sul rischio regolamentare nelle clausole di risoluzione.",
+   "links": [
+    "eu-regulation"
+   ],
+   "publishedAt": "2026-11-12 06:34",
+   "runId": "2026-11-12-r3",
+   "source": "Yahoo Finance",
+   "summary": "Western Union ha notificato la risoluzione dell'accordo di fusione con Intermex dopo che il Department of Financial Protection & Innovation della California, il 10 novembre, ha posto condizioni finali che la società giudica \"inaccettabili\" perché avrebbero richiesto modifiche al modello operativo, agli accordi con la rete di agenti e alla strategia. Il regolatore aveva approvato l'operazione a febbraio e concesso proroghe il 17 aprile e il 31 luglio, prima di revocare l'approvazione. Intermex respinge la risoluzione e chiede a Western Union di completare la fusione. Secondo Western Union nessuna delle parti deve pagare una penale.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Western Union rinuncia all'acquisizione di Intermex dopo le condizioni del regolatore californiano; Intermex respinge la risoluzione",
+   "tz": "UTC",
+   "url": "https://finance.yahoo.com/news/western-union-abandons-intermex-takeover-063442734.html",
+   "view": "Interpretazione: l'assenza di penale di risoluzione rende la posizione di Intermex debole; il caso è utile per chi negozia clausole su approvazioni regolamentari e \"burdensome conditions\".",
+   "why": "Mostra come un singolo regolatore statale possa far saltare un'operazione già approvata altrove."
+  }
+ ],
+ "radar": [
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm",
+    "pe-private-credit"
+   ],
+   "note": "Assemblee dell'11/11 (fuori finestra). Completamento atteso entro il primo trimestre 2027, soggetto a omologa del tribunale e autorizzazioni.",
+   "publishedAt": "2026-11-11 17:55 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Simple Flying; MarketScreener",
+   "title": "Gli azionisti di easyJet approvano l'acquisizione da parte di Apollo per 5,7 miliardi di sterline",
+   "url": "https://www.marketscreener.com/quote/stock/EASYJET-PLC-10093880/news/easyJet-shareholders-approve-its-5-7bn-takeover-by-Apollo-54717933/",
+   "id": "2026-11-12-r3-0"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "ai-finance",
+    "pe-private-credit"
+   ],
+   "note": "Collega assicurazioni del credito e debito AI (vedi insight sugli assicuratori come acquirenti).",
+   "publishedAt": "2026-11-11 15:45 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Bloomberg; Beinsure",
+   "title": "Marsh chiede alla Fed di alleggerire i requisiti di capitale per le banche che assicurano prestiti ai data center AI",
+   "url": "https://beinsure.com/news/marsh-urges-us-regulators-for-ai-data-center-loans/",
+   "id": "2026-11-12-r3-1"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Raro deal di private credit nel Golfo.",
+   "publishedAt": "2026-11-11 20:12 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Bloomberg; MarketScreener",
+   "title": "Goldman Sachs, HSBC e Fortress in un'operazione di private credit da 150 milioni di dollari in Arabia Saudita",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-11/goldman-fortress-and-hbsc-back-rare-private-credit-deal-in-saudi-arabia",
+   "id": "2026-11-12-r3-2"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Solo titolo; 15 minuti prima della finestra.",
+   "publishedAt": "2026-11-12 02:25 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Yahoo Finance",
+   "title": "Apollo: la domanda di private credit tiene nonostante i titoli negativi",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/apollo-global-management-sees-private-021207461.html",
+   "id": "2026-11-12-r3-3"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "note": "Solo titolo.",
+   "publishedAt": "2026-11-12 02:20 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Reuters",
+   "title": "BoJ: il consigliere Asada frena le attese di un rialzo anticipato dei tassi",
+   "url": "https://www.reuters.com/world/asia-pacific/dovish-boj-policymaker-asada-pushes-back-against-early-rate-hike-2026-11-12/",
+   "id": "2026-11-12-r3-4"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "ai-finance"
+   ],
+   "note": "Solo titolo; tema politico post elezioni di metà mandato.",
+   "publishedAt": "2026-11-12 01:00 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Financial Times",
+   "title": "FT: nervosismo sull'AI dopo che i Democratici minacciano di frenare la costruzione di data center",
+   "url": "https://www.ft.com/content/895a17ab-4fa7-45ab-9347-c6108352c690",
+   "id": "2026-11-12-r3-5"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "ai-finance"
+   ],
+   "note": "Solo titolo.",
+   "publishedAt": "2026-11-11 17:12 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Reuters",
+   "title": "Fractile, startup britannica di chip AI, valutata 7 miliardi di dollari",
+   "url": "https://www.reuters.com/legal/transactional/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-funding-round-2026-11-11/",
+   "id": "2026-11-12-r3-6"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Solo titolo; gruppo italo-olandese dei media.",
+   "publishedAt": "2026-11-11 17:49 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Reuters",
+   "title": "MFE resta aperta ad altre operazioni dopo l'acquisizione di ProSiebenSat.1",
+   "url": "https://www.reuters.com/business/mfe-remains-open-further-deals-after-prosiebensat1-takeover-ceo-says-2026-11-11/",
+   "id": "2026-11-12-r3-7"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Solo titolo.",
+   "publishedAt": "2026-11-11 16:00 UTC",
+   "runId": "2026-11-12-r3",
+   "source": "Yahoo Finance",
+   "title": "Wendy's respinge l'offerta da 1,4 miliardi di dollari di Nelson Peltz",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/wendys-rejects-nelson-peltzs-1-160007771.html",
+   "id": "2026-11-12-r3-8"
+  }
+ ],
+ "excluded": [
+  {
+   "reason": "Ripresa della notizia Reuters dell'11/11 già riportata in r2; nessun elemento nuovo sostanziale.",
+   "title": "Crédit Agricole valuta la cessione di Anima nel piano con Banco BPM (Yahoo Finance, 12:10 UTC)"
+  },
+  {
+   "reason": "Nessun comunicato o resoconto trovato nella finestra (ricerche e feed).",
+   "title": "Esito dei cda di Banco BPM e Mps del 12/11"
+  },
+  {
+   "reason": "Già riportata in m1; nessun aggiornamento sostanziale.",
+   "title": "Burberry, risultati semestrali (WSJ, FT, WWD)"
+  },
+  {
+   "reason": "Visto solo nel titolo; valute e importi non verificabili. Da riprendere se confermato.",
+   "title": "Alphabet avvia un collocamento obbligazionario in Asia (Bloomberg, 12:48 UTC)"
+  },
+  {
+   "reason": "Fonte debole (aggregatore); fatti di fondo già noti (ottobre e 9/11); nessuna novità verificabile.",
+   "title": "Richemont valuta un ruolo in De Beers dopo il sostegno del Botswana (ad-hoc-news.de)"
+  },
+  {
+   "reason": "Fonte debole (sito crypto) senza riferimento al documento originale.",
+   "title": "Nvidia: crediti verso clienti non incassati +24,6 miliardi (Coinpedia)"
+  },
+  {
+   "reason": "Le borse europee chiudono dopo la fine della finestra; nessun dato di chiusura disponibile.",
+   "title": "Wall Street, Ftse Mib e chiusure europee del 12/11"
+  },
+  {
+   "reason": "Fuori dai Focus o rilevanza bassa per il profilo.",
+   "title": "Vestas, SMIC, Hon Hai, Equita, El Corte Inglés: risultati del 12/11"
+  }
+ ],
+ "kb": [],
+ "posts": [],
+ "insights": []
+}

@@ -1,0 +1,264 @@
+{
+ "run": {
+  "counts": {
+   "kb": 5,
+   "news": 6,
+   "posts": 0,
+   "radar": 3,
+   "scanned": 2425,
+   "shortlisted": 196
+  },
+  "finishedAt": "2026-11-12T15:40:00Z",
+  "id": "2026-11-12-m2",
+  "kind": "manuale",
+  "notes": "PUSH RIFIUTATO (quinta esecuzione di fila oggi): il proxy git e l'API GitHub negano l'accesso (403) perché EOA-SM/intelligence-hub non è tra i repository autorizzati della sessione; lo strumento add_repo non è disponibile. Il commit 'Daily Intelligence 2026-11-12-m2' esiste solo nel container; il database è aggiornato. Su GitHub il repository è fermo all'11/11 (mancano r1, r2, m1, r3, m2 del 12/11). Per risolvere: aggiungere il repository alle fonti della routine/ambiente intelligence-hub. — Esecuzione manuale dalla dashboard (14:44 UTC), senza testo aggiuntivo. Si è sovrapposta all'esecuzione programmata r3 (14:40 UTC, finestra quasi identica), che ha scritto nel database durante questa esecuzione: 15 notizie e 9 elementi radar risultati duplicati sono stati cancellati; restano solo 6 notizie non coperte da r3. Il numero basso di notizie dipende dalla sovrapposizione, non dall'assenza di fatti. collect.py riuscito: 225 richieste, 6.157 titoli, 2.425 in finestra, lista ristretta di 196 letta per intero. Focus senza notizie nuove rispetto a r3: luxury-ma (nessuna operazione nella finestra), luxury-financing e luxury-tech-markets (coperti da r3). Nessun post LinkedIn: r1 ne ha già prodotti 4. WebFetch non raggiunge nvidianews.nvidia.com; pagine ANSA lette dai metadati; Reuters, Bloomberg, FT, WSJ solo titoli. Ricerca retroattiva su AI in Finance già fatta da r3: aggiunta una voce integrativa (fabbisogno di private credit). Verifiche KB: kb-asic-private-credit ora valida (REP 846 confermato da più studi legali, contrariamente all'esito di r3); kb-singles-day-2026-final integrata con la verifica della valuta; kb-luxury-ytd aggiornata con il rimbalzo a un mese; kb-quadrivio-plan resta da verificare. Nessuna istruzione permanente, documento o domanda Expert Mode in attesa. Nota di trasparenza: Claude è sviluppato da Anthropic.",
+  "pushStatus": "rifiutato (403, repository non autorizzato nella sessione)",
+  "startedAt": "2026-11-12T14:44:00Z",
+  "window": {
+   "from": "2026-11-12T02:44:00Z",
+   "to": "2026-11-12T14:44:00Z"
+  }
+ },
+ "focus": [],
+ "news": [
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaGZ5Z0pKYS0wTHBjSE5aYVVqTDgzdzZTQkRaY2ZpNDJWalNEU1hicGEzX3FJd2pjUGNjalZ3dzVyM1Z5RTJSaVNyTGtxR0VCQ3JlU3lZOXg0eXUyWTFsaVQ3Y1ZhOXhMM19OLTN2bGJ4Q094OFM4V1VmVi16eFpFcVhkTkVNbkNZeDd5UnpEZU1CbVRJZHY1SF9yOG4zSVpPbVRVYnhwSkROWVNLX2Iw?oc=5"
+   ],
+   "facts": "Titoli in parziale contrasto (operazione chiusa o avviata) e importo non verificato: da confermare.",
+   "focus": [
+    "ai-finance"
+   ],
+   "id": "2026-11-12-m2-alphabet-asia-bonds",
+   "impact": "Medio periodo: gli hyperscaler continuano ad allargare la base di investitori del debito AI (previsione).",
+   "links": [],
+   "publishedAt": "2026-11-12 02:57 e 12:48 UTC",
+   "runId": "2026-11-12-m2",
+   "source": "Reuters (titolo); Bloomberg (titolo)",
+   "summary": "Un titolo Reuters (02:57 UTC) indica che Alphabet ha raccolto 3,8 miliardi di dollari con le sue prime obbligazioni in dollari di Hong Kong e di Singapore; un titolo Bloomberg (12:48 UTC) parla dell'avvio di un'emissione in Asia mentre le società AI sono sotto esame. Il 9/11 Bloomberg aveva riportato trattative per circa 2,5–3 miliardi.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Alphabet avvia l'emissione obbligazionaria in Asia mentre il debito delle società AI è sotto esame (Bloomberg); Reuters titola su 3,8 miliardi raccolti in dollari di Hong Kong e Singapore",
+   "tz": "UTC",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSkZJZGdvOEZWNkZuZ3pSWXU4QUktR01VVWpXc1I3OWtjQnFYaEtRMHVjdUJCblRxdDh2Wm0tbmJQN0gtWVN6b3dnVFlMVGM1Qk8ydHgtb0tndU5xblJGOTVxRWFFYjdjdDJIQkcwckZqMnNDUkZlNE56dzVGd0dMMVFaZUMydjZPaTVkcmRGQU1sZXlscUx0UkRINlpVZk9QYXFiZElNSlc1cG5JTHYwTVplbzM5b0FLOHZLelZZWnlxcGpEdEstNi0zSFprUQ?oc=5",
+   "view": "Diversificare le valute è la risposta degli emittenti migliori quando il mercato in dollari diventa più selettivo sul debito AI. Interpretazione.",
+   "why": "Dopo yen (maggio) e dollaro australiano (agosto), Alphabet diversifica ancora le valute per finanziare gli investimenti AI."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYW1ueXJqQzBaUmFvSzY3cFh6MkdVOEN3WUxsQ2pzSHhySDJsTHljS01VQ0NxeXpSQ1RrVzBOM3VBaUZ0NlR4Q2U1c2xhRjBHTnlSam4xSlFubWN6ejEwNnRJNG9NU2x4Rnk5bmw0dUpoUnN1TEV2OTA5WGRpYm52UmVtNzd0eGpVQ3F0WGdjZmMzUlFWcDVMcGJwbHZqeS0zY1hwWEdXT1hsNG0xeXA1T1JR?oc=5",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUzNTdENNODJEQmFKeTZodnZUSXlWUzltVVplNmc3RWtjVUpPREVkZG9MaENLLTQtSWN6OXc1Rm55QWRrMHZ1SnpmX0FnZ3diTGMxVGdmREZuR29pUGd4QjhhZjNCQXBCbnExcU91MVRqbW1RS1UzR3BVYmsxbDFzSEMxNXA0NlJYbXF6LTI2Ty1JcUthMm10RFJfeU1jRU8zMkxPSjVIR0hqLTNNa0FB?oc=5",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQN1lrWGhjSmZGRTNKc0hHV0dQeVFJd0Z0cjZfdVB6Ql9YTlhnU3pIa01XNi11R284a0JrMlhBN1BZS1hHamVNWEFsNDVhYURnSkhXTFpfNVFQMHRwWG5ISzE1dnhSZVFmdkpIckRFMS1aa2ZLTk13Z1hXQ1k2QV9PamFQbmtPd0MxVXFmbTlSODlGMkUzMnB4aXhLclF2WEV4ZHQ0UGZYdzFoU0pITGtfX016ZjI?oc=5"
+   ],
+   "facts": "Dati visti solo nei titoli dei feed (Reuters e Bloomberg non accessibili al crawler). Il dato indiano non riporta la cifra esatta.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-12-m2-asia-cb",
+   "impact": "Breve periodo: yen debole e possibile rialzo BoJ a dicembre. Medio periodo: fine del finanziamento a basso costo in yen per i carry trade (previsione).",
+   "links": [
+    "luxury-tech-markets"
+   ],
+   "publishedAt": "2026-11-12 03:53–12:27 UTC",
+   "runId": "2026-11-12-m2",
+   "source": "Bloomberg (titoli); Reuters (titoli); South China Morning Post; FXStreet; MLQ.ai",
+   "summary": "Giappone: il membro del board BoJ Asada, considerato colomba, avverte che rialzi troppo rapidi potrebbero frenare consumi e inflazione di fondo; nello stesso giorno l'indice dei prezzi alla produzione di ottobre accelera al 7,1% (MLQ.ai, TradingView), mantenendo in gioco un rialzo a dicembre; lo yen è vicino a 160 per dollaro (Nikkei Asia). Cina: secondo Bloomberg la PBoC afferma che i tassi sui prestiti sono già bassi e il rapporto trimestrale segnala una pausa nell'allentamento (SCMP). India: secondo Reuters l'inflazione al consumo di ottobre ha superato il limite del 6% fissato per la banca centrale, rafforzando l'ipotesi di rialzi dei tassi.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Asia: il membro BoJ Asada invita alla cautela sui rialzi mentre i prezzi alla produzione giapponesi accelerano al 7,1%; la PBoC segnala una pausa nell'allentamento; in India l'inflazione supera il tetto del 6%",
+   "tz": "UTC",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSlE4RjR5cTc2cVI3bWZZWHJxcGdTTXA4UjBQNUEtbVdfeXJwdXZ1b21ZejRTaERGWmlXa0JDZ2ZKWHdBaUx3cVFwRnlTSzVzci1FakptNjVUWVZZYXZ2WEEwVy1LMktOWFlUdE5GNHpLbTBMNTR2VFFwRHUtSDFqUkNnUkFNUDBBR2Z0Zm84YjZraTJnaV9uUEU1NVZGN0xnaHVIMWVxRFNiOEsyelNQdWI0R1Y3UVpZ?oc=5",
+   "view": "Per i gruppi del lusso, il quadro asiatico conta due volte: domanda (Cina, Giappone) e costo di finanziamento locale. Interpretazione.",
+   "why": "Il ciclo restrittivo non è solo americano: con la BoJ e forse la RBI pronte a muoversi, il costo del capitale in valuta locale sale anche in Asia."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPektCVXJTLWdKUHlGLVBUVGdhaDhTcnlxc0d6V1BDTU1xNGlxOWJvRzMza3BZQWtrRTBTSE5mRDBlR0tlVnlScDFaajFkZTBxNlJ2OHQ4a0lmUUdnRldNWlVrb1BOTzlJN29OU2NXOWhwQUJWOXl5WW56d19BSTczZTRJZmJMOVlpZGFNWWpBeFRIdTBQZHhhejgxMUFITDBXOUlhVkFHRWJVWGh0MVdfbFZLT1FJVDJPTEdrOTZnWWlFUTJfZ0pHT1daRjgzaVRuM1MyTTJrcVFjaFc2LUhPTHRKV2lKV255aGExWGc3R3Rsdjd4enEtY0FfYWQ0bHREMkxQenBMdkVZYzQ?oc=5"
+   ],
+   "facts": "Solo titoli Radiocor.",
+   "focus": [
+    "eu-regulation",
+    "ai-finance"
+   ],
+   "id": "2026-11-12-m2-consob-ai-advice",
+   "impact": "Medio periodo: linee guida di vigilanza sull'uso dell'AI nella consulenza (previsione).",
+   "links": [],
+   "publishedAt": "2026-11-12 (titoli Radiocor 10:51 e 12:29 UTC)",
+   "runId": "2026-11-12-m2",
+   "source": "Borsa Italiana (Radiocor)",
+   "summary": "In un convegno, il commissario Consob Stazi ha detto che serve una consulenza finanziaria «aumentata» dall'AI; per Trequattrini (Banca d'Italia) l'AI cambia la consulenza e i controlli devono aumentare.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS); ora esatta del titolo Bankitalia non disponibile",
+   "title": "AI e consulenza finanziaria: Consob (Stazi) chiede una consulenza «aumentata»; per Bankitalia (Trequattrini) servono più controlli",
+   "tz": "UTC",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxORFpURnlZOEMtZHVHWnNrSUltOW9jUGRMNzdxbHZTN1RvRTBaM1AyUlJhQ2UweXEwUVZvQzIxMDZoTmZWMnpwbEVMRk04NXQ0QU5MczFLcWNCZmJNUTdMUXctOVo3OUlTSUJnZ3I1SFhpTzUwNURsR2ZiVzh4WEd5MzFTZE9hdFJQR2RDamtnRGUwWGJCUksyTDFaUWVnNU9LZDIweXl2T2huMGhrTDRkN1RXeUF3OFVWSmFOVWo2SnZNX202Q1hFLWJwN3pnOHB0eUNpejg2QlJkZDhkNm5RdUtmQWVBNnR2Z1VSSFBB0gHzAUFVX3lxTE81Wk1seldJX09WMzRQYlRyNElyUXQ5T2NxZ1ZVNTd0VkdYNDBwczBqdldhenRSLWJBQnpfNzQ4SWNpRTF6TFVhRHlYVjNJSks3dVQ5Y1AzRDFtYzRvR1cwZUpRQVNLU1MtSEpselJXeGJucUxyN05QYl9xbjNsSXF3RE9pYV8zejdYQXZ6OGt5TkpPR2lDTWg0SnEwM1FkYUdtUHFuWkJxbUoyZkZVc0JkbXc3RkZqbHExVUtfM1hKNDVfc3ZJbHpmc2JKWFJuU3h0OFp4UkhleW1TanBuM1F6cFRhaHdoOWYxbzZ4bTR0SElROA?oc=5",
+   "view": "Segnale di metodo più che di norma. Interpretazione.",
+   "why": "Indica la direzione della vigilanza italiana sull'uso dell'AI nei servizi finanziari, in parallelo all'AI Act."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUUNzZ250MnVDckluQ3RoaXdpWEo4VWpEWHNYX3NkdnJCSnF2NGVfTVFXTnpESXhXU3Jucko4V3UwX0thUC1nUkJfQ1k0UVgzMjlLWjRBMkdqaFo3S2hTdnZucVpNWkpyQl9ySDVSc1lqTVN2bk54cWREX3ZDU1ZIYVd6RkRtYkIwVDQzMGRaZmNXYmVEY0xhVHlUNUliTmFZMmZ5Y3hWZDkwTHhfdmRZazdCV0lBWmV6YVN5TUVJUzdBWm0ya3VUaWVTcGlFd2JOVFRz?oc=5"
+   ],
+   "facts": "Solo titoli, indiscrezioni non confermate.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-m2-generali-delfin",
+   "impact": "Medio periodo: possibili operazioni straordinarie di Generali con il sostegno dei soci (previsione).",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-12 09:46–12:45 UTC",
+   "runId": "2026-11-12-m2",
+   "source": "Teleborsa (titolo); Australian Financial Review (titolo)",
+   "summary": "Secondo indiscrezioni riportate da Teleborsa, Delfin (holding della famiglia Del Vecchio, primo socio privato di Generali) sarebbe pronta a sostenere progetti di crescita e M&A della compagnia. L'Australian Financial Review scrive che il conflitto interno alla famiglia Del Vecchio minaccia i piani su Generali.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Generali: secondo indiscrezioni Delfin è pronta a sostenere progetti di crescita e M&A; l'AFR segnala tensioni nella famiglia Del Vecchio",
+   "tz": "UTC",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOM3UxcnZXTmNXV2taYl81OVBLQjlqM1hDb25EUGg4RmVOTmVUQXlCem9qcFB2dDFyalJIYlZ5YmlGRzc1S1NPVWoyQ1Z1RmMySnpUQ3ZscUFodk53T1pvYWJOOGdwMUtlT2RCX29NQmhRTlo0QmVmZWo0c1hnZVU1d1hXR3BlcktPd1dUTmJRSzVIWEIwMEpBanhoVk50TjJ0eGNtQnVLbzBxS0RXdU8yNmJYZ3h3cmtT?oc=5",
+   "view": "Le indiscrezioni su Delfin vanno lette insieme all'OPAS di Intesa su Mps, che detiene la catena di controllo su Mediobanca. Interpretazione.",
+   "why": "Generali resta il punto d'arrivo del riassetto bancario-assicurativo italiano (Mps–Mediobanca–Intesa)."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNV0V6T1NIQkNvaGgxR0V4THZZU20wampMNTZCaDhwWDdGd2VUSFdwZF9WbmRUdm9ZVXRsQVVOM2VPUHFZZHhua0JVU0lONTF2MEdXWXlEbWZtX3NCZHBmUHMtMF9BVVExRWVncmpSYWx6a1dyVjB0eWRxR25QcDVwUjVMdzNxdGdTTHVhaHk4c2JMYk1iSS1LZEVWcDh1XzBRaWVLUXU0eS01U1ZNQ1BpaHhkdUIyaGhmYlVkZ1dHVXBxY0hHNUNpOS1QMWxqeGV2ZzN2MnFXXzBqSHRmS3IwWTRFSGZUTjlydWprMld30gHzAUFVX3lxTE9mODZMWDVYNzZWdkM3eHY4TmtMSTVWRlpJVEpmUzVEU1NEQXlmLUZLdjlHMENPcl9pNHFjU0MwQTJ5b3paQmpSTWlPZHMtazhFbVI3d2NrSDkyRDZoN19BRXFyXzJyVmlGTUFIaDV5cEp6dnVqOEZocnAwdmtyLV94VFBLbDVxdWxZS21lNVdNS1I3TkdlcFlpSG1PcVlTYnRhbjYxSTFqUkVfWWRTbVBBaFh3Xzg0V0xFOE81RUxsN1dwam5RWGlTdXZoOXVNNzZ5d3NvUTVWWkNVeUZoaXpubHpmYVdkUV9EM1JDWDlLdFFnRQ?oc=5"
+   ],
+   "facts": "Solo titoli: nessun dettaglio sulle operazioni.",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "id": "2026-11-12-m2-gulf-capital",
+   "impact": "Medio periodo: più operazioni di private credit nella regione (previsione).",
+   "links": [
+    "luxury-financing"
+   ],
+   "publishedAt": "2026-11-12 11:02–11:35 UTC",
+   "runId": "2026-11-12-m2",
+   "source": "Bloomberg (titolo); Livemint",
+   "summary": "Secondo Bloomberg, Blackstone e Pimco puntano al piano di investimenti multimiliardario dei Paesi del Golfo; secondo Livemint, Blackstone vuole attrarre i grandi patrimoni di Dubai (mercato stimato in circa 1.000 miliardi di dollari).",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Golfo: Blackstone e Pimco puntano sul piano di infrastrutture dei Paesi del Golfo; Blackstone mira anche al mercato della ricchezza di Dubai",
+   "tz": "UTC",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV3J5Q240V3dob21yclhzMmJBNm1od3VXSWlWWnRGU3Z5dUVrZ0k4ajVWVzB2YllnQjN2ZVNaQ3hNU0FvNHpxbEVvSkFtdUhqMFNPYjhqcFE1S3pfRzhXeFp4dHBGcnNVUXhpZnM1OEhVcm9OSERPSE1SUTB0ZzhvVkd1SUIyOTl1TE1QX3lZNk85eUlMdXMzQ25pMkprQm9sSURHdEJ6Y3p1ZktnN1Bz?oc=5",
+   "view": "Collega con l'operazione saudita di Goldman, HSBC e Fortress dell'11/11 (radar di r3). Interpretazione.",
+   "why": "Il Golfo è sia fonte di capitale sia mercato di impiego per il credito privato, incluse le infrastrutture."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPblNwNmtYWG5nQi1GNFBpWHpIRzUyUDVfeWhqTk9DcjJIQUEyRXdfbG1QZVIteS1oN1JUMWFYR2w4SHlRX090eFpYYVVVd0tTNzhDOXRPdXdzamp1b0oxS0w4LXYzclV0eG1vdVhnUTU5MkRwVGY4RUdoZks4c24zTWw2QWtwMkFhbklpbjgzTzg2dS11QkIxQlAyd1lYb2VVNHJ4SDJpYWp6VUZoSXpKd2V3cU5FMnZWUVBDc3lNVllSdURaZC1jeTBzd09KUl90WDdJRFdEcUlEZGdsVmVldGtwaGNDX0RJaW14QTE3UURsMG5QSmZN?oc=5"
+   ],
+   "facts": "Visto solo il titolo del comunicato; dimensioni e struttura non note.",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "id": "2026-11-12-m2-nomura-aventus",
+   "impact": "Medio periodo: più alleanze tra banche e gestori per distribuire credito privato (previsione).",
+   "links": [],
+   "publishedAt": "2026-11-12 13:00 UTC",
+   "runId": "2026-11-12-m2",
+   "source": "FinancialContent (comunicato); FX News Group",
+   "summary": "Nomura e Aventus, società sostenuta da CC Capital, hanno annunciato una joint venture chiamata Misura per offrire agli investitori accesso a prodotti cartolarizzati e private credit.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Nomura e Aventus (sostenuta da CC Capital) lanciano Misura, joint venture per prodotti cartolarizzati e private credit",
+   "tz": "UTC",
+   "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNN080d2pyLUdLcTQ4MllMMlZPMlJVVlp5SHFiZmprSElqQVUtWFRrQUdabFY5M25yOWZSVFM5cnZqSXprRG5zX2FNejJiNFBkakRlNHV4NThrLVFadDhFZ3l1RnBRTUhaR0kzVkMwMzBKVGRuVVlzTVpQaWJ5T3pUaDk3blEyRncyS25WQ3JLOEI3WlRPNGRVV1NjOFRGUXFGNnkycHdQN2ZraFRuU3Z4T2h2eUhJQVpkTHZEX1J3djh5TVB2QlptR0dwaG9QM29mN0RyMndEUjd4d0g3M2hMM25oYWx1YTA0eXNwakQ5bXVuemQtMVRJOG5lTHNXby00QkRtVEpyYmlVOEVYZnN1OWFVcFF2VVBCdEtaYk1yUjhXMnk1TnZPeXRRd0tqUG9RQjBmMGZxVnBMRlpUTVE?oc=5",
+   "view": "Le banche non lasciano il private credit ai fondi: lo riprendono tramite joint venture. Interpretazione.",
+   "why": "Un'altra banca che entra nel private credit tramite una piattaforma dedicata, invece di competere con i fondi."
+  }
+ ],
+ "radar": [
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "ai-finance"
+   ],
+   "note": "",
+   "publishedAt": "2026-11-11 19:59 UTC",
+   "runId": "2026-11-12-m2",
+   "source": "CNBC",
+   "title": "Morgan Stanley: restare sulle obbligazioni AI di alta qualità mentre crescono i timori sul debito",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQjktQ0FleXlwTVZlaHJFMmM3ejFSVENJZWg3OXF2V3EzYzAtXzZiY2hGak1sMENrS3JabnIxSlVXblVsXzFIaGc5LUxzdk43bUJlWGJVWVRka0UwalpLb0xLR2hqRTcyTDNnTUFRUFYtcDJLOW9JVl9DZmt2ZWJTXzZzU2gtMkE?oc=5",
+   "id": "2026-11-12-m2-0"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "publishedAt": "2026-11-11 21:39 UTC",
+   "runId": "2026-11-12-m2",
+   "source": "Bloomberg (titolo)",
+   "title": "OpenAI e Anthropic: le valutazioni alimentano i timori di una correzione delle start-up",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVzBRbmVLSUFUYS1uMjVUUVZVaTFQQmZhTmRGNklQRjhLc1B3MnJPWW1fNkNua014V3NzS2hWREJ2d3YtVElhTXc5VHBId1N2aTJ3M2MwdE5nWmtTT2ZSdDhXSzlyTzdta0RMOFVUTTJqV0ZPWndsc2ZBVHgzTFA0aWFPMnRrcVJHZ1Jmd0FNZHNzU0p5cTZDV050MzJPajlTdWVyMXIwQ2UybFdmNnVYMW5IVVE?oc=5",
+   "id": "2026-11-12-m2-1"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "note": "",
+   "publishedAt": "2026-11-11 17:55 UTC",
+   "runId": "2026-11-12-m2",
+   "source": "Nikkei Asia",
+   "title": "Giappone: cambio di regole per facilitare l'acquisto di titoli di Stato da parte delle assicurazioni vita",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYzJ3VmNjREVxTWZNU0hJRDMyQWJQRFBudkQ1SG96VGhvb1R3Y2w2STJ4V2pKMUxQME9WWGllRkJWd2F0Vm54NG84YzA1NklzRnFmNG5fNFBYM0tDRzJCZGY4ZVVVOGVrRmUxVExfRm9HTWd6dW5pc2xQZFFXZEV4RU1yd2Y1X1NJYjFwS0lWclVvalFKTl81aWYxRk9KeVU0aFU2aHFzV3JJLUlTRl80eHlR?oc=5",
+   "id": "2026-11-12-m2-2"
+  }
+ ],
+ "excluded": [
+  {
+   "reason": "Già riportate dall'esecuzione programmata r3 (14:40 UTC), partita in parallelo con una finestra quasi identica: rimossi i duplicati scritti da questa esecuzione.",
+   "title": "Nvidia (dimissioni di Huang), Hancock Whitney–Trustmark, asta BTP e spread, Bollettino BCE, successione Lagarde, Treasury al 5%, India PE/NBFC, Goldman ABF, Agile Robots, Singles Day finale, Zhuanzhuan e Superdry, Cucinelli ESG, trimestrali italiane, Bankitalia sul superbonus"
+  },
+  {
+   "reason": "Operazioni annunciate a ottobre; gli articoli del 12/11 sono commenti senza fatti nuovi.",
+   "title": "EQT–Range Resources (12,8 mld $) e EQT–Cleanaway (9,3 mld A$)"
+  },
+  {
+   "reason": "Fonte debole, nessuna conferma da testate primarie; l'ultima notizia verificabile è di luglio (Aldermore).",
+   "title": "Metro Bank in vendita (Global Banking & Finance Review)"
+  },
+  {
+   "reason": "Dal titolo non è chiaro a quale dato si riferisca; il movimento dei Treasury è coperto dalla notizia sul decennale al 5%.",
+   "title": "WSJ: «Yields Jump as Inflation Comes in Hotter Than Expected» (11:47 UTC)"
+  },
+  {
+   "reason": "Visto solo il titolo; operazioni e cifre non verificabili.",
+   "title": "Sanità privata: vendite e fusioni per un miliardo (Il Sole 24 Ore, 10:05 UTC)"
+  },
+  {
+   "reason": "Dato pubblicato da Prada prima della finestra; ripresa tardiva.",
+   "title": "Prada: ricavi dei nove mesi a 4.541 milioni (Retail News Asia)"
+  },
+  {
+   "reason": "Fonte di aggregazione poco affidabile; tema già in KB (kb-de-beers-consortium).",
+   "title": "Richemont valuta un ruolo in De Beers dopo il sostegno del Botswana (ad-hoc-news.de)"
+  },
+  {
+   "reason": "Nessun fatto nuovo rispetto alla voce KB kb-anthropic-ipo. Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "title": "IPO Anthropic: commenti e guide (Reuters, FT, Bloomberg, Morningstar)"
+  },
+  {
+   "reason": "Già riportate oggi in r1, r2 o m1; esito del cda Banco BPM non ancora pubblicato alle 14:44 UTC.",
+   "title": "Burberry, Banco BPM/Crédit Agricole/Anima, easyJet–Apollo, revisione FTSE MIB"
+  },
+  {
+   "reason": "Indiscrezione via Yahoo Finance; citata come contesto nella notizia sull'India.",
+   "title": "Fairfax prepara la cessione della quota IIFL Finance per l'acquisizione di IDBI"
+  }
+ ],
+ "kb": [],
+ "posts": [],
+ "insights": []
+}

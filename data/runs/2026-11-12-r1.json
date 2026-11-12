@@ -1,0 +1,327 @@
+{
+ "run": {
+  "counts": {
+   "kb": 20,
+   "news": 5,
+   "posts": 4,
+   "radar": 4
+  },
+  "finishedAt": "2026-11-12T06:30:00Z",
+  "id": "2026-11-12-r1",
+  "kind": "daily",
+  "notes": "PUSH RIFIUTATO: il proxy git ha negato l'accesso (403) perché EOA-SM/intelligence-hub non è tra i repository autorizzati della sessione e lo strumento add_repo non era disponibile. Il commit 'Daily Intelligence 2026-11-12-r1' (rassegna, 16 nuove voci KB, 4 bozze di post, dossier Focus aggiornati) esiste solo nel container e andrà perso: il database della dashboard è aggiornato. Per le prossime esecuzioni aggiungere il repository alle fonti della sessione/routine. — Esecuzione r1 programmata (priorità Asia e notte di New York). Nessuna esecuzione r2 l'11/11: le notizie tra le 10:28 e le 17:41 UTC dell'11/11 sono finite nel radar. WebFetch non raggiungibile (rete limitata): data e ora derivano da URL e risultati di ricerca. corriere.it blocca il crawler di Claude (verificato oggi). Nessuna istruzione permanente, nessun documento da analizzare, nessuna domanda Expert Mode in attesa.",
+  "pushStatus": "rifiutato (403, repository non autorizzato nella sessione)",
+  "startedAt": "2026-11-12T05:41:00Z",
+  "window": {
+   "from": "2026-11-11T17:41:00Z",
+   "to": "2026-11-12T05:41:00Z"
+  }
+ },
+ "focus": [],
+ "news": [
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.wftv.com/news/business/asian-shares-mostly/NGFIIPGOHA32JK6FIGWSDZIJDI/"
+   ],
+   "facts": "I livelli degli indici sono istantanee intraday di agenzie diverse, non chiusure; le variazioni di Samsung, SK hynix e Kioxia vengono da estratti di ricerca e non sono state verificate sulla fonte primaria.",
+   "focus": [
+    "macro-central-banks",
+    "ai-finance"
+   ],
+   "id": "2026-11-12-asia-open",
+   "impact": "Breve periodo: la filiera asiatica dei chip per ora tiene; il segnale da seguire è l'apertura USA. Medio periodo: la spesa in capacità (HBM, packaging) continua, quindi continua anche il fabbisogno di finanziamento.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12 (sessione asiatica)",
+   "runId": "2026-11-12-r1",
+   "source": "AP (via WFTV/DTNext); AFP via France 24; CNBC (quotazioni)",
+   "summary": "Nella mattina di giovedì il Nikkei 225 oscillava tra +0,8% (circa 61.714, AFP) e -0,1% (61.224,87, AP); l'Hang Seng perdeva tra lo 0,9% e l'1,1% (circa 24.050–24.090). I titoli dei semiconduttori della regione restano sostenuti: secondo le quotazioni riportate, Samsung Electronics +3,57% e SK hynix +5,36%, Kioxia circa +5,5%. Il presidente sudcoreano Lee Jae Myung ha detto che l'investimento di Samsung in un impianto di packaging HBM sarà seguito da investimenti in macchinari avanzati per circa 40.000 miliardi di won.",
+   "tier": "alta",
+   "timeVerified": "articoli AP e AFP datati 12/11; livelli intraday, non di chiusura",
+   "title": "Asia contrastata: Hang Seng in calo di circa l'1%, Tokyo poco mossa, chip coreani in rialzo; pesa il caso Nvidia",
+   "tz": "JST/HKT",
+   "url": "https://www.france24.com/en/live-news/20261112-asian-stocks-extend-gains-but-traders-keep-eye-on-nvidia-crisis",
+   "view": "Il mercato distingue tra Nvidia come società (rischio di governance) e la domanda di chip AI (che resta). Per ora è una lettura ragionevole, ma fragile se il cambio al vertice dovesse rallentare gli ordini.",
+   "why": "È la prima reazione dei mercati asiatici, i più esposti alla filiera dei chip, alla crisi di governance di Nvidia."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.bloomberg.com/news/articles/2026-11-11/bc-partners-to-buy-investcorp-bdc-amid-private-credit-shakeout",
+    "https://www.globenewswire.com/news-release/2026/11/11/3401185/7512/en/bcp-investment-corporation-announces-third-quarter-2026-financial-results.html"
+   ],
+   "facts": "Una fonte terza riporta un valore di 1,38 dollari per azione basato sui prezzi di mercato del 9/11: non è coerente con il dato del comunicato (2,49 dollari sul NAV) e non è stato usato.",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "id": "2026-11-12-bcic-icmb",
+   "impact": "Breve periodo: possibili altre operazioni sui BDC che hanno avviato revisioni strategiche (Bloomberg cita TCP Capital e WhiteHorse Finance). Medio periodo: i NAV in calo e le fusioni a sconto mettono pressione sulle valutazioni dei portafogli di direct lending.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-11 (diffuso con i risultati Q3 di BCIC)",
+   "runId": "2026-11-12-r1",
+   "source": "GlobeNewswire (comunicato); Bloomberg",
+   "summary": "Investcorp Credit Management BDC (ICMB) si fonderà in BCP Investment Corporation (BCIC), gestita da BC Partners. Gli azionisti ICMB riceveranno un corrispettivo pari al 90% del NAV rettificato alla chiusura (circa 2,49 dollari per azione sui NAV al 30/9), in azioni BCIC (fino al 19,99% del capitale) e contanti; BCIC è valutata al 100% del NAV. Chiusura attesa nel primo trimestre 2027, soggetta al voto degli azionisti. Nello stesso giorno BCIC ha comunicato un NAV di 13,13 dollari per azione al 30/9, da 14,49 al 30/6, per svalutazioni in più settori.",
+   "tier": "media",
+   "timeVerified": "data verificata dall'URL GlobeNewswire; ora non verificata. La ripresa su Manila Times è datata 12/11, compatibile con una diffusione serale USA",
+   "title": "Private credit, consolidamento dei BDC: BC Partners (BCP Investment) incorpora Investcorp Credit Management BDC al 90% del NAV",
+   "tz": "ET",
+   "url": "https://www.globenewswire.com/news-release/2026/11/11/3401183/7512/en/investcorp-credit-management-bdc-inc-to-merge-into-bcp-investment-corporation.html",
+   "view": "Il 90% del NAV è un prezzo che dice due cose: il mercato non crede del tutto ai NAV dei BDC piccoli, e il compratore usa la propria azione valutata al 100% come moneta. È la stessa logica di un M&A bancario a sconto sul patrimonio.",
+   "why": "È un caso concreto della fase di consolidamento del private credit: veicoli piccoli e quotati a forte sconto vengono assorbiti da piattaforme più grandi."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/banco-bpm-portavoce-smentisce-rumors-su-possibilita-di-cedere-anima-257_2026-11-11_TLB.html?lang=it",
+    "https://www.teleborsa.it/News/2026/11/11/credit-agricole-rumors-aperta-a-cedere-anima-nell-ambito-della-fusione-con-banco-bpm-251.html"
+   ],
+   "facts": "Notizia basata su fonti anonime e smentita da Banco BPM: va trattata come indiscrezione, non come fatto.",
+   "focus": [
+    "global-ma-ecm",
+    "eu-regulation"
+   ],
+   "id": "2026-11-12-ca-anima-bpm",
+   "impact": "Breve periodo: attenzione al consiglio di Banco BPM di oggi e alla reazione del titolo. Medio periodo: se confermata, apre un dossier di M&A nel risparmio gestito italiano.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-11T21:28+01:00",
+   "runId": "2026-11-12-r1",
+   "source": "Reuters via Boursorama; Teleborsa/Borsa Italiana",
+   "summary": "Secondo due fonti citate da Reuters, Crédit Agricole avrebbe indicato in modo informale alle autorità italiane di essere disposta a cedere Anima Holding (controllata da Banco BPM) nell'ambito della fusione proposta tra Banco BPM e Crédit Agricole Italia, con acquirenti graditi al governo. Con la fusione la quota di Crédit Agricole salirebbe da circa il 29,3–29,6% a circa il 45%. Una portavoce di Banco BPM ha definito la notizia priva di fondamento e ha detto che la banca non intende vendere Anima; Crédit Agricole non ha commentato. Il consiglio di Banco BPM è convocato il 12/11 per un primo esame della proposta.",
+   "tier": "alta",
+   "timeVerified": "ora verificata dal titolo Boursorama (21:28); smentita Teleborsa dell'11/11, ora non verificata",
+   "title": "Crédit Agricole pronta a cedere Anima per facilitare la fusione con Banco BPM (fonti Reuters); Banco BPM smentisce",
+   "tz": "CET",
+   "url": "https://www.boursorama.com/bourse/actualites/credit-agricole-dispose-a-ceder-anima-dans-son-projet-avec-bpm-sources-20035b210a903247d29600f15a0bfa09",
+   "view": "Nel risiko italiano il negoziato con il governo sembra venire prima di quello con gli azionisti. Offrire un asset prima che venga chiesto è il segnale che il golden power è considerato il vero ostacolo, anche dopo la procedura d'infrazione UE sulla norma.",
+   "why": "Una cessione di Anima sarebbe un 'rimedio' offerto in anticipo per ridurre il rischio politico (golden power) e le sovrapposizioni con Amundi."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.france24.com/en/technology/20261112-nvidia-board-to-decide-whether-to-oust-longtime-ceo-jensen-huang",
+    "https://www.nbcnews.com/business/business-news/nvidia-shares-drop-hours-reports-meeting-ceo-jensen-huangs-future-rcna608906",
+    "https://www.axios.com/2026/11/11/nvidia-jensen-huang-affair-shares",
+    "https://www.cbsnews.com/news/nvidia-board-ceo-jensen-huang-china/"
+   ],
+   "facts": "Le fonti divergono sull'andamento di Nvidia in seduta regolare (+2,9% secondo alcune, -4,6% secondo Reuters) e sull'entità del calo after hours (7,2% alle 19 ET, 8,6% in altre rilevazioni). NBC non ha confermato in modo indipendente né le notizie del NYT né la riunione.",
+   "focus": [
+    "ai-finance",
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-nvidia-board-huang",
+   "impact": "Breve periodo: volatilità sui titoli AI e sui semiconduttori, verifica della tenuta del rimbalzo di mercoledì. Medio periodo: il tema 'key person' entra nelle analisi su debito e contratti legati all'AI (SPV per il compute, finanziamenti dei data center).",
+   "links": [
+    "macro-central-banks"
+   ],
+   "publishedAt": "2026-11-11 sera (dopo la chiusura di Wall Street)",
+   "runId": "2026-11-12-r1",
+   "source": "CNBC; CNN; NBC News; Axios; Reuters via France 24; CBS News",
+   "summary": "Secondo il Wall Street Journal, ripreso da CNBC, CNN e NBC, il consiglio di Nvidia si è riunito mercoledì sera per decidere sul futuro del fondatore e CEO Jensen Huang; Reuters (via France 24) e CBS, citando fonti, scrivono che il board valuta di rimuoverlo. Il fatto scatenante sono le notizie (New York Times) di una seconda relazione extraconiugale, con una dirigente a riporto diretto, dopo quella con una donna che l'intelligence USA riterrebbe legata alla Cina. L'8/11 il board aveva aperto un'indagine indipendente dichiarando fiducia in Huang. Il titolo è sceso fino a oltre il 9% after hours, poi intorno al 7–8,6%; su una capitalizzazione di circa 4.200 miliardi di dollari, il calo equivale a quasi 400 miliardi se confermato in seduta. Nessun successore indicato.",
+   "tier": "breaking",
+   "timeVerified": "notizie datate 11/11 sera (ET) e 12/11 (Asia) negli URL e nei risultati; ora esatta non verificata",
+   "title": "Nvidia, il consiglio si riunisce per decidere se rimuovere Jensen Huang; il titolo cede circa l'8% after hours",
+   "tz": "ET",
+   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
+   "view": "Al momento della ricerca non c'è una decisione ufficiale: è una riunione riportata da fonti, non una rimozione. Per chi fa deal la lezione è il key-person risk in società guidate dal fondatore, che raramente è prezzato nei modelli. Nota di trasparenza: Claude, il sistema che produce questa analisi, è sviluppato da Anthropic, citata qui come cliente e controparte di Nvidia.",
+   "why": "Nvidia è il principale fornitore dell'infrastruttura AI e il titolo con il peso maggiore negli indici: un cambio di CEO non pianificato tocca valutazioni, catene di fornitura e il clima dell'IPO di Anthropic prevista per il 18–19/11."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-11-224502652.html",
+    "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-futures-rise-104431138.html"
+   ],
+   "facts": "Il dato +25% su CoreWeave proviene dal titolo di un articolo Yahoo Finance; la data di pubblicazione dei risultati CoreWeave (10 o 11/11) non è verificata.",
+   "focus": [
+    "macro-central-banks",
+    "ai-finance"
+   ],
+   "id": "2026-11-12-wall-street-coreweave",
+   "impact": "Breve periodo: il rally è esposto alla notizia Nvidia uscita dopo la chiusura e alla riapertura dei Treasury. Medio periodo: i risultati di CoreWeave sono un riferimento per il credito ai 'neocloud', oggi il segmento più contestato del debito AI.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-11 chiusura (16:00 ET = 21:00 UTC)",
+   "runId": "2026-11-12-r1",
+   "source": "AP via Yahoo Finance; Yahoo Finance",
+   "summary": "S&P 500 +1,31% a 7.619,38; Nasdaq Composite +1,60% a 25.466,19; Dow +0,49% a 52.486,49. Il rialzo è stato guidato da CoreWeave (circa +25%) dopo risultati trimestrali superiori alle attese, e dai titoli delle memorie (SanDisk +14%, Seagate +10%, Western Digital +8%). L'S&P 500 è a circa il 2,6% dal record di ottobre. Il mercato dei Treasury era chiuso per il Veterans Day: il rendimento decennale resta vicino al 5% (4,99% l'ultima rilevazione citata).",
+   "tier": "alta",
+   "timeVerified": "orario di chiusura del mercato; articoli datati 11/11",
+   "title": "Wall Street chiude in rialzo (S&P 500 +1,31%) trainata da CoreWeave; mercato obbligazionario chiuso per il Veterans Day",
+   "tz": "ET",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-211834867.html",
+   "view": "Un rialzo guidato dal titolo più indebitato del settore (CoreWeave) mentre il decennale è al 5% dice che il mercato azionario sta ancora prezzando la crescita, non il costo del capitale. Il credito, nelle stesse settimane, si muove nella direzione opposta (vendite di prestiti sui data center).",
+   "why": "Il rimbalzo arriva dopo il dato CPI che ha fatto salire le attese di un rialzo Fed a dicembre; la riapertura del mercato obbligazionario giovedì è il vero test."
+  }
+ ],
+ "radar": [
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "pe-private-credit",
+    "global-ma-ecm"
+   ],
+   "note": "Take-private di grande dimensione in Europa con un acquirente di private markets.",
+   "publishedAt": "2026-11-11T14:21+01:00",
+   "runId": "2026-11-12-r1",
+   "source": "Reuters via Boursorama",
+   "title": "Gli azionisti di easyJet approvano l'acquisizione da parte di Apollo per 5,7 miliardi di sterline (97,07% dei voti)",
+   "url": "https://www.boursorama.com/bourse/actualites/les-actionnaires-d-easyjet-approuvent-le-rachat-de-la-compagnie-par-apollo-pour-un-montant-de-5-7-milliards-de-livres-sterling-534b40bde3d2470a87e49b6d36751e09",
+   "id": "2026-11-12-r1-0"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Private equity in Giappone: rilancio minimo, segnale di competizione o di resistenza degli azionisti.",
+   "publishedAt": "2026-11-11",
+   "runId": "2026-11-12-r1",
+   "source": "Reuters via Boursorama (rassegna M&A dell'11/11)",
+   "title": "EQT alza l'offerta su Kakaku.com a 3.700 yen per azione (da 3.683)",
+   "url": "https://www.boursorama.com/bourse/actualites/offres-du-jour-fusions-et-acquisitions-171d6c875e788171fcd7c9305e702d65",
+   "id": "2026-11-12-r1-1"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Infrastrutture energetiche italiane: rotazione di asset verso fondi infrastrutturali.",
+   "publishedAt": "2026-11-11",
+   "runId": "2026-11-12-r1",
+   "source": "Reuters via Boursorama (rassegna M&A dell'11/11)",
+   "title": "Snam in trattativa esclusiva per cedere Agri Biomethane; favorito F2i con Femo Gas (fonte Reuters)",
+   "url": "https://www.boursorama.com/bourse/actualites/offres-du-jour-fusions-et-acquisitions-171d6c875e788171fcd7c9305e702d65",
+   "id": "2026-11-12-r1-2"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "note": "Al limite della finestra radar (ora non verificata). Archiviato anche in Knowledge Base.",
+   "publishedAt": "2026-11-10",
+   "runId": "2026-11-12-r1",
+   "source": "Federal Reserve Board",
+   "title": "Fed, il governatore Waller propende per un rialzo di 25 punti base a dicembre",
+   "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm",
+   "id": "2026-11-12-r1-3"
+  }
+ ],
+ "excluded": [
+  {
+   "reason": "Vista solo in un riassunto della rassegna; nessuna seconda fonte trovata e orario non attribuibile: da verificare alla prossima esecuzione.",
+   "title": "Marsh acquisisce Wilshire da CC Capital e Motive Partners (rassegna Reuters via Boursorama, 11/11)"
+  },
+  {
+   "reason": "Vista solo in una pagina aggregata di Business of Fashion; nessun comunicato trovato. Il tema è già nella rassegna dell'11/11.",
+   "title": "Capri Holdings: Justin Boxford CEO dal 4 gennaio 2027"
+  },
+  {
+   "reason": "Fuori finestra: aggiunto alla voce KB esistente sull'IPO.",
+   "title": "Anthropic: pricing dell'IPO il 18/11 e quotazione il 19/11 (CNBC, 10/11)"
+  },
+  {
+   "reason": "Fuori finestra e fuori radar (oltre 36 ore).",
+   "title": "Germania: 6,6 miliardi di euro per il 50% di KNDS (10/11, 13:18 CET)"
+  },
+  {
+   "reason": "Non ancora pubblicati o non trovati nella finestra.",
+   "title": "Dati del credito cinese di ottobre, risultati Tencent Q3"
+  }
+ ],
+ "kb": [],
+ "posts": [
+  {
+   "audience": "M&A e leveraged finance, lender, PE: chi valuta o finanzia società guidate dal fondatore.",
+   "body": "Nvidia's board met last night to discuss removing its founder. Most deal models have no line for that.\n\nThe facts so far: according to the Wall Street Journal and others, Nvidia's board met on Wednesday evening to decide on Jensen Huang's future, after reports of two personal relationships. The shares fell 7–9% after hours. On a company worth about $4.2 trillion, that is close to $400 billion. No decision had been announced when Asia opened.\n\nWhatever the outcome, the case is a useful lesson for anyone who prices or lends to founder-led businesses.\n\nWe stress revenue, margins, CapEx and, lately, rates. We rarely stress governance. Yet in founder-led companies the founder is often the strategy, the main customer relationship and the reason lenders are comfortable.\n\nThree places where this should show up:\n→ Valuation: a discount, or at least a scenario, for an unplanned succession.\n→ Documentation: key-person and change-of-management clauses that are tested, not boilerplate.\n→ Counterparties: suppliers and customers whose own plans depend on that one company.\n\n[Spazio per la tua esperienza: come hai trattato il rischio legato al management nella valutazione di un target, in forma generica.]\n\nIn your last deal, was key-person risk in the model, in the documentation, or nowhere?\n\n#MandA #CorporateGovernance #LeveragedFinance #AI",
+   "date": "2026-11-12",
+   "focus": [
+    "ai-finance",
+    "global-ma-ecm"
+   ],
+   "hook": "Nvidia's board met last night to discuss removing its founder. Most deal models have no line for that.",
+   "id": "2026-11-12-p1",
+   "lang": "EN",
+   "message": "Il key-person risk è un rischio di credito e di valutazione, non una nota a margine.",
+   "question": "In your last deal, was key-person risk in the model, in the documentation, or nowhere?",
+   "runId": "2026-11-12-r1",
+   "sourceName": "CNBC, CNN, NBC News, Reuters via France 24 (11–12/11/2026)",
+   "sourceUrl": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
+   "status": "bozza",
+   "thesis": "Nei modelli si stressano ricavi, margini e tassi, ma raramente la governance. Il caso Nvidia mostra quanto valore può muoversi in un'ora quando il rischio è una persona.",
+   "topic": "Key-person risk in founder-led companies",
+   "type": "Lezione da un caso"
+  },
+  {
+   "audience": "Professionisti di M&A bancario, CFO e advisor italiani, chi segue il risparmio gestito.",
+   "body": "Nel risiko bancario italiano i rimedi si offrono prima che qualcuno li chieda.\n\nIeri sera Reuters, citando due fonti, ha scritto che Crédit Agricole avrebbe indicato in modo informale alle autorità italiane di essere pronta a cedere Anima, nell'ambito della fusione proposta tra Banco BPM e Crédit Agricole Italia. Banco BPM ha smentito: nessuna intenzione di vendere. Oggi il consiglio della banca esamina la proposta.\n\nÈ un'indiscrezione, e va trattata come tale. Ma il fatto che circoli dice molto su come si strutturano oggi questi deal.\n\nLa proposta di Crédit Agricole è costruita per gli azionisti: premio, dividendo straordinario, sinergie, continuità del management. L'ostacolo vero sembra un altro: il consenso politico, con il golden power sulle banche già oggetto di una procedura d'infrazione europea.\n\nLa mia lettura: in Italia il negoziato con lo Stato è entrato nella struttura dell'operazione. Si prepara una cessione prima che venga chiesta, si scelgono acquirenti \"graditi\". È una forma di prezzo, solo che non compare nel concambio.\n\nPer chi lavora sui deal questo cambia il lavoro: la mappa degli asset cedibili diventa parte della valutazione, come le sinergie.\n\n[Spazio per la tua esperienza: un caso in cui un vincolo regolatorio ha cambiato la struttura di un'operazione, senza nomi.]\n\nQuanto vale ridurre il rischio golden power? E chi lo paga: il compratore o gli azionisti del target?\n\n#MandA #Banche #GoldenPower #RisikoBancario",
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm",
+    "eu-regulation"
+   ],
+   "hook": "Nel risiko bancario italiano i rimedi si offrono prima che qualcuno li chieda.",
+   "id": "2026-11-12-p2",
+   "lang": "IT",
+   "message": "Nelle operazioni bancarie italiane il negoziato con lo Stato è diventato parte della struttura del deal.",
+   "question": "Quanto vale, in un'operazione bancaria italiana, ridurre il rischio golden power? E chi lo paga: il compratore o gli azionisti del target?",
+   "runId": "2026-11-12-r1",
+   "sourceName": "Reuters via Boursorama; Teleborsa (11/11/2026)",
+   "sourceUrl": "https://www.boursorama.com/bourse/actualites/credit-agricole-dispose-a-ceder-anima-dans-son-projet-avec-bpm-sources-20035b210a903247d29600f15a0bfa09",
+   "status": "bozza",
+   "thesis": "L'indiscrezione su Anima mostra un cambiamento: chi compra prepara in anticipo cessioni di asset per ridurre il rischio politico. Il prezzo dell'operazione include ora il costo del consenso.",
+   "topic": "Crédit Agricole, Banco BPM e Anima: il golden power come vero tavolo negoziale",
+   "type": "Cambiamento in atto"
+  },
+  {
+   "audience": "Private credit, PE, LP e wealth manager che allocano su BDC quotati e semi-liquidi.",
+   "body": "One private credit fund just agreed to sell itself at 90% of NAV. The buyer pays with shares valued at 100%.\n\nThe facts: Investcorp Credit Management BDC will merge into BCP Investment Corporation, managed by BC Partners. Shareholders get 90% of adjusted NAV, in stock and cash. Closing is expected in Q1 2027. The same day, the buyer reported its own NAV down to $13.13 per share from $14.49 in June, after markdowns. (Source: company release; Bloomberg)\n\nPut this next to the other model in the market.\n\nListed BDCs: priced every day, often at a discount to NAV. When they consolidate, the discount becomes the deal price.\n\nNon-traded and semi-liquid funds: subscriptions and redemptions at NAV, with quarterly caps. This year several of them have faced record redemption requests.\n\nSame asset class, two prices for similar loans. A merger at 90% of NAV is not a market verdict on every portfolio. But it is a data point that LPs, auditors and boards of semi-liquid funds will find hard to ignore.\n\nMy read: consolidation of small listed BDCs will continue, and each deal will make the gap with semi-liquid NAVs more visible.\n\nIf two private credit funds merge at 90% of NAV, what should a semi-liquid fund holding similar loans report as its NAV?\n\n#PrivateCredit #DirectLending #BDC #PrivateMarkets",
+   "date": "2026-11-12",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "hook": "One private credit fund just agreed to sell itself at 90% of NAV. The buyer pays with shares valued at 100%.",
+   "id": "2026-11-12-p3",
+   "lang": "EN",
+   "message": "Il prezzo a cui si fondono i BDC è il miglior test disponibile dei NAV del private credit.",
+   "question": "If a merger between two private credit funds happens at 90% of NAV, what should the NAV of a semi-liquid fund holding similar loans be?",
+   "runId": "2026-11-12-r1",
+   "sourceName": "GlobeNewswire; Bloomberg (11/11/2026)",
+   "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/11/3401183/7512/en/investcorp-credit-management-bdc-inc-to-merge-into-bcp-investment-corporation.html",
+   "status": "bozza",
+   "thesis": "I veicoli quotati scambiano a sconto, quelli semi-liquidi al NAV. Le fusioni a sconto rendono visibile la distanza tra i due modelli e la porteranno nelle discussioni sulle valutazioni.",
+   "topic": "BDC consolidation: listed discounts vs semi-liquid NAVs",
+   "type": "Confronto tra modelli"
+  },
+  {
+   "audience": "Advisor M&A ed ECM, family office, PE consumer, CFO di aziende del lusso a controllo familiare.",
+   "body": "The next wave of luxury deals may be written in wills, not in strategy decks.\n\nThe Armani case is the clearest example. According to Reuters, the will requires the heirs to sell about 15% by March 2027 and points to an IPO within three to eight years. Bankers put the group's value at €5–7bn. L'Oréal and EssilorLuxottica are seen as the most engaged suitors, while the heirs reportedly prefer a listing.\n\nAt the other end of the scale, Style Capital has just taken control of N°21 after its industrial partner exited. Different size, same pattern: ownership changes driven by the shareholders' situation, not by the market cycle.\n\nA scenario for the next 24 months:\n→ More minority sales with a path to IPO, because sellers cannot wait for multiples to recover.\n→ Strategic buyers taking small stakes with options, rather than full control.\n→ Financing structures that bridge the gap: preferred equity, holdco debt, earn-outs linked to brand performance.\n\nThe risk is obvious: a fixed deadline in a soft market weakens the seller's hand. The structure becomes the main lever on value.\n\n[Spazio per la tua esperienza: il lavoro su cap table e valutazione in una ristrutturazione societaria, in forma generica.]\n\nIf you had to sell 15% of a family-controlled luxury house by a fixed date, in a weak market: strategic buyer, financial investor, or IPO?\n\n#Luxury #MandA #FamilyBusiness #ECM",
+   "date": "2026-11-12",
+   "focus": [
+    "luxury-financing",
+    "luxury-ma"
+   ],
+   "hook": "The next wave of luxury deals may be written in wills, not in strategy decks.",
+   "id": "2026-11-12-p4",
+   "lang": "EN",
+   "message": "Le successioni nelle famiglie del lusso creano operazioni con scadenze fisse, indipendenti dal ciclo.",
+   "question": "If you had to sell 15% of a family-controlled luxury house by a fixed date, in a weak market: strategic buyer, financial investor, or IPO?",
+   "runId": "2026-11-12-r1",
+   "sourceName": "Reuters via FashionNetwork (5/11/2026); FashionNetwork (Style Capital–N°21)",
+   "sourceUrl": "https://us.fashionnetwork.com/news/Armani-heirs-favour-ipo-over-sale-to-industry-player-sources-say,1882271.html",
+   "status": "bozza",
+   "thesis": "Quando la vendita è imposta da un testamento o da un passaggio generazionale, il calendario non lo decide il mercato. Con multipli compressi, il valore lo fa la struttura: minoranze, IPO a tappe, partner industriali.",
+   "topic": "Succession as the pipeline of luxury M&A and ECM",
+   "type": "Scenario futuro"
+  }
+ ],
+ "insights": []
+}

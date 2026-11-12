@@ -1,0 +1,105 @@
+{
+ "run": {
+  "counts": {
+   "kb": 12,
+   "news": 6,
+   "posts": 0,
+   "radar": 4
+  },
+  "finishedAt": "2026-11-12T08:40:00Z",
+  "id": "2026-11-12-r2",
+  "kind": "daily",
+  "notes": "PUSH RIFIUTATO (come in r1): il proxy git nega l'accesso (403) perché EOA-SM/intelligence-hub non è tra i repository autorizzati della sessione; lo strumento add_repo non è disponibile in questa sessione. Il commit 'Daily Intelligence 2026-11-12-r2' esiste solo nel container: il database della dashboard è aggiornato. Per le prossime esecuzioni aggiungere il repository alle fonti della routine. — Esecuzione r2 (priorità apertura europea e stampa del mattino). Non ripetute le notizie di r1; la notizia Nvidia è riproposta solo come aggiornamento sostanziale (nessuna decisione ufficiale, nomi per l'interim, corsa cinese ai chip). Nessun post LinkedIn: r1 ne ha già prodotti 4. WebFetch non raggiungibile (milanofinanza.it non risolto dal DNS della sessione): orari da titoli e URL. L'indice di ricerca restituisce poco della mattina del 12/11 (prima delle 08:40): esito del cda Banco BPM, asta BTP, risultati Burberry e Munich Re non ancora disponibili. Fonti eur-lex.europa.eu e istat.it verificate (ok). Nessuna istruzione permanente, nessun documento, nessuna domanda Expert Mode in attesa.",
+  "pushStatus": "rifiutato (403, repository non autorizzato nella sessione)",
+  "startedAt": "2026-11-12T07:41:00Z",
+  "window": {
+   "from": "2026-11-11T19:41:00Z",
+   "to": "2026-11-12T07:41:00Z"
+  }
+ },
+ "focus": [],
+ "news": [],
+ "radar": [
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "note": "Ora non verificata. Archiviato in KB.",
+   "publishedAt": "2026-11-11",
+   "runId": "2026-11-12-r2",
+   "source": "Istat",
+   "title": "Istat: PIL italiano +0,9% nel 2026 e +0,6% nel 2027; deflatore dei consumi al 3,3% nel 2026",
+   "url": "https://www.istat.it/en/press-release/note-on-the-performance-and-outlook-of-the-italian-economy-years-2026-2027-2/",
+   "id": "2026-11-12-r2-0"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Contesto per il cda di oggi.",
+   "publishedAt": "2026-11-11T10:20+01:00",
+   "runId": "2026-11-12-r2",
+   "source": "MF-Milano Finanza",
+   "title": "Banco BPM, i tre nodi prima del cda su Crédit Agricole: valore di CA Italia, distribuzione dei benefici, controllo",
+   "url": "https://www.milanofinanza.it/news/banco-bpm-i-tre-nodi-dell-offerta-agricole-ecco-cosa-deve-decidere-castagna-202611111020363595",
+   "id": "2026-11-12-r2-1"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Due uscite dal listino principale per OPA: effetto del ciclo di take-over.",
+   "publishedAt": "2026-11-11",
+   "runId": "2026-11-12-r2",
+   "source": "Teleborsa",
+   "title": "Pirelli e Banca Generali entrano nel FTSE MIB al posto di Iveco e Recordati (uscite per OPA)",
+   "url": "https://teleborsa.it/News/2026/11/11/pirelli-e-banca-generali-entrano-nel-ftse-mib-al-posto-di-iveco-e-recordati-269.html",
+   "id": "2026-11-12-r2-2"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "note": "Conti attesi oggi a mercati chiusi.",
+   "publishedAt": "2026-11-11T15:22+01:00",
+   "runId": "2026-11-12-r2",
+   "source": "MF-Milano Finanza",
+   "title": "Enel, attese per i nove mesi: utile ordinario stimato circa 5,8 miliardi, debito netto circa 65 miliardi (Jefferies)",
+   "url": "https://www.milanofinanza.it/news/enel-per-i-9-mesi-il-mercato-stima-un-utile-di-5-8-miliardi-a-trazione-estera-202611111522257459",
+   "id": "2026-11-12-r2-3"
+  }
+ ],
+ "excluded": [
+  {
+   "reason": "Già in r1; esito non ancora disponibile alle 08:40, nessun aggiornamento sostanziale.",
+   "title": "Banco BPM: cda del 12/11 su Crédit Agricole"
+  },
+  {
+   "reason": "Orario non verificabile (probabilmente 11/11 prima della finestra); aggiunto alla voce KB. Nota: Claude è sviluppato da Anthropic.",
+   "title": "Anthropic: domanda pari a più volte le azioni offerte (Bloomberg, mercoledì) e ipotesi di pricing sopra la forchetta (FT)"
+  },
+  {
+   "reason": "Data e attribuzione incerte (estratto ambiguo tra Quadrivio e Style Capital): archiviato in KB come da verificare.",
+   "title": "Quadrivio/Style Capital: piano da 2 miliardi in 30 operazioni in due anni (FashionNetwork)"
+  },
+  {
+   "reason": "Nessuna cifra trovata nell'indice di ricerca alle 08:40.",
+   "title": "Burberry e Munich Re: risultati del 12/11"
+  },
+  {
+   "reason": "Pubblicata il 10/11, oltre il radar di 36 ore.",
+   "title": "Tod's: lascia il direttore creativo Matteo Tamburini"
+  },
+  {
+   "reason": "Pubblicata il 9/11, fuori radar: archiviata in KB.",
+   "title": "BloombergNEF: debito dei data center in scadenza nel 2027 e shock dei tassi"
+  }
+ ],
+ "kb": [],
+ "posts": [],
+ "insights": []
+}

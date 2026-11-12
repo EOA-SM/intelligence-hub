@@ -1,0 +1,208 @@
+{
+ "run": {
+  "counts": {
+   "kb": 8,
+   "news": 5,
+   "posts": 0,
+   "radar": 2
+  },
+  "finishedAt": "2026-11-12T13:55:00Z",
+  "id": "2026-11-12-m1",
+  "kind": "manuale",
+  "notes": "PUSH RIFIUTATO (terza volta oggi): il proxy git nega l'accesso (403) perché EOA-SM/intelligence-hub non è tra i repository autorizzati della sessione; lo strumento add_repo non è disponibile. Il commit 'Daily Intelligence 2026-11-12-m1' esiste solo nel container: il database della dashboard è aggiornato. Anche i commit di r1 e r2 non sono mai arrivati su GitHub (il repo è fermo al 11/11). — Esecuzione manuale dalla dashboard, senza testo aggiuntivo. La finestra (01:10–13:10 UTC) si sovrappone a r1 e r2: riportate solo notizie nuove dopo le 07:41 UTC o aggiornamenti sostanziali (Nvidia). Nessun post LinkedIn: r1 ne ha già prodotti 4 oggi. WebFetch non raggiungibile (teleborsa.it non risolto dal DNS della sessione): orari da URL e risultati di ricerca. Esito dei cda Banco BPM e Mps e dell'asta BTP non ancora pubblicati alle 13:10 UTC. Ricerca retroattiva: Financing nel Luxury. Verificata (ora valida) la voce KB sull'uscita di Piccioli da Balenciaga. Nessuna istruzione permanente, nessun documento, nessuna domanda Expert Mode in attesa.",
+  "pushStatus": "rifiutato (403, repository non autorizzato nella sessione)",
+  "startedAt": "2026-11-12T13:10:00Z",
+  "window": {
+   "from": "2026-11-12T01:10:00Z",
+   "to": "2026-11-12T13:10:00Z"
+  }
+ },
+ "focus": [],
+ "news": [
+  {
+   "date": "2026-11-12",
+   "extraUrls": [],
+   "facts": "Fatti: riunioni e calendario Mps (MF). Le perplessità di Tononi sono voci non confermate.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-m1-bpm-mps-cda",
+   "impact": "Esito da verificare nella prossima esecuzione. Se Banco BPM nomina advisor, il negoziato con Crédit Agricole entra in una fase formale.",
+   "links": [],
+   "publishedAt": "2026-11-12T10:22+01:00",
+   "runId": "2026-11-12-m1",
+   "source": "MF-Milano Finanza",
+   "summary": "Oggi si riuniscono i consigli di Banco BPM e Mps. Banco BPM riceve una prima informativa sulla proposta di fusione con Crédit Agricole Italia e potrebbe avviare una fase di approfondimento con advisor prima di esprimersi; MF riporta voci non confermate di perplessità del presidente Massimo Tononi. Mps inizia l'esame del documento dell'OPAS di Intesa Sanpaolo: il comunicato dell'emittente è atteso in un cda successivo, probabilmente tra il 19 e il 20 novembre (periodo di adesione 24 novembre – 22 gennaio).",
+   "tier": "monitor",
+   "timeVerified": "ora dall'URL Milano Finanza (202611121022); esito delle riunioni non ancora pubblicato alle 13:10 UTC",
+   "title": "Banco BPM e Mps, doppio cda sul risiko: prima informativa su Crédit Agricole a Piazza Meda; Mps avvia l'esame dell'OPAS di Intesa, giudizio finale atteso il 19–20 novembre",
+   "tz": "CET",
+   "url": "https://www.milanofinanza.it/news/banco-bpm-e-mps-doppio-cda-sul-risiko-bancario-sul-tavolo-le-operazioni-straordinarie-con-credit-agricole-202611121022556864",
+   "view": "La notizia vera arriverà dal comunicato serale: per ora conta solo che nessuno dei due consigli si pronuncerà nel merito oggi. Interpretazione.",
+   "why": "Aggiornamento di calendario su due dossier già in archivio: fissa le prossime date utili per la posizione dei consigli."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://qz.com/burberry-stock-jumps-sales-beat-expectations-luxury-market-111226",
+    "https://boursorama.com/bourse/actualites/wall-street-suspendue-a-nvidia-le-stoxx-600-paneuropeen-touche-un-record-db8e1c2fc9145da6a0350d35d87db085"
+   ],
+   "facts": "Fatti: ricavi, comparabili, aree, utili e margine (da FashionNetwork e Quartz; comunicato ufficiale non aperto). Il free cash flow del semestre è riportato in modo discordante (deflusso di 147 milioni oppure +125 milioni): non usato. Outlook: crescita dei ricavi e margini in miglioramento nell'esercizio, secondo fonti secondarie.",
+   "focus": [
+    "luxury-ma",
+    "luxury-tech-markets"
+   ],
+   "id": "2026-11-12-m1-burberry-h1",
+   "impact": "Breve periodo: rivalutazione del titolo e confronto con i target price tagliati sul lusso francese. Medio periodo: se il recupero regge, Burberry torna da potenziale target a società con margini in ricostruzione; resta il tema EMEIA e outlet.",
+   "links": [
+    "luxury-financing"
+   ],
+   "publishedAt": "2026-11-12 (mattina, ora UK)",
+   "runId": "2026-11-12-m1",
+   "source": "FashionNetwork; Quartz; Reuters via Boursorama",
+   "summary": "Nelle 26 settimane al 26 settembre 2026 Burberry registra ricavi per 1,098 miliardi di sterline (+6% sia reported sia a cambi costanti) e vendite retail comparabili +4% (+5% nel primo trimestre, +4% nel secondo), sopra il +3% atteso dagli analisti (WSJ, citato da Quartz). Americhe +12%, Cina continentale e Hong Kong +7%, EMEIA -2% per minori flussi turistici e debolezza degli outlet. Utile operativo rettificato 62 milioni (da circa 19), margine 5,7%; utile operativo reported 54 milioni dopo una perdita. Il CEO Joshua Schulman parla di strategia che funziona. In Borsa il titolo sale di circa il 9%.",
+   "tier": "alta",
+   "timeVerified": "data verificata da URL e titoli del 12/11; ora del comunicato non verificata",
+   "title": "Burberry, primo semestre 2026/27: vendite comparabili +4%, quinto trimestre di crescita, utile operativo rettificato triplicato a 62 milioni di sterline; titolo +9%",
+   "tz": "GMT",
+   "url": "https://uk.fashionnetwork.com/news/Burberry-recovery-continues-defies-tough-market-despite-emeia-weakness,1884296.html",
+   "view": "Il dato chiave non è il +4% ma il margine al 5,7%: la leva operativa è ancora tutta da dimostrare, e il flusso di cassa del semestre è riportato in modo contraddittorio dalle fonti. Il mercato sta comprando la direzione, non ancora i numeri. Interpretazione.",
+   "why": "È l'unico grande nome del lusso europeo in crescita organica mentre Kering e LVMH arretrano: conferma che un turnaround basato su prezzo, prodotto core e wholesale può funzionare anche con la Cina debole."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.teleborsa.it/News/2026/11/11/pirelli-e-banca-generali-entrano-nel-ftse-mib-al-posto-di-iveco-e-recordati-269.html"
+   ],
+   "facts": "Fatti: date di ingresso e uscita, variazione di Pirelli alle 12, peso del settore bancario (MF).",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-12-m1-ftsemib-revision",
+   "impact": "Flussi passivi nei prossimi giorni; concentrazione bancaria dell'indice ancora più alta con Banca Generali.",
+   "links": [],
+   "publishedAt": "2026-11-12T12:16+01:00",
+   "runId": "2026-11-12-m1",
+   "source": "MF-Milano Finanza; Teleborsa",
+   "summary": "Da giovedì 12 novembre Pirelli sostituisce Iveco Group nel FTSE MIB; venerdì 13 novembre Banca Generali prende il posto di Recordati. Alle 12 Pirelli guadagna circa il 2,5% a 6,9 euro. Le banche pesano il 37,3% dell'indice.",
+   "tier": "monitor",
+   "timeVerified": "ora dall'URL Milano Finanza; annuncio di Teleborsa dell'11/11",
+   "title": "FTSE MIB: Pirelli entra oggi al posto di Iveco, domani Banca Generali sostituisce Recordati; Pirelli +2,5% a metà giornata",
+   "tz": "CET",
+   "url": "https://www.milanofinanza.it/news/piazza-affari-il-ftse-mib-cambia-volto-rientrano-pirelli-e-banca-generali-al-posto-di-iveco-e-202611121216266115",
+   "view": "Il peso delle banche oltre un terzo dell'indice rende il FTSE MIB sempre più una scommessa sul risiko bancario. Interpretazione.",
+   "why": "Le uscite di Iveco e Recordati riflettono operazioni straordinarie; l'ingresso dei nuovi titoli muove i flussi dei fondi indicizzati."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://www.cnbc.com/2026/11/12/nvidia-boards-crisis-meeting.html",
+    "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html",
+    "https://thenextweb.com/news/nvidia-board-meeting-jensen-huang-ouster-no-decision"
+   ],
+   "facts": "Fatti: assenza di decisione, cali pre-mercato (cifre diverse per orario e fonte), declassamento Bernstein, studio legale incaricato. Stima del -20% = opinione di analisti.",
+   "focus": [
+    "ai-finance"
+   ],
+   "id": "2026-11-12-m1-nvidia-premarket-bernstein",
+   "impact": "Breve periodo: volatilità su semiconduttori e titoli AI (in Europa il comparto tech cede circa lo 0,9%). Medio periodo: possibile effetto sul clima del collocamento Anthropic (pricing atteso il 18/11), di cui Nvidia è investitore nel collocamento privato collegato.",
+   "links": [
+    "global-ma-ecm",
+    "macro-central-banks"
+   ],
+   "publishedAt": "2026-11-12 (mattina ET, circa 07:05 ET = 12:05 UTC)",
+   "runId": "2026-11-12-m1",
+   "source": "CNBC; Yahoo Finance",
+   "summary": "Aggiornamento rispetto a r2. Giovedì mattina (ora USA) il board di Nvidia non ha ancora comunicato alcuna decisione dopo la riunione notturna sul futuro di Jensen Huang. Nel pre-mercato il titolo perde tra il 5,9% (Yahoo Finance, 163,43 dollari) e l'8,1% (CNBC, ore 07:05 ET); i future su S&P 500 e Nasdaq sono in calo. Bernstein ha declassato il titolo a market-perform e tagliato il target price da 400 a 200 dollari. L'indagine indipendente del board è affidata allo studio Wachtell, Lipton, Rosen & Katz. Analisti sentiti da CNBC stimano un ulteriore calo di circa il 20% in caso di rimozione.",
+   "tier": "alta",
+   "timeVerified": "data dall'URL CNBC 2026/11/12; ora 07:05 ET citata nel risultato di ricerca, pagina non aperta",
+   "title": "Nvidia, aggiornamento: ancora nessuna decisione sul CEO; titolo tra -6% e -8% nel pre-mercato, Bernstein dimezza il target a 200 dollari",
+   "tz": "ET",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+   "view": "Il mercato sta prezzando non solo l'uscita di Huang ma l'assenza di un piano di successione pubblico: il taglio del target a metà è un segnale che il premio di valutazione era in larga parte attribuito alla persona. Interpretazione. Nota di trasparenza: Claude è sviluppato da Anthropic, citata qui come società collegata.",
+   "why": "È il primo declassamento di un broker di primo piano legato esplicitamente al rischio di governance, non ai fondamentali: il key-person risk entra nei multipli del titolo più pesante dell'indice e del ciclo di investimento AI."
+  },
+  {
+   "date": "2026-11-12",
+   "extraUrls": [
+    "https://finance.yahoo.com/markets/world-indices/articles/europes-stoxx-600-hits-record-083533950.html",
+    "https://www.teleborsa.it/News/2026/11/12/borse-europee-positive-nonostante-incertezza-nvidia-milano-resta-alla-finestra-133.html"
+   ],
+   "facts": "Fatti: livelli e variazioni con orario. Le variazioni di Siemens differiscono per orario (Reuters mattina +4,4%, Boursorama mezzogiorno circa +2,1%).",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-12-m1-stoxx-record",
+   "impact": "Breve periodo: sostegno al mercato primario europeo (ECM) prima delle festività. Da monitorare l'apertura di Wall Street, legata alla decisione su Huang.",
+   "links": [
+    "ai-finance",
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12T13:04+01:00",
+   "runId": "2026-11-12-m1",
+   "source": "Reuters via Boursorama e Yahoo Finance; Teleborsa",
+   "summary": "Alle 09:26 GMT lo Stoxx 600 sale dello 0,4% a 665,61 punti e il DAX dell'1,1% a un nuovo massimo (Reuters). Alle 13:04 (Parigi) lo Stoxx 600 è ancora +0,40% dopo un record intraday a 666,58 punti. Trainano trimestrali (Burberry +8,8%, Siemens tra +2% e +4,4%); il comparto tecnologico cede circa lo 0,9% con ASML e Infineon. A Milano il FTSE MIB è sui livelli della vigilia, circa 51.991 punti alle 13:57 (Teleborsa).",
+   "tier": "media",
+   "timeVerified": "ora dal titolo Boursorama (13:04 Parigi); dato Reuters alle 09:26 GMT; Teleborsa 13:57 da estratto",
+   "title": "Europa: lo Stoxx 600 tocca un nuovo record (666,58 punti) e il DAX un massimo storico, mentre il tech cede sul caso Nvidia; Milano piatta poco sotto 52.000",
+   "tz": "CET",
+   "url": "https://boursorama.com/bourse/actualites/wall-street-suspendue-a-nvidia-le-stoxx-600-paneuropeen-touche-un-record-db8e1c2fc9145da6a0350d35d87db085",
+   "view": "Un record con il tech negativo è un segnale di rotazione verso industriali e consumi ciclici, più solido di un rialzo trainato da pochi titoli AI. Interpretazione.",
+   "why": "Il mercato europeo separa il rischio idiosincratico Nvidia dal ciclo degli utili: record su base ampia con il tech in calo."
+  }
+ ],
+ "radar": [
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "ai-finance",
+    "global-ma-ecm"
+   ],
+   "note": "Nuovo canale retail oltre al circa 20% di allocazione retail negli USA. Nota: Claude è sviluppato da Anthropic.",
+   "publishedAt": "2026-11-11",
+   "runId": "2026-11-12-m1",
+   "source": "CNBC",
+   "title": "Anthropic apre l'offerta retail in Australia (chiusura 17/11)",
+   "url": "https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html",
+   "id": "2026-11-12-m1-0"
+  },
+  {
+   "date": "2026-11-12",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Annuncio che precede la notizia in finestra.",
+   "publishedAt": "2026-11-11",
+   "runId": "2026-11-12-m1",
+   "source": "Teleborsa",
+   "title": "Teleborsa annuncia la revisione del FTSE MIB (Pirelli e Banca Generali dentro, Iveco e Recordati fuori)",
+   "url": "https://www.teleborsa.it/News/2026/11/11/pirelli-e-banca-generali-entrano-nel-ftse-mib-al-posto-di-iveco-e-recordati-269.html",
+   "id": "2026-11-12-m1-1"
+  }
+ ],
+ "excluded": [
+  {
+   "reason": "I risultati sono del dicembre 2025 (chiusura dell'offerta); nessuna prova di un closing nella finestra.",
+   "title": "JD.com e Ceconomy: 'completata' l'acquisizione del 59,8%"
+  },
+  {
+   "reason": "Nessuna fonte con data e orario del voto: non verificabile.",
+   "title": "Azionisti easyJet approvano l'OPA di Apollo"
+  },
+  {
+   "reason": "Non ancora pubblicati o non trovati nell'indice alle 13:10 UTC.",
+   "title": "Esito dei cda Banco BPM e Mps, asta BTP del 12/11, risultati definitivi Munich Re"
+  },
+  {
+   "reason": "Già coperte da r1; nessun dato di chiusura verificabile in più.",
+   "title": "Asia: chiusure di Nikkei e Hang Seng del 12/11"
+  },
+  {
+   "reason": "Data non attribuibile alla finestra; tema già in KB (kb-dc-refinancing-2027, kb-ing-dc-loans).",
+   "title": "Debito dei data center a rendimenti a due cifre (Bloomberg via Yahoo)"
+  }
+ ],
+ "kb": [],
+ "posts": [],
+ "insights": []
+}
