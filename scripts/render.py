@@ -165,8 +165,9 @@ source: {p['sourceUrl']}
             dump("posts", p["id"], {**p, "date": date})
         for i in d.get("insights", []):
             dump("insights", i["id"], {**i, "date": date})
-        dump("runs", run["id"], {**run, "counts": {"news": len(d.get("news", [])), "radar": len(d.get("radar", [])),
-             "kb": len(d.get("kb", [])), "posts": len(d.get("posts", []))}, "excluded": d.get("excluded", [])})
+        counts = {"news": len(d.get("news", [])), "radar": len(d.get("radar", [])), "kb": len(d.get("kb", [])), "posts": len(d.get("posts", []))}
+        counts.update({k: v for k, v in run.get("counts", {}).items() if k in ("scanned", "shortlisted")})
+        dump("runs", run["id"], {**run, "counts": counts, "excluded": d.get("excluded", [])})
 
 
 if __name__ == "__main__":

@@ -111,7 +111,7 @@ label{display:grid;gap:4px;font-size:13px;color:var(--muted);font-weight:500}
 <script>
 const S={sources:[],directives:[],requests:[],focus:[],news:[],radar:[],kb:[],posts:[],insights:[],runs:[],docs:[],questions:[],meta:null};
 let db=null, assets=null, sample=null, mcp=null, canRun=false, user=null, ready=false, failed=false;
-const RUN_TRIGGER="trig_018nRPRZVcWKiQ3RUxqPoE4h", CCR="Claude Code Remote";
+const RUN_TRIGGER="trig_01QHUFu4zpZdNCphwme38LGC", CCR="Claude Code Remote";
 const CATS=["Italia","Internazionale","Lusso","Deal e private markets","Istituzionale","Consulenza e report","Asia","Tecnologia","Altro"];
 const COLS=["sources","directives","requests","focus","news","radar","kb","posts","insights","runs","docs","questions"];
 const TIER={breaking:"Breaking News",alta:"Alta rilevanza",media:"Media rilevanza",monitor:"Da monitorare"};
@@ -150,7 +150,8 @@ function vDash(){
   <div><span class="eyebrow">Dashboard</span><h1>Stato della ricerca</h1>
   <p class="lede">${lr?`Ultima esecuzione <b>${esc(lr.id)}</b>, finestra ${esc(fmtTime(lr.window.from))} → ${esc(fmtTime(lr.window.to))}.`:"Nessuna esecuzione ancora."}</p></div>
   <div class="kpis">
-    <div class="kpi"><b>${todayNews.length}</b><span>notizie nelle ultime 12 ore</span></div>
+    <div class="kpi"><b>${lr&&lr.counts&&lr.counts.scanned?lr.counts.scanned.toLocaleString("it-IT"):"—"}</b><span>titoli analizzati dai feed</span></div>
+    <div class="kpi"><b>${todayNews.length}</b><span>notizie selezionate (ultime 12 ore)</span></div>
     <div class="kpi"><b>${lr&&lr.counts?lr.counts.radar:0}</b><span>nel radar 12–36 ore</span></div>
     <div class="kpi"><b>${active.length}</b><span>Focus attivi</span></div>
     <div class="kpi"><b>${props.length}</b><span>trend e Focus suggeriti</span></div>
@@ -333,7 +334,7 @@ function vAgent(){
   const reqs=[...S.requests].sort((a,b)=>String(b.at).localeCompare(String(a.at))).slice(0,6);
   const lr=latestRun();
   return `<div class="section">
-  <div><span class="eyebrow">Agente</span><h1>Il tuo analista</h1><p class="lede">L'agente lavora da solo alle 6:40 e alle 8:40 (ora italiana). Qui gli dai istruzioni permanenti e puoi chiedergli una ricerca in qualsiasi momento.</p></div>
+  <div><span class="eyebrow">Agente</span><h1>Il tuo analista</h1><p class="lede">L'agente lavora da solo alle 6:40 e alle 8:40 ogni giorno e alle 15:40 nei giorni feriali (ora italiana). Qui gli dai istruzioni permanenti e puoi chiedergli una ricerca in qualsiasi momento.</p></div>
   <div class="grid2">
   <form class="card" id="runForm">
     <h2>Avvia ricerca ora</h2>

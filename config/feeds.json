@@ -1,0 +1,20 @@
+{
+ "_note": "Feed RSS diretti e ricerche Google News fisse usati da scripts/collect.py. Le fonti aggiunte dall'utente nella dashboard sono incluse automaticamente (ricerca site: su Google News e campo rss).",
+ "feeds": [
+  {"name": "Il Sole 24 Ore Finanza", "url": "https://www.ilsole24ore.com/rss/finanza.xml"},
+  {"name": "Il Sole 24 Ore Economia", "url": "https://www.ilsole24ore.com/rss/economia.xml"},
+  {"name": "Il Sole 24 Ore Moda", "url": "https://www.ilsole24ore.com/rss/moda.xml", "focus": ["luxury-ma", "luxury-financing"]},
+  {"name": "ANSA Economia", "url": "https://www.ansa.it/sito/notizie/economia/economia_rss.xml"},
+  {"name": "WWD", "url": "https://wwd.com/feed/", "focus": ["luxury-ma", "luxury-tech-markets"]},
+  {"name": "WWD Business", "url": "https://wwd.com/business-news/feed/", "focus": ["luxury-ma", "luxury-financing"]},
+  {"name": "PR Newswire M&A", "url": "https://www.prnewswire.com/rss/financial-services-latest-news/acquisitions-mergers-and-takeovers-list.rss", "focus": ["global-ma-ecm", "pe-private-credit"]},
+  {"name": "Business Wire M&A", "url": "https://feed.businesswire.com/rss/home/?rss=G1QFDERJXkJeEFtRWA==", "focus": ["global-ma-ecm"]},
+  {"name": "BCE comunicati", "url": "https://www.ecb.europa.eu/rss/press.html", "focus": ["macro-central-banks"]},
+  {"name": "Fed comunicati", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "focus": ["macro-central-banks"]}
+ ],
+ "google_news_queries": [
+  "site:ft.com", "site:reuters.com business", "site:reuters.com deals", "site:bloomberg.com", "site:wsj.com", "site:apnews.com business",
+  "site:voguebusiness.com", "site:cnbc.com", "site:nikkei.com", "site:caixinglobal.com", "site:scmp.com business",
+  "acquisition agreed billion", "private credit", "leveraged loan refinancing", "IPO pricing", "OPA offerta pubblica", "luxury group stake"
+ ]
+}
