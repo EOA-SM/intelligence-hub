@@ -1,0 +1,812 @@
+{
+ "run": {
+  "counts": {
+   "kb": 27,
+   "news": 23,
+   "posts": 4,
+   "radar": 8,
+   "scanned": 1854,
+   "shortlisted": 191
+  },
+  "finishedAt": "2026-11-13T05:57:31Z",
+  "id": "2026-11-13-r1",
+  "kind": "daily",
+  "notes": "PUSH RIFIUTATO (sesta esecuzione di fila): il proxy git nega l'accesso (403) perché EOA-SM/intelligence-hub non è tra i repository autorizzati della sessione; add_repo non disponibile. Il commit ddc3c88 \"Daily Intelligence 2026-11-13-r1\" esiste solo nel container; il database è aggiornato e la sincronizzazione notturna ricostruirà l'archivio. Per risolvere: aggiungere il repository alle fonti della routine/ambiente intelligence-hub. — Esecuzione r1 (06:40), priorità Asia (Tokyo, Hong Kong, Shanghai) e notte di New York. Finestra 2026-11-12T17:41Z → 2026-11-13T05:41Z. Raccolta collect.py riuscita (con 7 ricerche extra su Asia e chiusura USA): 246 richieste, 6.453 titoli, 1.854 in finestra, lista ristretta di 191 + 60 radar letta per intero; scansione aggiuntiva per parole chiave (Asia, lusso, banche italiane) su tutti i 1.854 titoli in finestra. Rete: WebFetch bloccato su Reuters e Repubblica; via curl leggibili solo Yahoo Finance, WWD, Milano Finanza, Il Sole 24 Ore, ANSA (solo metadati), Teleborsa e PR Newswire. I link di Google News sono stati convertiti negli URL originali. Dove il testo non era leggibile i fatti vengono da titoli dei feed e da WebSearch, come indicato in ogni notizia. Notizie: 23 (1 breaking, 13 alta, 7 media, 2 monitor). Nessun duplicato con le esecuzioni del 12/11: Banco BPM–Crédit Agricole è un aggiornamento sostanziale (esito del cda); Anthropic aggiorna la voce KB esistente con la sovrascrizione. Copertura Focus: luxury-financing senza notizie nuove verificabili in finestra (Castiglion del Bosco e Mangia's/Blackstone solo titoli, esclusi); la notizia Reuters dell'11/11 sull'iniezione di 100 milioni in Valentino è in radar e in KB. luxury-ma coperto da Frasers–Hugo Boss (marchio premium); luxury-tech-markets da segnali sulla domanda asiatica (solo titoli). Gli altri Focus hanno almeno una notizia. Ricerca retroattiva a rotazione: M&A nel Luxury (Prada–Versace, Armani, Valentino–Kering–Mayhoola, deleveraging Kering); dossier focus/luxury-ma.md aggiornato. Verifiche KB: kb-quadrivio-plan ricontrollata, resta da verificare. LinkedIn: 4 bozze in inglese (questa settimana già 2 post in italiano). Nessuna istruzione permanente, nessun documento e nessuna domanda Expert Mode in attesa. Nota di trasparenza: Claude è sviluppato da Anthropic (notizia sull'IPO Anthropic e post p3).",
+  "pushStatus": "rifiutato (403, repository non autorizzato nella sessione)",
+  "startedAt": "2026-11-13T05:41:00Z",
+  "window": {
+   "from": "2026-11-12T17:41:00Z",
+   "to": "2026-11-13T05:41:00Z"
+  }
+ },
+ "focus": [],
+ "news": [
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://finance.yahoo.com/markets/stocks/articles/cisco-systems-csco-said-q1-011431448.html",
+    "https://finance.yahoo.com/markets/stocks/articles/applied-materials-amat-said-q4-001432681.html",
+    "https://www.reuters.com/business/cerebras-raises-annual-sales-forecast-strong-ai-linked-demand-2026-11-12/"
+   ],
+   "facts": "Cifre Cisco dal comunicato e dalla sintesi della conference call (MarketBeat via Yahoo Finance); Applied Materials dalla sintesi della call; Cerebras da Automated Insights/Zacks e dal titolo Reuters.",
+   "focus": [
+    "ai-finance"
+   ],
+   "id": "2026-11-13-ai-capex-earnings",
+   "impact": "Breve periodo: sostegno ai titoli di filiera dopo il caso Nvidia. Medio periodo: domanda superiore all'offerta fino al 2027–2028, quindi fabbisogno di finanziamento della capacità ancora alto.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-12T21:05Z",
+   "runId": "2026-11-13-r1",
+   "source": "Cisco (PR Newswire); Reuters; Yahoo Finance (MarketBeat); Automated Insights",
+   "summary": "Cisco, primo trimestre fiscale 2027: ricavi record di 18,5 miliardi di dollari (+24%), EPS rettificato 1,40 dollari (+40%); guidance annua alzata a 74,8–75,8 miliardi; previsione di ricavi da infrastruttura AI per gli hyperscaler portata a 9 miliardi da 7,5. In conference call il CEO Robbins ha definito l'esposizione ai neocloud 'relativamente immateriale' e la politica sul rischio di credito prudente. Applied Materials, quarto trimestre fiscale: ricavi 10,4 miliardi (+53%), EPS non-GAAP 4,16 dollari; prevede una crescita della spesa in attrezzature per wafer superiore al 30% nel 2027 e indica la capacità produttiva come vincolo. Cerebras: ricavi del trimestre 210,8 milioni, guidance annua 940–960 milioni; il titolo è salito del 17%.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Cisco alza la guidance 2027 (ricavi AI da hyperscaler a 9 miliardi) e definisce 'immateriale' l'esposizione ai neocloud; Applied Materials: domanda di attrezzature +30% nel 2027, limiti di capacità",
+   "tz": "ET",
+   "url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html",
+   "view": "Due fornitori, due approcci: Cisco limita il credito ai clienti più fragili, Nvidia li ha finanziati. Se il mercato inizia a premiare il primo modello, il vendor financing diventerà più caro.",
+   "why": "I conti dei fornitori confermano che la spesa AI continua; il commento di Cisco sul credito ai neocloud è un raro dato esplicito sul rischio di controparte."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://finance.yahoo.com/markets/stocks/articles/ai-trade-barometer-anthropic-ipo-231418743.html",
+    "https://finance.yahoo.com/markets/article/bond-king-jeffrey-gundlach-on-buying-anthropic-debt-makes-me-want-to-break-out-in-hives-174149093.html"
+   ],
+   "facts": "Sovrascrizione da Bloomberg via Reuters e Yahoo Finance (testo letto). Cifre di raccolta, ricavi e valutazione dalla documentazione come riportata da Yahoo Finance; quota Amazon da GuruFocus (calcolo di terzi). Un titolo investingLive su una valutazione 'intorno a 1.000 miliardi' contrasta con la documentazione ed è stato escluso. Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "focus": [
+    "global-ma-ecm",
+    "ai-finance"
+   ],
+   "id": "2026-11-13-anthropic-ipo-demand",
+   "impact": "Breve periodo: possibile prezzo nella parte alta o sopra la forchetta e allocazioni ridotte per i nuovi investitori. Medio periodo: il risultato del debutto influenzerà finestra e valutazioni delle altre IPO AI (Nscale, OpenAI).",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-12T21:00Z",
+   "runId": "2026-11-13-r1",
+   "source": "Bloomberg; Reuters; Yahoo Finance (Stocktwits); GuruFocus",
+   "summary": "Secondo Bloomberg (12/11 sera), gli ordini per l'IPO di Anthropic sono circa sei volte le azioni disponibili. I collocatori (Goldman Sachs e Morgan Stanley capofila, con altre 20 banche) hanno indicato che l'allocazione favorirà i soci esistenti; alcuni investitori istituzionali stanno già cedendo parte delle allocazioni attese e i detentori di azioni pre-IPO commercializzano quote tramite SPV. Dati della documentazione: fino a 64,4 miliardi di dollari dall'IPO più 26 miliardi di collocamento privato contestuale; ricavi annualizzati di 81 miliardi al 31/10; valutazione obiettivo pienamente diluita di circa 1.400 miliardi; pricing il 18/11 e debutto al Nasdaq il 19/11 (ticker ANT). GuruFocus calcola la quota di Amazon in circa 271,8 miliardi al prezzo massimo di 78 dollari. Jeffrey Gundlach (DoubleLine) ha detto di non voler comprare debito Anthropic e che un rating investment grade non sarebbe giustificato. Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS); articolo Yahoo Finance letto (datePublished 2026-11-12T23:14Z)",
+   "title": "IPO Anthropic: ordini pari a circa sei volte le azioni disponibili (Bloomberg); priorità agli azionisti esistenti nell'allocazione",
+   "tz": "ET",
+   "url": "https://www.reuters.com/legal/transactional/anthropics-ipo-is-about-six-times-oversubscribed-bloomberg-news-reports-2026-11-12/",
+   "view": "Il dettaglio più utile per chi lavora sui deal è la rivendita delle allocazioni prima del debutto e l'uso di SPV per le quote pre-IPO: segnali di un mercato secondario già molto attivo. Il commento di Gundlach ricorda che equity e credito leggono lo stesso emittente in modo diverso.",
+   "why": "Domanda di sei volte su un'offerta di queste dimensioni indica che il mercato primario è aperto per gli emittenti AI di grande scala, nonostante il caso Nvidia."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.reuters.com/world/asia-pacific/chinese-ai-satellite-maker-adaspace-set-open-lower-hong-kong-debut-2026-11-13/",
+    "https://www.bloomberg.com/news/articles/2026-11-13/china-chipmaker-sigmastar-said-to-plan-300-million-hk-listing",
+    "https://www.japantimes.co.jp/business/2026/11/13/companies/smartnews-ipo/"
+   ],
+   "facts": "Notizie viste dai titoli dei feed (Reuters, Bloomberg, The Japan Times, MarketScreener); importi dai titoli. Testi non letti (domini non raggiungibili dalla rete della sessione).",
+   "focus": [
+    "global-ma-ecm",
+    "ai-finance"
+   ],
+   "id": "2026-11-13-asia-ipo-pipeline",
+   "impact": "Breve periodo: performance dei debutti come termometro per le prossime quotazioni a Hong Kong. Medio periodo: le IPO 'down round' come SmartNews diventano un'uscita per venture capital e PE.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-13T05:24Z",
+   "runId": "2026-11-13-r1",
+   "source": "Reuters; Bloomberg; MarketScreener; The Japan Times",
+   "summary": "Nella notte asiatica: xFusion, produttore cinese di server AI, ha superato l'esame per un'IPO da 1,2 miliardi di dollari a Shenzhen (Reuters, 05:24 UTC). Adaspace, produttore cinese di satelliti con funzioni AI, ha raccolto netti 651,8 milioni di HK$ ed è sceso al debutto a Hong Kong (Reuters, 01:30 UTC). Il produttore di chip SigmaStar prepara una quotazione a Hong Kong da circa 300 milioni di dollari (Bloomberg, 02:11 UTC). SmartNews cerca 11,2 miliardi di yen con un'IPO a Tokyo dopo un taglio dell'80% della valutazione (The Japan Times, 01:42 UTC).",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "IPO in Asia: xFusion (server AI) ottiene il via libera per 1,2 miliardi a Shenzhen, Adaspace scende al debutto a Hong Kong, SigmaStar prepara 300 milioni, SmartNews a Tokyo dopo un taglio dell'80% della valutazione",
+   "tz": "CST/HKT/JST",
+   "url": "https://www.reuters.com/world/asia-pacific/chinese-ai-server-maker-xfusion-clears-review-12-billion-shenzhen-ipo-2026-11-13/",
+   "view": "Il taglio dell'80% di SmartNews è il dato più istruttivo: l'uscita in borsa avviene, ma a un prezzo che riconosce la distanza tra le valutazioni private del 2021 e quelle pubbliche di oggi.",
+   "why": "Il calendario mostra la doppia velocità dell'ECM: la Cina continua a quotare la filiera AI domestica, mentre le società con valutazioni private gonfiate tornano in borsa a sconto."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.wsj.com/finance/stocks/nikkei-rises-1-1-led-by-chip-stocks-eb2ed881",
+    "https://www.thestandard.com.hk/finance/article/348416/Hang-Seng-edges-lower-by-222-points-by-midday-Lenovo-drops-5-percent",
+    "https://m.economictimes.com/markets/us-stocks/news/japans-nikkei-set-for-biggest-weekly-gain-in-five-months-as-ai-optimism-lifts-sentiment/articleshow/135789823.cms",
+    "https://investinglive.com/central-banks/pboc-sets-usd-cny-reference-rate-for-today-at-6-7152-vs-estimate-at-6-6756/"
+   ],
+   "facts": "Livelli e variazioni sono istantanee di testate diverse a orari diversi, non chiusure; le cifre divergono tra fonti. Il fixing PBoC e la stima vengono da investingLive e FXStreet (titoli).",
+   "focus": [
+    "macro-central-banks",
+    "ai-finance"
+   ],
+   "id": "2026-11-13-asia-session",
+   "impact": "Breve periodo: la filiera giapponese e taiwanese tiene, Hong Kong soffre (tecnologia cinese, timori su export di chip). Medio periodo: il fixing più debole delle attese segnala che Pechino frena l'apprezzamento dello yuan.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-13T03:36Z",
+   "runId": "2026-11-13-r1",
+   "source": "investingLive; WSJ; Reuters via Economic Times; The Standard; MLQ.ai; Yahoo Finance",
+   "summary": "Rilevazioni intraday del 13/11 (non chiusure): il Nikkei 225 guadagna tra l'1,1% (WSJ, 00:19 UTC) e l'1,4% (investingLive, 03:36 UTC), guidato dai titoli dei semiconduttori; secondo Reuters il Nikkei va verso il maggior rialzo settimanale da cinque mesi. Il Kospi apre in rialzo di circa il 2–3% (circa 5.500 punti secondo MLQ.ai) e poi ripiega verso la parità. L'Hang Seng scende sotto 24.000 punti all'apertura e a metà seduta perde 222 punti (The Standard), circa -0,9% intorno a 23.800, con Lenovo -5%. Sul continente il sentiment resta negativo nonostante gli acquisti di fondi statali (SCMP, indicatore Morgan Stanley). Il fixing PBoC è stato fissato a 6,7152 per dollaro contro stime di 6,6756.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Asia, venerdì mattina: Nikkei +1,1–1,4% trainato dai chip, Kospi apre a +2–3% e ripiega, Hang Seng sotto quota 24.000 (-0,9% a metà seduta)",
+   "tz": "JST/HKT",
+   "url": "https://investinglive.com/stock-market-update/asian-stocks-steady-as-nikkei-gains-1-4-hang-seng-slips-on-nvidia-leadership-fallout/",
+   "view": "Il mercato premia i fornitori di attrezzature e memorie (ordini confermati da Applied Materials) e penalizza chi dipende dall'accesso ai chip USA: la divergenza Tokyo–Hong Kong è coerente con questa lettura.",
+   "why": "È la prima seduta asiatica completa dopo le dimissioni di Huang e la chiusura di Wall Street: misura quanto il rischio Nvidia si trasmette alla filiera dei chip."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.repubblica.it/en/economy/2026/11/13/news/banco_bpm_open_to_merger_with_credit_agricole_italia_castagna_given_the_go-ahead_to_negotiate-425719720/",
+    "https://www.quotidiano.net/economia/banco-bpm-apre-alla-fusione-d676363e"
+   ],
+   "facts": "Fatti: mandato a negoziare e richiesta di termini adeguati (Reuters 18:03 UTC, MarketScreener 18:11 UTC). Termini della proposta da esecuzioni precedenti e da riprese (Il Sole 24 Ore, MLQ.ai); 'premio e più tutele' dal titolo di Quotidiano Nazionale (articolo non letto: dominio non raggiungibile). Aggiornamento sostanziale della notizia 2026-11-12-m1-bpm-mps-cda (esito del cda allora non noto).",
+   "focus": [
+    "global-ma-ecm",
+    "eu-regulation"
+   ],
+   "id": "2026-11-13-bpm-ca-mandate",
+   "impact": "Breve periodo: negoziato su concambio, governance e tutele delle minoranze; possibile richiesta di un premio più alto. Medio periodo: whitewash in assemblea e condizioni del governo; Anima e il risparmio gestito restano un tassello da chiarire.",
+   "links": [
+    "eu-regulation"
+   ],
+   "publishedAt": "2026-11-12T18:03Z",
+   "runId": "2026-11-13-r1",
+   "source": "Reuters; MarketScreener; la Repubblica; Quotidiano Nazionale",
+   "summary": "Il cda di Banco BPM del 12/11 ha autorizzato l'amministratore delegato Giuseppe Castagna ad avviare il negoziato con Crédit Agricole sulla proposta di fusione con Crédit Agricole Italia. Secondo Reuters, la banca chiede che i termini riflettano il fatto che l'operazione toglierebbe agli azionisti l'appeal speculativo (un'eventuale futura OPA) e sposterebbe di fatto il controllo verso il gruppo francese; Quotidiano Nazionale parla di richiesta di un premio e di maggiori tutele per gli azionisti. Termini della proposta già noti (9–11/11): Crédit Agricole, oggi al 29,6%, salirebbe a circa il 45% dell'entità combinata; rapporto di cambio che riflette un premio del 20% sulle stime 2027; dividendo straordinario da 1 miliardo; chiusura attesa nel secondo semestre 2027; la banca resterebbe quotata a Milano con maggioranza di consiglieri indipendenti. Serve il voto con procedura whitewash e l'esame del governo (golden power).",
+   "tier": "breaking",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Banco BPM apre alla fusione con Crédit Agricole Italia: il cda dà mandato a Castagna di negoziare, ma chiede che i termini compensino la perdita dell'appeal speculativo",
+   "tz": "CET",
+   "url": "https://www.reuters.com/legal/transactional/banco-bpm-says-any-credit-agricole-deal-would-need-reflect-loss-takeover-appeal-2026-11-12/",
+   "view": "La posizione del cda è coerente con la teoria del premio di controllo: senza OPA, la compensazione deve arrivare dal concambio o dal dividendo. La partita reale sarà la soglia del 45% e la governance post-fusione, più che il 20% di premio.",
+   "why": "È il primo passo formale verso un'aggregazione che creerebbe il terzo gruppo bancario italiano, senza un'OPA: il prezzo del controllo diventa la variabile negoziale."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [],
+   "facts": "Articolo MF letto per intero (pubblicato 22:55 CET). Comunicato BCE originale non consultato.",
+   "focus": [
+    "eu-regulation",
+    "macro-central-banks"
+   ],
+   "id": "2026-11-13-ecb-srep-liquidity",
+   "impact": "Breve periodo: nessun effetto diretto sui requisiti. Medio periodo: maggiore attenzione a concentrazione della raccolta e piani di finanziamento, rilevanti nelle aggregazioni bancarie.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12T21:55Z",
+   "runId": "2026-11-13-r1",
+   "source": "MF-Milano Finanza",
+   "summary": "La Vigilanza BCE ha completato la revisione dello SREP con il capitolo sulla liquidità. Dal 2027 la valutazione si baserà su tre elementi: rischio a breve termine, sostenibilità della raccolta e controlli del rischio, esaminati in modo congiunto. I team di vigilanza potranno concentrarsi sui rischi più rilevanti e fare valutazioni pluriennali invece che annuali; cambia la formula dei punteggi automatici. Le procedure SREP resteranno in vigore almeno fino al 2030, con aggiornamenti al massimo ogni tre anni.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS); articolo MF letto (article:published_time 2026-11-12T22:55+01:00)",
+   "title": "BCE: completata la revisione dello SREP con la nuova metodologia sulla liquidità, in vigore dal 2027 e stabile almeno fino al 2030",
+   "tz": "CET",
+   "url": "https://www.milanofinanza.it/news/bce-controlli-piu-snelli-sulla-liquidita-delle-banche-la-vigilanza-completa-cosi-la-revisione-degli-202611121852568857",
+   "view": "È una semplificazione coerente con la linea di riduzione degli oneri di vigilanza; per chi segue il risiko bancario conta soprattutto la valutazione congiunta della sostenibilità della raccolta.",
+   "why": "La liquidità è uno dei quattro pilastri dello SREP: regole più stabili e valutazioni pluriennali riducono l'incertezza per le banche che pianificano fusioni e raccolta."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.bloomberg.com/news/articles/2026-11-12/fed-s-daly-says-more-rate-hikes-likely-needed-to-cool-inflation",
+    "https://www.reuters.com/business/feds-williams-says-central-bank-has-work-do-get-inflation-back-target-2026-11-13/",
+    "https://www.nytimes.com/2026/11/12/business/economy/fed-warsh-october.html"
+   ],
+   "facts": "Citazioni di Goolsbee lette sull'articolo Yahoo Finance. Daly e Williams: solo titoli Bloomberg, Reuters, WSJ e FXStreet. Riunione di ottobre 2027: titoli CNBC, NYT e WSJ, contesto da riprese dell'annuncio di ottobre.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-13-fed-speakers",
+   "impact": "Breve periodo: il rialzo di dicembre è dato per scontato; il dibattito è su 25 o 50 pb. Medio periodo: una riunione in meno nel 2027 riduce le occasioni di correzione e aumenta il peso delle comunicazioni intermedie.",
+   "links": [],
+   "publishedAt": "2026-11-12T18:37Z",
+   "runId": "2026-11-13-r1",
+   "source": "Yahoo Finance; Bloomberg; Reuters; CNBC; NYT; WSJ",
+   "summary": "Goolsbee (Chicago Fed, a Yahoo Finance Invest): 'siamo in un momento precario'; i prezzi di servizi e sanità restano alti per ragioni non legate a dazi o petrolio; l'inflazione da data center per ora 'resta nella corsia' dell'AI. Il CPI di ottobre è salito dello 0,4% (attese 0,3%), il core dello 0,3%. Daly (San Francisco Fed): secondo Bloomberg (19:36 UTC) servono probabilmente altri rialzi; secondo Reuters (21:03 UTC) la Fed ha tempo per calibrarli. Williams (New York Fed, 00:53–01:35 UTC): inflazione 'troppo alta', c'è ancora 'lavoro da fare'. Il 12/11 la Fed ha indicato che la riunione di ottobre 2027 non prevederà un voto sui tassi (sessione dedicata alla strategia, come annunciato dal presidente Warsh a ottobre).",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Fed: Goolsbee parla di 'momento precario', Daly e Williams vedono altri rialzi; la riunione di ottobre 2027 sarà senza voto sui tassi",
+   "tz": "ET",
+   "url": "https://finance.yahoo.com/economy/policy/article/chicago-feds-austan-goolsbee-were-at-a-precarious-moment-with-inflation-183700943.html",
+   "view": "Il messaggio comune è che il lavoro non è finito; la differenza tra Daly ('c'è tempo') e Goolsbee ('precario') riguarda il ritmo, non la direzione.",
+   "why": "Tre membri influenti, uno dei quali votante permanente (Williams), confermano la direzione restrittiva: il costo del capitale per i rifinanziamenti 2027 continua a salire."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://finance.yahoo.com/markets/stocks/articles/gpn-stock-track-worst-day-191826785.html",
+    "https://www.teleborsa.it/News/2026/11/12/global-payments-scambia-in-rosso-a-new-york-271_TLB-1LINER.html"
+   ],
+   "facts": "Motivazione e quota GTCR da Reuters via Yahoo Finance (testo letto, 19:18 UTC); variazione di borsa da Teleborsa; debito netto da commenti di fine ottobre (William Blair).",
+   "focus": [
+    "pe-private-credit",
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-13-gpn-pe-walkaway",
+   "impact": "Breve periodo: pressione sul titolo e sui comparabili (Fiserv, PayPal in calo). Medio periodo: gli sponsor preferiranno operazioni più piccole, carve-out o strutture con equity di co-investitori.",
+   "links": [
+    "macro-central-banks"
+   ],
+   "publishedAt": "2026-11-12T18:37Z",
+   "runId": "2026-11-13-r1",
+   "source": "Reuters; Yahoo Finance (Stocktwits); Teleborsa",
+   "summary": "Secondo Reuters (fonti), Clayton Dubilier & Rice e GTCR hanno sospeso i colloqui per acquisire Global Payments: le discussioni erano in fase iniziale e non sono avanzate soprattutto per la difficoltà di strutturare un take-private di questa dimensione; non è escluso che riprendano o che emerga un altro acquirente. GTCR è il maggiore azionista esterno con circa il 15%. Il titolo è sceso fino a circa il 12% nel pomeriggio (Teleborsa: -10,43% alle 20:00 CET). Le indiscrezioni sul take-private erano emerse a fine ottobre; all'epoca William Blair indicava i circa 22 miliardi di debito netto come possibile ostacolo, soprattutto con tassi in salita.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "CD&R e GTCR abbandonano le trattative per il take-private di Global Payments: 'difficile da strutturare per dimensione'; titolo fino a -12%",
+   "tz": "ET",
+   "url": "https://www.reuters.com/world/cdr-gtcr-drop-pursuit-global-payments-sources-say-2026-11-12/",
+   "view": "La motivazione 'dimensione' più che 'prezzo' è il dato chiave: indica che il vincolo è il debito disponibile, non la valutazione.",
+   "why": "È un segnale concreto sul limite di capacità del mercato LBO: con tassi in salita, i take-private da decine di miliardi diventano difficili da finanziare."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://wwd.com/business-news/human-resources/grieder-hugo-boss-ceo-frasers-epstein-make-ashley-1239413637/"
+   ],
+   "facts": "Fatti dall'articolo Reuters letto via Yahoo Finance (17:59 UTC) e dalla sintesi WWD (19:29 UTC). Hugo Boss è un marchio premium più che di lusso: rilevante per il Focus come caso di M&A nel fashion europeo.",
+   "focus": [
+    "luxury-ma"
+   ],
+   "id": "2026-11-13-hugo-boss-frasers-ceo",
+   "impact": "Breve periodo: integrazione commerciale con la piattaforma Frasers. Medio periodo: possibile delisting o operazioni sul capitale; attenzione ai diritti delle minoranze e alle clausole di cambio di controllo nel debito.",
+   "links": [
+    "luxury-financing"
+   ],
+   "publishedAt": "2026-11-12T17:59Z",
+   "runId": "2026-11-13-r1",
+   "source": "Reuters via Yahoo Finance; WWD; FashionNetwork",
+   "summary": "Hugo Boss ha comunicato il 12/11 che il CEO Daniel Grieder lascerà la società su sua richiesta, con effetto dal 1° gennaio 2027; gli succederà David Epstein, dal 2024 responsabile delle partnership con i marchi di Frasers Group (segmenti Sport, Premium e Luxury). Frasers, il gruppo britannico controllato da Mike Ashley, ha preso il controllo di maggioranza in ottobre portando la quota sopra il 50%, mesi dopo un'offerta di acquisizione da 2 miliardi di euro non andata a buon fine; a settembre il CEO di Frasers Michael Murray era diventato presidente del consiglio di sorveglianza.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS); articoli Reuters (Yahoo) e WWD letti",
+   "title": "Hugo Boss: Frasers, ora azionista di maggioranza, installa il suo manager David Epstein come CEO dal 2027; Grieder lascia",
+   "tz": "CET",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/frasers-executive-david-epstein-becomes-175928793.html",
+   "view": "Il modello Frasers (quote crescenti e poi controllo della governance) è un'alternativa all'OPA da monitorare anche nel lusso europeo, dove molti gruppi hanno flottante ridotto.",
+   "why": "È un caso di controllo acquisito per accumulo di quote dopo un'offerta fallita: il nuovo azionista prende la gestione senza un'OPA totalitaria."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [],
+   "facts": "Articolo letto per intero (pubblicato 23:12 CET). La società ha anche ricordato l'improvvisa scomparsa dell'amministratore delegato Roberto Zoia.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-13-igd-9m",
+   "impact": "Breve periodo: titolo in rialzo dell'1,86% il 12/11. Medio periodo: il percorso verso LTV 40% e l'outlook positivo aprono a un rifinanziamento a condizioni migliori.",
+   "links": [],
+   "publishedAt": "2026-11-12T22:12Z",
+   "runId": "2026-11-13-r1",
+   "source": "Il Sole 24 Ore",
+   "summary": "Igd (centri commerciali, segmento Star) chiude i nove mesi 2026 con utile netto di gruppo di 28,6 milioni (17,6 un anno prima) e FFO di 36,6 milioni (+17,7%), grazie soprattutto a oneri finanziari ricorrenti più bassi. Guidance FFO 2026 alzata ad almeno 47 milioni. Loan to value al 42,9%, obiettivo vicino al 40% entro fine 2027; costo medio del debito al 5%, contenuto dalle coperture nonostante il rialzo dei tassi; il 21/10 Fitch ha confermato il rating BBB- e alzato l'outlook a positivo. Prosegue la cessione degli asset rumeni (9 su 15 venduti per 35,6 milioni).",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS); articolo letto (datePublished 2026-11-12T23:12+01:00)",
+   "title": "Igd: nove mesi in crescita e guidance FFO alzata; LTV al 42,9%, costo medio del debito al 5%, Fitch BBB- con outlook positivo",
+   "tz": "CET",
+   "url": "https://www.ilsole24ore.com/art/igd-9-mesi-salgono-utili-e-ricavi-affitti-si-alza-anche-guidance-e-l-outlook-e-positivo-AJxTauEC",
+   "view": "Il dato da guardare è il costo del debito al 5% grazie alle coperture: quando le coperture scadranno, il confronto con i tassi di mercato dirà quanto è solido il miglioramento.",
+   "why": "È un esempio italiano di come coperture e cessioni sostengano un emittente immobiliare in una fase di tassi crescenti."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://it.marketscreener.com/notizie/intesa-critica-l-italia-per-i-prelievi-sulle-banche-previsti-dal-bilancio-2027-e-afferma-che-la-bce-ce785ed8d08af627",
+    "https://www.ansa.it/sito/notizie/economia/2026/11/12/dal-governo-norme-sudamericane-e-scontro-messina-meloni_66cb92ca-cf90-4cae-a644-923b05b820c5.html"
+   ],
+   "facts": "Citazioni di Messina dal titolo FT e da MarketScreener; repliche da ANSA (descrizione dell'articolo). L'importo di 5,9 miliardi viene da riprese Reuters; altre fonti indicano cifre pluriennali diverse. Nessuna azione della BCE è stata annunciata.",
+   "focus": [
+    "eu-regulation",
+    "macro-central-banks"
+   ],
+   "id": "2026-11-13-intesa-levy-sovereign",
+   "impact": "Breve periodo: possibili modifiche al testo in Parlamento; pressione sui titoli bancari. Medio periodo: se le banche riducessero i BTP, aumenterebbe la dipendenza da investitori esteri e il rischio di spread.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12T18:49Z",
+   "runId": "2026-11-13-r1",
+   "source": "Financial Times; MarketScreener (Reuters); ANSA",
+   "summary": "In audizione parlamentare il 12/11 il CEO di Intesa Sanpaolo Carlo Messina ha criticato il prelievo sul settore finanziario previsto dalla legge di bilancio 2027 (circa 5,9 miliardi secondo riprese Reuters), definendolo un approccio 'sudamericano' alla gestione del debito pubblico e avvertendo che la BCE potrebbe chiedere alle banche italiane di ridurre l'esposizione ai titoli di Stato (FT, 18:49 UTC). La premier Meloni ha risposto che si tratta di 'una scelta di giustizia'; il ministro Giorgetti ha rivendicato la sua 'politica asburgica' (ANSA, 20:14 UTC). La Banca d'Italia aveva indicato che la misura ridurrebbe la crescita del debito nel 2027 ma potrebbe pesare sugli utili 2026 degli intermediari.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Messina (Intesa) contro il contributo delle banche nella manovra 2027: 'norme sudamericane', la BCE potrebbe chiedere di ridurre i titoli di Stato; Meloni: 'scelta di giustizia'",
+   "tz": "CET",
+   "url": "https://www.ft.com/content/6e27b96d-cb31-4e1a-bb1c-46816be25983",
+   "view": "L'avvertimento sulla BCE è un argomento negoziale, non un'azione annunciata; resta però plausibile che la vigilanza guardi con più attenzione alla concentrazione sovrana se i prelievi diventano ricorrenti.",
+   "why": "Lo scontro tra la prima banca italiana e il governo tocca il legame banche–debito sovrano, cioè il canale con cui la politica fiscale arriva al costo del credito per le imprese."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://finance.biggo.com/news/2c67dae8-6b0b-4f51-b348-3d5703144811"
+   ],
+   "facts": "Fatti dal 6-K come riportati dai risultati di ricerca; il 59,8% era noto da dicembre 2025, il fatto nuovo è il closing. Rilevanza per il lusso solo indiretta (canali di distribuzione).",
+   "focus": [
+    "global-ma-ecm",
+    "luxury-tech-markets"
+   ],
+   "id": "2026-11-13-jd-ceconomy-closing",
+   "impact": "Breve periodo: delisting e integrazione della logistica. Medio periodo: precedente per altre acquisizioni cinesi in Europa nel retail e nei marchi di consumo.",
+   "links": [
+    "eu-regulation"
+   ],
+   "publishedAt": "2026-11-13T01:06Z",
+   "runId": "2026-11-13-r1",
+   "source": "JD.com (Form 6-K, SEC); BigGo Finance; Crypto Briefing",
+   "summary": "Secondo il Form 6-K datato 12/11, JD.com ha completato l'offerta pubblica volontaria su Ceconomy AG acquisendo il 59,8% di azioni e diritti di voto per un corrispettivo totale di 1.335 milioni di euro, dopo le autorizzazioni antitrust, sugli investimenti esteri e sulle sovvenzioni estere UE. Con la quota del partner Convergenta la posizione congiunta è dell'85,2%; Ceconomy viene consolidata nei conti di JD.com ed è possibile un delisting a breve.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "JD.com completa l'acquisizione del 59,8% di Ceconomy (MediaMarkt) per 1,335 miliardi di euro dopo tutte le autorizzazioni UE",
+   "tz": "CET/CST",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001549802/000119312526456897/d114554dex991.htm",
+   "view": "Il fatto che l'operazione abbia superato l'esame sulle sovvenzioni estere è il dato utile per chi assiste acquirenti asiatici su target europei.",
+   "why": "È uno dei maggiori ingressi di un gruppo cinese nella distribuzione europea, completato sotto il nuovo regolamento UE sulle sovvenzioni estere."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.marketscreener.com/news/japan-bond-yields-hit-multi-week-highs-on-us-treasury-moves-ce785ed9d88ff124",
+    "https://www.marketscreener.com/news/boj-not-planning-further-etf-sales-review-now-himino-says-ce785ed9db8ff424"
+   ],
+   "facts": "Solo titoli dei feed; livelli dei rendimenti non visti.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-13-jgb-boj",
+   "impact": "Breve periodo: correlazione alta con i Treasury in vista del PPI USA. Medio periodo: costo del debito più alto per gli emittenti giapponesi e per le acquisizioni finanziate in yen.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-13T03:11Z",
+   "runId": "2026-11-13-r1",
+   "source": "Bloomberg; MarketScreener (Reuters)",
+   "summary": "Venerdì mattina i JGB perdono terreno con l'estendersi delle vendite sui Treasury legate alle attese di rialzi Fed (Bloomberg, 03:11 UTC); i rendimenti toccano i massimi da diverse settimane (Reuters via MarketScreener, 00:40 UTC). Il vicegovernatore della Banca del Giappone Ryozo Himino ha detto che per ora la banca non prevede un'ulteriore revisione del programma di vendita degli ETF (04:58 UTC).",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Giappone: i rendimenti dei titoli di Stato ai massimi da settimane sulla scia dei Treasury; Himino (BoJ) esclude per ora una nuova revisione delle vendite di ETF",
+   "tz": "JST",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/japan-bonds-fall-as-treasury-rout-extends-on-fed-hike-bets",
+   "view": "La combinazione di yen debole e rendimenti in salita restringe i margini di manovra della BoJ: un rialzo dei tassi difenderebbe la valuta ma peserebbe sul debito pubblico.",
+   "why": "Il rialzo dei rendimenti giapponesi riduce l'attrattiva relativa dei Treasury per gli investitori giapponesi e si somma alla pressione sui tassi globali."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.scmp.com/business/article/3374254/hong-kong-retail-rents-recover-unevenly-2027-led-luxury-locations",
+    "https://www.businessoffashion.com/articles/luxury/how-burberry-is-thriving-in-china/"
+   ],
+   "facts": "Solo titoli dei feed; il totale del Singles' Day è già nella notizia 2026-11-12-r3-singles-day-final.",
+   "focus": [
+    "luxury-tech-markets"
+   ],
+   "id": "2026-11-13-luxury-demand-asia",
+   "impact": "Breve periodo: nessun effetto diretto sui titoli. Medio periodo: la ripresa degli affitti nelle vie del lusso di Hong Kong segnala attese di ritorno dei flussi turistici.",
+   "links": [
+    "luxury-ma"
+   ],
+   "publishedAt": "2026-11-12T18:44Z",
+   "runId": "2026-11-13-r1",
+   "source": "Seeking Alpha; SCMP; Business of Fashion",
+   "summary": "Seeking Alpha (18:44 UTC) titola che il Singles' Day registra vendite deboli in Cina ma Coach (Tapestry) e Ralph Lauren sovraperformano. SCMP (23:00 UTC): gli affitti retail di Hong Kong dovrebbero riprendersi in modo disomogeneo nel 2027, guidati dalle zone del lusso. Business of Fashion (22:23 UTC) pubblica un'analisi su come Burberry stia crescendo in Cina.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Lusso e domanda asiatica: Singles' Day fiacco ma Coach e Ralph Lauren sovraperformano; affitti retail di Hong Kong attesi in ripresa nel 2027, guidati dalle vie del lusso",
+   "tz": "CST/HKT",
+   "url": "https://seekingalpha.com/news/4671684-singles-day-sees-sluggish-sales-in-china-but-coach-and-ralph-lauren-are-outperforming",
+   "view": "La performance di Coach e Ralph Lauren rafforza la tesi del 'valore percepito' già vista con Burberry: il lusso aspirazionale con prezzi contenuti tiene meglio.",
+   "why": "I segnali confermano una domanda cinese selettiva: premia il lusso accessibile e i marchi con un posizionamento chiaro."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.bloomberg.com/news/articles/2026-11-13/new-world-suspends-trading-as-investors-watch-for-next-steps",
+    "https://www.thestandard.com.hk/finance/article/348392/New-World-Development-halts-trading-planning-up-to-25-billion-rights-issue"
+   ],
+   "facts": "Fatti sulla sospensione da SCMP, AASTOCKS e Dimsum Daily; importi dell'aumento di capitale e dei prestiti solo da Bloomberg (fonti anonime, non confermati dalla società). La capitalizzazione riportata da Dimsum Daily è incoerente tra due articoli: non usata.",
+   "focus": [
+    "global-ma-ecm",
+    "pe-private-credit"
+   ],
+   "id": "2026-11-13-new-world-suspension",
+   "impact": "Breve periodo: annuncio atteso; reazione di bond e azioni alla ripresa delle negoziazioni. Medio periodo: diluizione per gli azionisti di minoranza e possibile ruolo della famiglia controllante nella sottoscrizione.",
+   "links": [
+    "macro-central-banks"
+   ],
+   "publishedAt": "2026-11-13T02:14Z",
+   "runId": "2026-11-13-r1",
+   "source": "SCMP; Bloomberg; The Standard; Dimsum Daily; AASTOCKS",
+   "summary": "Il 13/11 alle 9:00 (ora di Hong Kong) New World Development ha sospeso le negoziazioni delle azioni e di 14 emissioni obbligazionarie garantite in attesa di un annuncio di informazioni privilegiate. Secondo Bloomberg la società ha incaricato banche di preparare un aumento di capitale in opzione fino a 25 miliardi di HK$ (circa 3,2 miliardi di dollari), con discussioni ancora in corso; sempre secondo Bloomberg Chow Tai Fook Enterprises, holding della famiglia Cheng, cercava circa 5 miliardi di HK$ di nuovi prestiti, notizia che un portavoce ha definito non corrispondente ai fatti. Nell'ultimo esercizio il gruppo ha registrato una perdita record di circa 28 miliardi di HK$. Ultimo prezzo prima della sospensione riportato: 4,87 HK$.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Hong Kong: New World Development sospende azioni e 14 bond in attesa di informazioni privilegiate; Bloomberg parla di un aumento di capitale fino a 25 miliardi di HK$",
+   "tz": "HKT",
+   "url": "https://www.scmp.com/business/markets/article/3374279/hong-kongs-new-world-development-suspends-trading-financial-rescue-speculation-mounts",
+   "view": "Se confermato, un aumento di capitale prima di una ristrutturazione del debito indica che si cerca di proteggere i bondholder con capitale nuovo: è la scelta che preserva l'accesso al mercato del credito, ma costa molto agli azionisti.",
+   "why": "È uno dei maggiori emittenti immobiliari di Hong Kong in difficoltà: un aumento di capitale di questa taglia sarebbe un test per l'ECM asiatico e per i creditori obbligazionari."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.cnbc.com/2026/11/12/nscale-updates-ipo-prospectus-that-shows-widening-loss.html",
+    "https://www.ft.com/content/8d5a8642-d0a1-458d-aaa4-c1e7d344fe47"
+   ],
+   "facts": "Cifre dal prospetto come riportate da MLQ.ai e Seeking Alpha (alcune fonti indicano erroneamente la perdita come trimestrale). Il fabbisogno di liquidità è nel solo titolo FT. Convertibili Nvidia da riprese di settembre.",
+   "focus": [
+    "ai-finance",
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-13-nscale-filing",
+   "impact": "Breve periodo: possibile revisione al ribasso della valutazione o rinvio. Medio periodo: il fabbisogno di capitale dei neocloud dipende dalla disponibilità di Nvidia a continuare a finanziare i clienti.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-12T22:58Z",
+   "runId": "2026-11-13-r1",
+   "source": "CNBC; Reuters; Financial Times; SEC (S-1/A)",
+   "summary": "Il neocloud britannico Nscale, sostenuto da Nvidia, ha depositato il 12/11 un prospetto modificato: perdita netta preliminare di 1,69 miliardi di dollari nei nove mesi al 30/9 (433,3 milioni un anno prima) su ricavi di 307,5 milioni; Reuters riporta attese di ricavi in crescita di 14 volte. Il Financial Times (04:10 UTC) titola che la società avverte di aver bisogno di altra liquidità prima dell'IPO da 35 miliardi. Nel prospetto precedente la società aveva segnalato dubbi sulla continuità aziendale; Nvidia ha sottoscritto a settembre obbligazioni convertibili per circa 3,1 miliardi.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Nscale aggiorna il prospetto per l'IPO da 35 miliardi: perdita di 1,69 miliardi nei nove mesi, ricavi in forte crescita; FT: servono altri capitali",
+   "tz": "ET",
+   "url": "https://www.sec.gov/Archives/edgar/data/0002110365/000119312526458722/ck0002110365-20261112.htm",
+   "view": "Il prospetto rende visibile il nodo del vendor financing: senza il sostegno del fornitore, la struttura del capitale di un neocloud è difficile da sostenere con il solo equity pubblico.",
+   "why": "Nscale è il caso tipo di neocloud finanziato dal fornitore di chip: il suo prospetto arriva nel giorno in cui il mercato punisce Nebius e CoreWeave."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.techmeme.com/261112/p69",
+    "https://www.barrons.com/articles/nvidia-bonds-jensen-huang-ceo-credit-risk-9fc0d593",
+    "https://www.reuters.com/business/nvidia-pe-falls-14-year-low-ceo-exit-ai-worries-cloud-bargain-2026-11-12/"
+   ],
+   "facts": "Fatti: titolo e sintesi Bloomberg via Techmeme (testo integrale non letto); dati di borsa da Reuters via Yahoo Finance (chiusura 12/11). L'elenco dei partner del veicolo viene da riprese precedenti, non dall'articolo di oggi.",
+   "focus": [
+    "ai-finance",
+    "pe-private-credit"
+   ],
+   "id": "2026-11-13-nvidia-ai-backstop",
+   "impact": "Breve periodo: i finanziatori potrebbero chiedere garanzie più forti o rinviare le operazioni finché la nuova leadership non conferma la politica di finanziamento. Medio periodo: possibile ridimensionamento del 'vendor financing' e spread più alti per i veicoli legati alle GPU.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-12T21:47Z",
+   "runId": "2026-11-13-r1",
+   "source": "Bloomberg (via Techmeme); Barron's; Reuters",
+   "summary": "Secondo Bloomberg (fonti), prima delle dimissioni di Jensen Huang Nvidia era sotto pressione per aumentare il supporto al valore residuo del 25% previsto per un veicolo di finanziamento AI da 500 miliardi di dollari costruito con asset manager (tra i partner citati in precedenza: Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs, KKR). Barron's (22:26 UTC) riporta che le obbligazioni di Nvidia restano stabili dopo l'uscita di Huang e che il mercato guarda ora alla CEO ad interim Colette Kress. Reuters (20:57 UTC): il rapporto prezzo/utili di Nvidia è al minimo da 14 anni. In chiusura del 12/11 il titolo ha perso il 4,3% dopo un calo intraday vicino al 12%.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Nvidia era sotto pressione per alzare il backstop del 25% sul veicolo di finanziamento AI da 500 miliardi prima dell'uscita di Huang (Bloomberg)",
+   "tz": "ET",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-faced-pressure-to-boost-its-ai-backstop-before-huang-exit",
+   "view": "La notizia sposta l'attenzione dalla governance al credito: se il garante di ultima istanza cambia guida, cambia anche il prezzo del rischio residuo. Interessante il contrasto con Cisco, che dichiara un'esposizione 'relativamente immateriale' ai neocloud.",
+   "why": "Il backstop del fornitore è il punto in cui il rischio della domanda di compute torna sul bilancio di Nvidia: chi finanzia data center e neocloud lo usa come mitigante del valore residuo."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.ansa.it/sito/notizie/mondo/2026/11/13/media-lutnick-testimoniera-sul-caso-nvidia-prima-del-congresso_ef0beace-b70a-4c45-9601-26b941efac61.html",
+    "https://www.bloomberg.com/news/articles/2026-11-13/nvidia-crisis-prompts-scrutiny-of-lutnick-s-role-in-chip-policy"
+   ],
+   "facts": "Fatti dai titoli Reuters, Bloomberg, FT, SCMP e dalla descrizione ANSA; testi non letti.",
+   "focus": [
+    "ai-finance",
+    "eu-regulation"
+   ],
+   "id": "2026-11-13-nvidia-lutnick-china",
+   "impact": "Breve periodo: audizioni e possibili dimissioni ai vertici del Commercio. Medio periodo: regole più rigide sull'export verso la Cina riducono il mercato indirizzabile di Nvidia e dei fornitori asiatici.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-13T00:15Z",
+   "runId": "2026-11-13-r1",
+   "source": "Reuters; ANSA; Bloomberg; FT; SCMP",
+   "summary": "Reuters (00:15 UTC): il presidente della commissione Bancaria del Senato USA ha chiesto a Jensen Huang e al segretario al Commercio Howard Lutnick di testimoniare. ANSA (04:39 UTC) riporta, citando media USA, che Lutnick testimonierà davanti al Congresso. Secondo Reuters (12/11 sera) la Casa Bianca discute del futuro di Lutnick; FT e Bloomberg riportano crescenti pressioni sul suo ruolo nella politica dei chip. Un'analisi Reuters indica come probabili restrizioni più severe sulle vendite di chip AI alla Cina; Bloomberg riporta che OpenAI sostiene nuove misure di controllo. Il Dipartimento di Giustizia, secondo Reuters, non ha concluso che la donna al centro del caso fosse una spia.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Caso Nvidia: il presidente della commissione Bancaria del Senato chiama Huang e Lutnick a testimoniare; attese regole più strette sull'export di chip verso la Cina",
+   "tz": "ET",
+   "url": "https://www.reuters.com/business/us-senate-banking-committee-chair-calls-jensen-huang-lutnick-testify-2026-11-13/",
+   "view": "Il rischio politico diventa rischio di credito per i veicoli che finanziano GPU destinate all'Asia: è un elemento da inserire nei covenant sulla destinazione degli asset.",
+   "why": "La vicenda si sposta dalla governance di Nvidia alla politica industriale USA: i controlli all'export incidono su ricavi, valutazioni e finanziamenti della filiera."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://financialnewswire.com.au/superannuation/apra-cautions-on-private-credit-ai-contagion/",
+    "https://news.bloombergtax.com/daily-tax-report-international/atkins-backs-accounting-research-on-data-centers-private-credit",
+    "https://kalkine.com.au/news/announcements/la-trobe-private-credit-fund-launches-equal-access-buy-back-offer-for-5-of-ordinary-units"
+   ],
+   "facts": "Solo titoli dei feed per Bloomberg, Financial Newswire e Bloomberg Tax (testi non letti). Buy-back La Trobe dai titoli dei comunicati via Kalkine.",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "id": "2026-11-13-private-credit-signals",
+   "impact": "Breve periodo: raccolta più lenta delle BDC e meno capacità per nuovi deal. Medio periodo: possibili requisiti di trasparenza sulle valutazioni e sull'esposizione AI.",
+   "links": [
+    "ai-finance"
+   ],
+   "publishedAt": "2026-11-12T19:01Z",
+   "runId": "2026-11-13-r1",
+   "source": "Bloomberg; Financial Newswire; Bloomberg Tax; Kalkine",
+   "summary": "Segnali dalla notte: Bloomberg (19:01 UTC) titola che le BDC in contrazione tengono il private credit ai margini mentre i tassi salgono. L'autorità prudenziale australiana APRA mette in guardia dal rischio di contagio dell'AI nel private credit (Financial Newswire, 19:32 UTC). Il presidente della SEC Paul Atkins sostiene ricerche contabili su data center e private credit (Bloomberg Tax, 18:28 UTC). In Australia il La Trobe Private Credit Fund lancia un riacquisto fuori mercato fino al 5% delle quote per il trimestre di dicembre (comunicati del 13/11).",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Private credit: BDC in contrazione con i tassi in salita (Bloomberg), APRA avverte sul contagio AI, SEC sostiene studi contabili su data center e private credit",
+   "tz": "ET/AEDT",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/shrinking-bdcs-keep-private-credit-on-sidelines-as-rates-rise",
+   "view": "Il riacquisto di La Trobe è un modo ordinato di offrire liquidità senza sospendere i rimborsi: un modello che i fondi semi-liquidi europei potrebbero dover adottare.",
+   "why": "Regolatori di due continenti guardano allo stesso nodo: la concentrazione del private credit sui finanziamenti all'infrastruttura AI."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.bloomberg.com/news/articles/2026-11-12/samsung-is-in-talks-to-acquire-data-center-cooling-firm-modine",
+    "https://www.nst.com.my/business/corporate/2026/11/1576558/samsung-talks-buy-data-center-cooling-firm-modine"
+   ],
+   "facts": "La valutazione di 5,6 miliardi è la capitalizzazione di Modine, non un prezzo concordato. Notizia Bloomberg ripresa da Reuters (00:11 UTC) e testate asiatiche.",
+   "focus": [
+    "global-ma-ecm",
+    "ai-finance"
+   ],
+   "id": "2026-11-13-samsung-modine",
+   "impact": "Breve periodo: possibile annuncio con premio rispetto ai prezzi pre-notizia; esame CFIUS da considerare. Medio periodo: consolidamento dei fornitori di infrastruttura fisica per l'AI (energia, raffreddamento), con multipli in crescita.",
+   "links": [],
+   "publishedAt": "2026-11-13T00:11Z",
+   "runId": "2026-11-13-r1",
+   "source": "Bloomberg; Reuters; New Straits Times; Seoul Economic Daily",
+   "summary": "Secondo Bloomberg (fonti), Samsung Electronics sta trattando l'acquisizione di Modine Manufacturing (Wisconsin), che produce sistemi di raffreddamento per data center; un accordo potrebbe arrivare nelle prossime settimane, ma non c'è una decisione finale e potrebbe emergere un altro offerente. Modine valeva circa 5,6 miliardi di dollari in borsa al 12/11 (dati LSEG); il titolo è salito di circa il 29% negli scambi dopo la chiusura. Nessuna delle due società ha commentato. Nel 2025 Samsung aveva già comprato la tedesca FläktGroup per circa 1,5 miliardi di euro.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Samsung in trattative per acquisire Modine, produttore USA di sistemi di raffreddamento per data center (Bloomberg); titolo +29% dopo la chiusura",
+   "tz": "ET/KST",
+   "url": "https://www.reuters.com/technology/samsung-talks-buy-data-center-cooling-firm-modine-bloomberg-news-reports-2026-11-13/",
+   "view": "È il secondo acquisto di Samsung nel raffreddamento in due anni: la strategia è chiara e suggerisce che il valore si sta spostando dai chip alle infrastrutture che li fanno funzionare.",
+   "why": "Il raffreddamento è uno dei colli di bottiglia dei data center AI: un gruppo asiatico compra capacità industriale USA per salire nella catena del valore."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.cnbc.com/video/2026/11/12/spacex-and-tesla-could-announce-merger-deal-as-soon-as-december-report.html"
+   ],
+   "facts": "Solo titoli Bloomberg, CNBC e Reuters; contesto da notizie di ottobre. Nessun accordo annunciato.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-13-spacex-tesla-talks",
+   "impact": "Breve periodo: attesa di termini e concambio; possibili contenziosi degli azionisti di minoranza Tesla. Medio periodo: un gruppo unico con fabbisogni di capitale enormi per l'AI.",
+   "links": [
+    "ai-finance"
+   ],
+   "publishedAt": "2026-11-12T20:22Z",
+   "runId": "2026-11-13-r1",
+   "source": "Bloomberg; CNBC; Reuters",
+   "summary": "Bloomberg (20:22 UTC) riporta che i colloqui tra SpaceX e Tesla su una fusione di dimensioni record stanno avanzando; CNBC (21:34 UTC), citando il report, indica un possibile annuncio già a dicembre. Reuters (20:23 UTC): SpaceX prevede investimenti per oltre 74 miliardi di dollari in campus AI in Texas e Arizona. Contesto: a ottobre Musk aveva confermato colloqui formali, con comitati di consiglieri indipendenti in entrambe le società e senza accordo sui termini.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "SpaceX e Tesla: le trattative sulla fusione record avanzano, possibile annuncio già a dicembre (Bloomberg, CNBC); SpaceX annuncia campus AI da oltre 74 miliardi",
+   "tz": "ET",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress",
+   "view": "Con un azionista comune su entrambi i lati, il lavoro dei comitati indipendenti e delle fairness opinion sarà il vero punto critico.",
+   "why": "Sarebbe la più grande operazione di M&A della storia e un caso di scuola di conflitti di interesse tra società con lo stesso azionista di riferimento."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
+   ],
+   "facts": "Livelli di chiusura e variazioni da Reuters (articolo letto via Yahoo Finance, 21:26 UTC). Probabilità sui tassi come riportate da Reuters.",
+   "focus": [
+    "macro-central-banks",
+    "ai-finance"
+   ],
+   "id": "2026-11-13-wall-street-close",
+   "impact": "Breve periodo: il PPI di venerdì è il prossimo test per i tassi. Medio periodo: la dispersione tra fornitori solidi (Broadcom, AMD) e neocloud con leva rischia di riflettersi sul costo del debito dei secondi.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-12T21:26Z",
+   "runId": "2026-11-13-r1",
+   "source": "Reuters via Yahoo Finance; AP",
+   "summary": "Chiusura del 12/11: Dow Jones -0,36% a 52.297,09; S&P 500 -0,35% a 7.592,40; Nasdaq Composite -0,39% a 25.366,09. Nvidia -4,3% dopo un minimo intraday di quasi -12%; gli acquisti retail nella prima mezz'ora (circa 111 milioni di dollari, Vanda) sono stati i più alti mai registrati sul titolo. Nebius -16,8% dopo i conti, CoreWeave -6,9%, IREN -6,5%, Applied Digital -5,4%; indice dei semiconduttori -0,5% dopo +17,2% nelle quattro sedute precedenti. Energia +1,5% con il greggio in rialzo dopo le parole di Trump sull'Iran. I mercati prezzano integralmente un rialzo Fed di almeno 25 pb a dicembre, con circa il 15% di probabilità di 50 pb; venerdì 13/11 esce il PPI.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS); articolo Reuters letto via Yahoo Finance (datePublished 2026-11-12T21:26Z)",
+   "title": "Wall Street chiude in lieve calo (S&P 500 -0,35%): Nvidia -4,3% dopo aver perso quasi il 12%, Nebius -16,8%; mercati prezzano un rialzo Fed a dicembre",
+   "tz": "ET",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-fall-nvidia-turmoil-093910045.html",
+   "view": "La rotazione dentro il settore (giù i neocloud, su Broadcom, AMD e Alphabet) dice che il mercato prezza il rischio di credito della catena AI più che la domanda.",
+   "why": "È la chiusura della notte di New York: il mercato separa il rischio Nvidia dalla domanda di AI, ma punisce i neocloud più indebitati."
+  },
+  {
+   "date": "2026-11-13",
+   "extraUrls": [
+    "https://www.bloomberg.com/news/articles/2026-11-13/japan-s-katayama-warns-of-fx-steps-after-one-sided-rapid-moves",
+    "https://www.reuters.com/world/africa/dollar-near-19-month-high-fed-hike-bets-yen-tests-160-2026-11-13/",
+    "https://www.fxstreet.com/news/japans-takaichi-says-in-close-contact-with-us-financial-authorities-on-currency-market-202611130455"
+   ],
+   "facts": "Cifre del rapporto della Fed di New York da Reuters e riprese (Lufkin Daily News, MLQ.ai). Dichiarazioni di Katayama e Takaichi da titoli Bloomberg, WSJ e FXStreet. Il titolo WSJ 'Japan spent record $50 billion in single day' (20:43 UTC) riprende un articolo Dow Jones dell'8/11: non trattato come notizia nuova.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-13-yen-intervention",
+   "impact": "Breve periodo: volatilità alta su USD/JPY e possibile intervento. Medio periodo: il costo delle coperture per acquirenti giapponesi all'estero e per i carry trade resta elevato finché il differenziale con i tassi USA non si riduce.",
+   "links": [],
+   "publishedAt": "2026-11-12T23:03Z",
+   "runId": "2026-11-13-r1",
+   "source": "Reuters; Bloomberg; WSJ; FXStreet; investingLive",
+   "summary": "Il rapporto trimestrale della Fed di New York (12/11 sera ET) indica che il 31 luglio, come agente del Tesoro, ha comprato circa 79,4 miliardi di yen (circa 497 milioni di dollari) vendendo euro dell'Exchange Stabilization Fund, in coordinamento con il ministero delle Finanze giapponese: è il primo acquisto di yen da parte degli USA dal 1998. La Fed non ha fatto interventi autonomi nel terzo trimestre. Venerdì mattina a Tokyo la ministra delle Finanze Satsuki Katayama ha detto di osservare movimenti 'unilaterali e rapidi' e di restare in contatto con il Tesoro USA; la premier Takaichi ha confermato contatti stretti con le autorità USA. Il dollaro è vicino ai massimi da 19 mesi e lo yen intorno a 160 per dollaro.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Yen a 160: la Fed di New York conferma che il Tesoro USA ha comprato yen il 31 luglio, primo intervento dal 1998; Katayama e Takaichi avvertono sui movimenti 'unilaterali e rapidi'",
+   "tz": "JST",
+   "url": "https://www.reuters.com/business/us-treasury-bought-yen-july-fed-made-no-solo-fx-interventions-q3-2026-11-12/",
+   "view": "La conferma ufficiale della partecipazione USA rende più credibile la minaccia di Tokyo: il mercato ora sa che a 160 può trovare due banche centrali, non una.",
+   "why": "La soglia di 160 è quella che a luglio ha fatto scattare l'intervento congiunto: il rischio di un nuovo intervento entra nelle coperture valutarie di chi finanzia o acquisisce in yen."
+  }
+ ],
+ "radar": [
+  {
+   "date": "2026-11-13",
+   "focus": [
+    "luxury-financing",
+    "luxury-ma"
+   ],
+   "note": "Sostegno degli azionisti dopo il breach dei covenant; contesto del rinvio delle opzioni put/call al 2028–2029.",
+   "publishedAt": "2026-11-11 (ora non verificata)",
+   "runId": "2026-11-13-r1",
+   "source": "Reuters via MarketScreener",
+   "title": "Kering e Mayhoola iniettano 100 milioni di euro in Valentino dopo la violazione dei covenant (Reuters)",
+   "url": "https://www.marketscreener.com/news/kering-and-mayhoola-agree-to-inject-100-million-euros-into-valentino-document-shows-ce7d5fd9df8ff72d",
+   "id": "2026-11-13-r1-0"
+  },
+  {
+   "date": "2026-11-13",
+   "focus": [
+    "ai-finance"
+   ],
+   "note": "Contesto del veicolo di finanziamento con asset manager.",
+   "publishedAt": "2026-11-12T16:55Z",
+   "runId": "2026-11-13-r1",
+   "source": "CNBC",
+   "title": "CNBC: l'uscita di Huang mette in ombra la scommessa da 500 miliardi di Wall Street sul finanziamento dell'AI",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html",
+   "id": "2026-11-13-r1-1"
+  },
+  {
+   "date": "2026-11-13",
+   "focus": [
+    "global-ma-ecm",
+    "ai-finance"
+   ],
+   "note": "Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "publishedAt": "2026-11-12T16:19Z",
+   "runId": "2026-11-13-r1",
+   "source": "Bloomberg",
+   "title": "Bloomberg: l'impegno di Nvidia da 10 miliardi nell'IPO di Anthropic sotto osservazione dopo l'uscita del CEO",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-s-10-billion-anthropic-ipo-pledge-in-focus-with-ceo-exit",
+   "id": "2026-11-13-r1-2"
+  },
+  {
+   "date": "2026-11-13",
+   "focus": [
+    "luxury-financing",
+    "luxury-ma"
+   ],
+   "note": "Collegata a kb-golden-goose (struttura proprietaria e possibile IPO).",
+   "publishedAt": "2026-11-12T16:19Z",
+   "runId": "2026-11-13-r1",
+   "source": "FashionNetwork",
+   "title": "Golden Goose: ricavi +16% nei primi nove mesi, trainati dal canale diretto",
+   "url": "https://ww.fashionnetwork.com/news/Golden-goose-sees-16-revenue-rise-in-january-september-driven-by-dtc-sales,1884397.html",
+   "id": "2026-11-13-r1-3"
+  },
+  {
+   "date": "2026-11-13",
+   "focus": [
+    "luxury-tech-markets"
+   ],
+   "note": "Aggiornato alle 18:40 UTC, pubblicato fuori finestra.",
+   "publishedAt": "2026-11-12T15:39Z",
+   "runId": "2026-11-13-r1",
+   "source": "WWD",
+   "title": "PwC: la ripresa del lusso per le feste resta incerta, i consumatori cercano valore",
+   "url": "https://wwd.com/business-news/business-features/pwc-holiday-season-luxury-shopping-trends-1239412694/",
+   "id": "2026-11-13-r1-4"
+  },
+  {
+   "date": "2026-11-13",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Buy-and-build italiano nel turismo.",
+   "publishedAt": "2026-11-12T12:13Z",
+   "runId": "2026-11-13-r1",
+   "source": "Teleborsa",
+   "title": "WeRoad avvia una campagna di acquisizioni con TravelTribe: obiettivo 70 milioni di ricavi da M&A in tre anni",
+   "url": "https://www.teleborsa.it/News/2026/11/12/weroad-avvia-campagna-di-acquisizioni-con-traveltribe-obiettivo-70-milioni-di-ricavi-da-m-a-in-tre-anni-141.html",
+   "id": "2026-11-13-r1-5"
+  },
+  {
+   "date": "2026-11-13",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Take-private australiano di medie dimensioni.",
+   "publishedAt": "2026-11-12T17:33Z",
+   "runId": "2026-11-13-r1",
+   "source": "The PIE News",
+   "title": "IDP Education valuta un'offerta di take-private da 573,3 milioni di dollari",
+   "url": "https://thepienews.com/idp-weighs-up-573-3m-private-equity-takeover-bid/",
+   "id": "2026-11-13-r1-6"
+  },
+  {
+   "date": "2026-11-13",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Politica industriale giapponese sulle catene di fornitura.",
+   "publishedAt": "2026-11-12T16:54Z",
+   "runId": "2026-11-13-r1",
+   "source": "Nikkei Asia",
+   "title": "Il Giappone valuta la presa in carico statale di impianti obsoleti per materiali critici",
+   "url": "https://asia.nikkei.com/spotlight/supply-chain/japan-eyes-state-takeover-of-aging-plants-making-critical-materials",
+   "id": "2026-11-13-r1-7"
+  }
+ ],
+ "excluded": [
+  {
+   "reason": "Risultati pubblicati il 10/11: ripresa fuori finestra.",
+   "title": "SoftBank, perdita trimestrale di circa 7 miliardi (WSJ, 02:10 UTC)"
+  },
+  {
+   "reason": "Articolo Dow Jones dell'8/11 ripubblicato; dato già noto. Citato come contesto nella notizia sullo yen.",
+   "title": "WSJ: il Giappone ha speso un record di 50 miliardi in un solo giorno per lo yen (20:43 UTC)"
+  },
+  {
+   "reason": "Traduzione di una nota del 10/11: fuori finestra.",
+   "title": "Berenberg pessimista sul lusso, consiglia di vendere sui rimbalzi (MarketScreener Italia, 02:26 UTC)"
+  },
+  {
+   "reason": "Solo titolo; il legame con il Qatar risale a indiscrezioni del 2022 mai confermate; nessun fatto nuovo verificabile.",
+   "title": "Castiglion del Bosco tra Brunello e fondo del Qatar (La Stampa, 04:00 UTC)"
+  },
+  {
+   "reason": "Articolo di approfondimento a pagamento; nessun fatto nuovo verificabile rispetto alla documentazione Reuters di settembre.",
+   "title": "Puck: le azioni Hermès scomparse e la quota nascosta di LVMH (23:44 UTC)"
+  },
+  {
+   "reason": "Profilo giornalistico; nessuna conferma di cambi di governance.",
+   "title": "Anton Rupert Jr indicato alla guida dell'impero Richemont (News24, 02:15 UTC)"
+  },
+  {
+   "reason": "In contrasto con la documentazione (circa 1.400 miliardi pienamente diluiti); fonte secondaria. Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "title": "investingLive: l'IPO di Anthropic punta a una valutazione intorno a 1.000 miliardi"
+  },
+  {
+   "reason": "Titolo fuorviante: Niccol cita LVMH solo come modello; nessuna operazione nel lusso.",
+   "title": "Starbucks: il CEO Niccol 'guarda a LVMH' per un impero multimarca (Yahoo Finance)"
+  },
+  {
+   "reason": "Solo titolo; contenuti non verificabili e operazione non datata.",
+   "title": "Mangia's Resorts e Blackstone: governance e private equity (We Wealth)"
+  },
+  {
+   "reason": "Fuori dai Focus o rilevanza bassa per il profilo.",
+   "title": "Helen of Troy respinge la proposta di Spectrum Brands a 37 dollari per azione; Kalshi raccoglie a 65 miliardi; Fnm nove mesi"
+  },
+  {
+   "reason": "Titolo in contrasto con altre rilevazioni della stessa mattina (Nikkei Asia: azioni cinesi in testa al rally dei chip); integrato con prudenza nella notizia sull'Asia.",
+   "title": "Chinese AI shares tumble after Nvidia's Huang resigns (MarketScreener, 05:18 UTC)"
+  },
+  {
+   "reason": "Fonte minore, testo non raggiungibile; da verificare su testate primarie.",
+   "title": "Messina: resterà il nome Monte dei Paschi di Siena (T24 Economia)"
+  }
+ ],
+ "kb": [],
+ "posts": [],
+ "insights": []
+}

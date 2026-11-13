@@ -1,0 +1,20 @@
+---
+id: kb-dior-salento
+focus: luxury-ma
+state: valida
+relevance: media
+published: "2026-11-13T09:22Z"
+acquired: "2026-11-13"
+source: "Corriere di Lecce; La Conceria"
+url: https://news.google.com/rss/articles/CBMizwJBVV95cUxQalVwTG9GZkF2aEU2R2JlTDZ4RjM4UThjVmxDdWhFQllhTGkyVHQtekVtMTNMVWxKOGNocjY3U1Q5ajlZS2ctQlowenJLQndUWGpiQlF0WGFZekxDVG1hcnFrdmVRb3Jxbk5ZNkhoN2JhQkMxS1JwOVhrV3M5UExxUmk4aXo0VmZtX1RRWVltLWZjWGU4eXNnN0VDX29URS03RC1sOVBQUzhUbW9fRDh1Ujg4Rzd4LTFEZ19BQklySWdWRHpwWXVzT1BKNjZ4YTJKTnpBWlM1M1JqOHNZSVR0MVNia3FKclFCYjg5WWl0ZnQ1RmRsRHR4enN2aTNBOC1PT1hPSFlxYUgyZUJMY3lON3JFbkQ0OWpfN1JDZEJjR0lhM01TamlKdW1ZNC1ZbjhMU1BBUmhTY0o4cVB6aGc3eXpWWTZKNVV1X2Z3amFUWdIBzwJBVV95cUxQalVwTG9GZkF2aEU2R2JlTDZ4RjM4UThjVmxDdWhFQllhTGkyVHQtekVtMTNMVWxKOGNocjY3U1Q5ajlZS2ctQlowenJLQndUWGpiQlF0WGFZekxDVG1hcnFrdmVRb3Jxbk5ZNkhoN2JhQkMxS1JwOVhrV3M5UExxUmk4aXo0VmZtX1RRWVltLWZjWGU4eXNnN0VDX29URS03RC1sOVBQUzhUbW9fRDh1Ujg4Rzd4LTFEZ19BQklySWdWRHpwWXVzT1BKNjZ4YTJKTnpBWlM1M1JqOHNZSVR0MVNia3FKclFCYjg5WWl0ZnQ1RmRsRHR4enN2aTNBOC1PT1hPSFlxYUgyZUJMY3lON3JFbkQ0OWpfN1JDZEJjR0lhM01TamlKdW1ZNC1ZbjhMU1BBUmhTY0o4cVB6aGc3eXpWWTZKNVV1X2Z3amFUWQ?oc=5
+links: ["kb-luxury-supply-chain-italy"]
+---
+# Dior apre un polo produttivo a Campi Salentina (Lecce), cerca 50 addetti
+
+**Stato:** Attualmente valida
+
+Solo titoli (Corriere Lecce, La Conceria). Esempio di integrazione verticale LVMH nella filiera italiana.
+
+**Concetti chiave:** filiera, integrazione verticale
+
+**Aggiornamenti:** —

@@ -17,4 +17,4 @@ Ripartizione indicata: 30% moda, 30% cosmetica, 30% food, vino e design, 10% alt
 
 **Concetti chiave:** private equity, Made in Italy, lusso accessibile
 
-**Aggiornamenti:** —
+**Aggiornamenti:**  13/11/2026 (r1): nuova verifica senza esito: le ricerche trovano solo la strategia di Quadrivio sul lusso accessibile (target con ricavi 50–70 mln, 2024) e l'operazione Autry–Style Capital, non il piano da 2 miliardi in 30 operazioni. Resta da verificare.

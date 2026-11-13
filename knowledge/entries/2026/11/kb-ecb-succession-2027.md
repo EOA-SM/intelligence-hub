@@ -17,4 +17,4 @@ Lagarde lascia a febbraio 2027, Schnabel a gennaio (FMI), Lane a maggio. Candida
 
 **Concetti chiave:** governance BCE, successione
 
-**Aggiornamenti:** —
+**Aggiornamenti:** 13/11/2026 (r3): la Germania proporrà la prossima settimana un pacchetto di nomine (Investing.com, titolo); l'UE fissa al 18/11 il termine per le candidature a capo economista e capo delle operazioni di mercato (MarketScreener, titolo); Lane: per il dopo Lagarde conta la continuità (Borsa Italiana); Corriere: corsa a due de Cos–Knot, Macron per lo spagnolo. Lo stato resta 'ipotesi'.
