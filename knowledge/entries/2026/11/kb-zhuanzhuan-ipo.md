@@ -17,4 +17,4 @@ Nessun documento HKEX trovato. Sede internazionale a Hong Kong da aprile 2026.
 
 **Concetti chiave:** resale, IPO Hong Kong
 
-**Aggiornamenti:** —
+**Aggiornamenti:** Riverifica 14/11/2026 (r1): nessuna conferma del deposito; trovata solo l'intenzione del fondatore di quotarsi a Hong Kong entro tre anni e l'ingresso nel programma OASES (aprile 2026). Resta da verificare.

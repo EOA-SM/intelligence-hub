@@ -17,4 +17,4 @@ Titoli in contrasto (operazione chiusa o avviata). Precedenti: yen 576,5 mld (ma
 
 **Concetti chiave:** diversificazione valutaria, debito hyperscaler
 
-**Aggiornamenti:** —
+**Aggiornamenti:** Riverifica 14/11/2026 (r1): confermati solo i piani (Reuters 11/11: obiettivo circa 3 mld $, minimi HK$8 mld e S$1,5 mld, coordinatori HSBC e JPMorgan, regolamento atteso il 19/11); nessuna conferma del collocamento. Resta da verificare.

@@ -1,0 +1,721 @@
+{
+ "run": {
+  "counts": {
+   "kb": 17,
+   "news": 18,
+   "posts": 4,
+   "radar": 7,
+   "scanned": 1596,
+   "shortlisted": 191
+  },
+  "finishedAt": "2026-11-14T05:55:20Z",
+  "id": "2026-11-14-r1",
+  "kind": "daily",
+  "notes": "PUSH RIFIUTATO (nona esecuzione di fila): il proxy git nega l'accesso (403) perché EOA-SM/intelligence-hub non è tra i repository autorizzati della sessione; add_repo non disponibile, repository clonato con git. Il commit 'Daily Intelligence 2026-11-14-r1' esiste solo nel container; il database è aggiornato e la sincronizzazione notturna ricostruirà l'archivio. Per risolvere: aggiungere il repository alle fonti della routine/ambiente intelligence-hub. — Esecuzione r1 (programmata alle 06:40 ora italiana, partita alle 06:41 = 05:41 UTC di sabato 14/11): finestra 2026-11-13T17:41Z → 2026-11-14T05:41Z. Priorità Asia e notte di New York. Sabato le borse di Tokyo, Hong Kong e Shanghai sono chiuse e l'ultima sessione asiatica (venerdì) si è chiusa prima della finestra: per l'Asia la rassegna riporta i fatti del weekend (trilaterale Trump–Xi–Putin a Shenzhen, IPO in Giappone e India, yen); i conti delle megabanche giapponesi sono nel radar. Raccolta collect.py riuscita: 225 richieste (0 fallite), 6.131 titoli, 1.596 in finestra; lista ristretta di 191 + 60 radar letta per intero, più scansione per parole chiave di tutti i 1.596 titoli in finestra (Asia, lusso, Italia, deal, tassi). Rete: letti direttamente il Financial Stability Report della Fed (PDF), il discorso di Jefferson (federalreserve.gov), ANSA (S&P e trilaterale) e WWD (Bally); Nikkei Asia, SCMP, Japan Today, Caixin, Khaleej Times e tradersunion.com non raggiungibili dalla sessione (vanno abilitati nelle impostazioni di rete); MarketScreener e CNBC rispondono 403. I link di Google News non sono risolvibili dalla sessione: dove manca l'URL originale si usa il link del feed, che reindirizza all'articolo. Molti fatti vengono da estratti WebSearch o da titoli, come indicato in ogni notizia; le notizie 'monitor' sono solo titolo. Verifica degli orari: la notizia Bally (orario del feed 18:05 UTC) risulta pubblicata alle 14:37 UTC secondo la pagina WWD ed è stata spostata nel radar. Non ripetute le notizie del 13/11: IPO Anthropic e caso Nvidia compaiono solo come aggiornamenti sostanziali (dichiarato nella sintesi). Nessuna notizia di oggi già presente nel database (controllo prima della scrittura). Copertura Focus: tutti i Focus hanno almeno una notizia tranne Regolamentazione UE per Finance e Luxury e Financing nel Luxury. UE: nessun fatto normativo verificabile in finestra (esclusi un titolo secondario sull'exit tax e commenti sulle nomine BCE). Financing nel Luxury: nessuna operazione di debito o capitale nel lusso in finestra; il caso Bally (procedure concorsuali e vendita del marchio) è nel radar e in KB. KB: 17 nuove voci (2 storiche dalla ricerca retroattiva), aggiornate kb-anthropic-ipo e kb-nscale-ipo. Voci da verificare riverificate (3, le più vecchie): kb-alphabet-asia-bonds (confermati solo i piani, non il collocamento), kb-zhuanzhuan-ipo e kb-india-pe-nbfc (nessuna conferma): restano da_verificare. Ricerca retroattiva a rotazione: Luxury Tech & nuovi mercati, mai trattato prima (dimensione del mercato e dell'usato 2025–2026 secondo Bain–Altagamma); dossier focus/luxury-tech-markets.md aggiornato. LinkedIn: 4 bozze (3 in inglese, 1 in italiano), tipologie a rotazione: cambiamento in atto, lezione da un caso, confronto tra modelli, scenario futuro. Nessuna pubblicazione. Nessuna istruzione permanente, nessun documento e nessuna domanda Expert Mode in attesa. Nota di trasparenza: Claude è sviluppato da Anthropic (IPO Anthropic nelle notizie e negli esclusi).",
+  "pushStatus": "rifiutato (403, repository non autorizzato nella sessione)",
+  "startedAt": "2026-11-14T05:41:00Z",
+  "window": {
+   "from": "2026-11-13T17:41:00Z",
+   "to": "2026-11-14T05:41:00Z"
+  }
+ },
+ "focus": [],
+ "news": [
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxNV2k0OFNjUW02OXM3V0NRM1ZDazFia3llSWFDazUzLUxUcXBaZ3cwWFlhTmg3S1JOb0IxVjdSZWJmM19WWkpKbVRwUUJFVGJVb2hlbndmZXhoa1lqWldnQUgzdk1WU3h2SWkxQkoxR0Vja1Z0WXVhZ1ZQOWpjYVNXb1VpLUdNaE0?oc=5",
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxORUJReUY4aWVzV1dsSmNsdDlBQ29HTTBlZEFTaFRGSmlPX0FnOWZwZTdwTHRBNmY0bV9kYWRKU0hVaDdTOFdDcFF6Ty1SVEZUMFdDWUJqNjFQcnMyTk1vR2QyM3lvZXk3RXlqVzhpR2NFZXFkY1NYcnNnOVJyYlU1dlJnaVI?oc=5"
+   ],
+   "facts": "Solo titoli; dati di bilancio di Nscale nella voce kb-nscale-ipo (prospetto del 12/11). URL generico: link originale non risolvibile dalla sessione.",
+   "focus": [
+    "ai-finance"
+   ],
+   "id": "2026-11-14-r1-ai-infra-financing",
+   "impact": "—",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-13T22:55Z",
+   "runId": "2026-11-14-r1",
+   "source": "Axios; Barron's; Financial Times",
+   "summary": "Axios (22:55 UTC): Nscale riporta un debito in forte crescita e la necessità di altro capitale in vista dell'IPO. Barron's (20:22 UTC): i legami con Nvidia rendono l'IPO di Nscale più incerta. FT (20:40 UTC): Amazon riprende un accordo con il travagliato progetto di data center sostenuto dall'ex segretario all'Energia Rick Perry.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Finanziamento delle infrastrutture AI: Axios, il debito di Nscale cresce e servirà altro capitale prima dell'IPO; Barron's, i legami con Nvidia rendono l'IPO più incerta; FT, Amazon riprende l'accordo con il progetto di data center sostenuto da Rick Perry",
+   "tz": "ET",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFByVmUzTExyejZPc3dMS3lJZzJVdWdWUElZYnpGRzhCdUNCVGJ4Q2lGRmNoSmVQdXM5WjZ2a2QtdE92aGtnLUE2YWZfVVJrUi1wYzA4NFBNUDFqVWZXZmVNejlhN0JBZGRIOFNWd3BaYWtOcGxZNFZR?oc=5",
+   "view": "—",
+   "why": "Completa il quadro del rapporto della Fed: i soggetti più deboli della filiera dipendono da contratti e garanzie dei grandi."
+  },
+  {
+   "date": "2026-11-14",
+   "facts": "Solo titoli (Reuters, Bloomberg, WSJ, FT, Yahoo Finance); termini dell'offerta dalla voce KB kb-anthropic-ipo. Escluso il titolo di Economic Times su un prezzo già fissato a 78 dollari: contrasta con il calendario di pricing. Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "focus": [
+    "global-ma-ecm",
+    "ai-finance"
+   ],
+   "id": "2026-11-14-r1-anthropic-roadshow",
+   "impact": "Breve periodo: domanda forte, ma in un mercato nervoso; il prezzo finale rispetto alla forchetta sarà il segnale. Medio periodo: le dichiarazioni sul calcolo indicano un fabbisogno di capitale continuo.",
+   "links": [
+    "macro-central-banks"
+   ],
+   "publishedAt": "2026-11-13T23:30Z",
+   "runId": "2026-11-14-r1",
+   "source": "Reuters (esclusiva, via Investing.com e MarketScreener); Bloomberg; WSJ; FT",
+   "summary": "Aggiornamento sostanziale rispetto a r1 del 13/11, che riportava la sovrascrizione di circa sei volte. Reuters (esclusiva, 23:30 UTC): gli investitori affluiscono all'IPO ma si interrogano sulla durata del vantaggio di Anthropic nell'AI. Nella conversazione con Jamie Dimon (JPMorgan) che chiude il roadshow, Dario Amodei ha detto di sperare che l'IPO 'prometta meno e mantenga di più' (WSJ). Ha definito la potenza di calcolo 'il dilemma di business più profondo' (Bloomberg) e ha detto che la quotazione darà alla società un cuscinetto di cassa più ampio (Reuters). Al FT ha detto di non essere 'troppo preoccupato' per le turbolenze di mercato. I termini restano quelli noti: forchetta 70–78 dollari, circa 825 milioni di azioni, pricing atteso il 18/11 e debutto al Nasdaq il 19/11 (CNBC, fonti). Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Aggiornamento IPO Anthropic, fine roadshow: Reuters, gli investitori affluiscono ma si chiedono quanto durerà il vantaggio; Amodei: il calcolo è 'il dilemma più profondo', l'IPO darà 'un cuscinetto di cassa più ampio'",
+   "tz": "ET",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOckJYSDVUWDh1cTJPb3ptd2pLZmxuNXBtSEJkN0F0WWFucUZuWDgtQ0dZbzZITDBWY3dhSWZqcjcyZl9FdGpHdHJsX1dkbVowTkZ3OWRKd3pwN2NIMnBGZ1AtbDFkMkl6Vm1RZFNsZ2VDOU1nLUVmY2d4UHV2U01ER1pJTmdlSGFDdmsyM2ZhbXlXYVdEb01ERlNybGxWY0RsYlo4QlNxa0NCaUNpQjQw?oc=5",
+   "view": "Interpretazione: la frase sul calcolo come 'dilemma' è la più rilevante per chi fa credito, perché collega l'equity raccolta al debito per l'infrastruttura descritto dal rapporto della Fed. Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "why": "È la più grande IPO dell'anno, e il suo esito fissa il prezzo del rischio AI nei mercati azionari e del credito."
+  },
+  {
+   "date": "2026-11-14",
+   "facts": "Solo titoli. Covetrus è controllata da fondi di private equity (CD&R e TPG dal take-private del 2022): è contesto, non riportato nei titoli di oggi.",
+   "focus": [
+    "global-ma-ecm",
+    "pe-private-credit"
+   ],
+   "id": "2026-11-14-r1-antitrust-deals",
+   "impact": "Breve periodo: rischio di esecuzione sui deal di consolidamento. Medio periodo: più clausole di 'reverse break fee' e tempi più lunghi.",
+   "links": [
+    "eu-regulation"
+   ],
+   "publishedAt": "2026-11-13T18:24Z",
+   "runId": "2026-11-14-r1",
+   "source": "Reuters; MarketScreener; DVM360; Rubber News; OilPrice; MLQ.ai",
+   "summary": "La Federal Trade Commission ha fatto causa per bloccare la vendita da 3,5 miliardi di dollari di MWI Animal Health, la divisione veterinaria di Cencora, a Covetrus (Reuters, MarketScreener, DVM360). La fusione AkzoNobel–Axalta ha ottenuto un'approvazione condizionata dalla Commissione europea e affronta un ulteriore esame nel Regno Unito (Rubber News). La Germania valuta di comprare, con fino a 4 miliardi di euro, la quota di RWE ed E.ON in Urenco, il gruppo dell'arricchimento dell'uranio (OilPrice, MLQ.ai).",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "M&A e antitrust: la FTC fa causa per bloccare la vendita di MWI Animal Health (Cencora) a Covetrus per 3,5 miliardi; via libera Ue condizionato ad AkzoNobel–Axalta; la Germania valuta di comprare la quota Urenco di RWE ed E.ON",
+   "tz": "ET",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcXdFLTNlbU5kN1Z1Z2p6cDJRSnlsUEpWMm9KdkEwOUlMVHE3a2pmemF5cFJjcjNVS2Z5cG9aUkx0R0RMMy16YmtVbzc5bHljYVdMY2ZERm54Q29lZTM2VWVzV3ptU3EyVUtvWERjUFlLT3lrNjNGaWlta0RERWh0SnNtalREUm5ZVlFoODlaWGdULWZ3eDdScC1TeDZpX0IxM2NqdUYwZzdnNkItVGd6UUxB?oc=5",
+   "view": "Per il buy-and-build il rischio antitrust è un costo da prezzare, non un dettaglio legale: la causa della FTC arriva su un'operazione da 3,5 miliardi, non su una mega-fusione.",
+   "why": "L'antitrust USA torna a colpire operazioni di consolidamento sostenute da sponsor; la Germania mostra lo Stato come compratore di asset strategici."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTE51c3BkMXhjUkhrTHo4UV9OSEFKSlRwTllET3dLRWRXZDA5eTNCV2hfTGhuVzZ6RUVVUGN0TkhpdWxqZHhnaHA0cTEwQ3FscDhRY1FvQ052b0p1MUZsUHB4dnJTcUFCS2Y1LWpUcW9FdTBzMTR0dGNNV3p5eXp1NVZ2d01EMTBHMVNwSlIxbU1ZSXlmaUdkdXN6TUwxcUNlMkE?oc=5",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tMk1OMl82Qm40TGI3emhpVzM2Sl9DZEtkYkZMaVdjYnVpQVo1Vmt1bnV5a01aSnJkNHVldkFmdjlkbEtackhjWGRyTlBmNVRKRUVHcDBmbWphRDgxUnZZa1BSWW1mcnRnMlE?oc=5"
+   ],
+   "facts": "Solo titoli; il contesto su WHI viene da Reuters (6/10, via Zawya). URL di Nikkei generico: articolo non raggiungibile dalla sessione.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-14-r1-asia-ecm-weekend",
+   "impact": "Breve periodo: pipeline di IPO asiatiche per fine anno. Medio periodo: il Giappone come mercato di exit per i fondi.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-13T22:03Z",
+   "runId": "2026-11-14-r1",
+   "source": "Nikkei Asia; Reuters; The Nation Thailand",
+   "summary": "Nikkei Asia (22:03 UTC): WHI Holdings, la società di software HR controllata da Bain Capital e GIC, è avviata a diventare la maggiore IPO giapponese del 2026. A ottobre Reuters indicava una valutazione di almeno 500 miliardi di yen (circa 3,2 miliardi di dollari) e la possibilità di una vendita in alternativa. La fintech indiana Razorpay ha ottenuto il via libera regolamentare per l'IPO (Reuters, 17:47 UTC). Central Group e CPN hanno annunciato il rilievo della quota di Hongkong Land nel progetto Central Embassy 2 a Bangkok, un piano da oltre 83 miliardi di baht (The Nation, 23:47 UTC).",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Asia, mercati dei capitali (mercati chiusi sabato): WHI di Bain e GIC verso la maggiore IPO giapponese del 2026 (Nikkei); Razorpay ottiene il via libera all'IPO in India; Central Group e CPN rilevano la quota di Hongkong Land in Central Embassy 2",
+   "tz": "JST",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNR1Fmd05hR09rY2xHZHNFSWI3QWVIaGZoNzNmaW5zR29PdnBNMUdDLVhSeWV4SFY5ZGQ1eVhIN1A0Qmh0MTB3TGdrTTZQbV96Vk0tTkdhVWt5V09CN2NRVEFfNWgxSWFFZWUxbWJMWFFQeWI2ekZDbDBMV1JPRDVOWVJ0MU5QNnFWTHhKS2xmZ24yMkhhZVNHRm1WZDNaUE5adngtRTNGQURDdXU3VWc?oc=5",
+   "view": "—",
+   "why": "Le exit via IPO del private equity in Giappone e India sono il canale più attivo dell'Asia."
+  },
+  {
+   "date": "2026-11-14",
+   "facts": "Solo titolo; il testo dell'intervista FT non è accessibile.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-14-r1-boe-pill",
+   "impact": "—",
+   "links": [],
+   "publishedAt": "2026-11-14T05:29Z",
+   "runId": "2026-11-14-r1",
+   "source": "Reuters via MarketScreener (intervista al Financial Times)",
+   "summary": "Huw Pill, capo economista della Banca d'Inghilterra, ha detto al Financial Times che la BoE probabilmente aumenterà ancora i tassi nel 2027 (titolo Reuters ripreso da MarketScreener in inglese e in italiano).",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Banca d'Inghilterra: il capo economista Pill al FT, probabili altri rialzi dei tassi nel 2027",
+   "tz": "GMT",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZDJsLXlfV0s0RjlDQm5DLXVuWjhSN3N0cTh3Rmo0Y3dFblF4N09zSzhHR1hYSTN2d2V6UGFsS2JrRTlqandDek1fNG53OGhabEljT2J0MUpva2FkTjBsZE41a3hTRy1hUzVvaGxqUzgwUFVnSWNURHJzVHplQndpRTB1Wjg0YVBVTE9IQnQ1dVEzNkp5bnBEOThuQnlKdnN6dF9rMFZxV2pKZ1lF?oc=5",
+   "view": "—",
+   "why": "Conferma la tendenza al rialzo dei tassi anche nel Regno Unito, rilevante per il leveraged finance in sterline."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://www.federalreserve.gov/publications/financial-stability-report.htm"
+   ],
+   "facts": "Cifre lette nel PDF originale della Fed. La percentuale dell'87% dei rispondenti, riportata da Newsquawk e Startup Fortune, non compare nel testo: si ricava dal grafico ed è quindi da trattare come dato di stampa.",
+   "focus": [
+    "ai-finance",
+    "macro-central-banks"
+   ],
+   "id": "2026-11-14-r1-fed-fsr-ai",
+   "impact": "Breve periodo: più attenzione di banche e investitori alle strutture con SPE e garanzie sul valore residuo. Medio periodo: possibili richieste di disclosure sugli impegni fuori bilancio e prezzi più alti per le tranche subordinate.",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-13T21:00Z",
+   "runId": "2026-11-14-r1",
+   "source": "Federal Reserve Board (Financial Stability Report, novembre 2026); CNBC; Bloomberg; Reuters; Newsquawk",
+   "summary": "Nel rapporto semestrale (riquadro 2.2 'Leverage in the Data Center Buildout') la Fed stima che le emissioni di debito legate al calcolo avanzato abbiano superato i 680 miliardi di dollari a ottobre 2026, circa cinque volte i 130 miliardi del 2023. Questo debito vale circa il 31% delle emissioni investment grade non finanziarie nel 2026 (meno del 6% nel 2023). Il debito pubblico in essere legato al settore supera i 1.100 miliardi; il private credit ne aggiunge una parte non misurabile. Per Amazon, Alphabet, Broadcom, Meta, Microsoft, Nvidia e Oracle, i leasing non ancora iniziati superano i 1.000 miliardi e le altre obbligazioni (take-or-pay, garanzie sul valore residuo) i 2.000 miliardi, valori non attualizzati. Le tranche subordinate dei veicoli SPE sono detenute da fondi high yield, assicurazioni vita, BDC e veicoli di debito privato; le maggiori banche USA hanno un'esposizione di quasi 1.000 miliardi verso big tech, sviluppatori di data center, SPE, private credit e utility. Nel sondaggio della Fed di New York (23 contatti, settembre–ottobre) l'AI è il rischio più citato, davanti a correzione degli asset rischiosi, rendimenti a lungo termine più alti, cyberattacchi e sostenibilità del debito pubblico.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS); PDF del 13/11 letto sul sito della Fed",
+   "title": "Fed, Financial Stability Report: l'AI è il rischio più citato; il debito per il calcolo avanzato supera i 680 miliardi emessi nel 2026, e gli impegni fuori bilancio (leasing e garanzie) superano i 3.000 miliardi",
+   "tz": "ET",
+   "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+   "view": "Il numero che conta non è il debito (1.100 miliardi) ma i 3.000 miliardi di impegni contrattuali: è lì che si trasferisce il rischio dai grandi emittenti ai veicoli più deboli. Per chi struttura project finance su data center, la qualità del contratto con l'hyperscaler diventa la vera garanzia.",
+   "why": "È la prima misura ufficiale della leva 'nascosta' del ciclo AI: per chi finanzia infrastrutture, il rischio di controparte degli hyperscaler è maggiore di quanto dicano i bilanci."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html"
+   ],
+   "facts": "Jefferson: testo integrale sul sito della Fed. Daly e Bloomberg: solo titoli. Probabilità FedWatch: CNBC, via estratto di ricerca.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-14-r1-fed-hike-path",
+   "impact": "Breve periodo: rendimenti a 2 e 10 anni sostenuti, dollaro forte. Medio periodo: tasso neutrale più alto significa leva sostenibile più bassa nei modelli LBO.",
+   "links": [
+    "ai-finance",
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-14T00:03Z",
+   "runId": "2026-11-14-r1",
+   "source": "Federal Reserve Board (discorso di Jefferson, 13/11); Reuters; Bloomberg; CNBC (CME FedWatch)",
+   "summary": "Il vicepresidente della Fed Philip Jefferson (UC San Diego, 13/11) ha detto che la traiettoria dell'inflazione è 'il segnale più importante' per decidere la politica monetaria. Ha citato PCE al 3,6% e core PCE al 3,1% a settembre, disoccupazione al 4,1% a ottobre e crescita del PIL del 3,4% annualizzato nel terzo trimestre. Secondo Jefferson la spesa per i data center spinge la domanda e i prezzi di beni specifici come le memorie; se l'AI aumenta in modo permanente la produttività, il tasso neutrale potrebbe salire. Mary Daly (Fed di San Francisco) ha detto che la Fed probabilmente dovrà alzare i tassi per il peggioramento dell'inflazione (Reuters, titolo). Secondo Bloomberg la Fed è avviata a un rialzo a dicembre e forse a un altro a gennaio. Il CME FedWatch indicava il 100% di probabilità di un rialzo il 9 dicembre (89% per 25 punti base, circa 14% per 50).",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS); discorso letto sul sito della Fed",
+   "title": "Fed: Jefferson 'segue i segnali dell'inflazione' e lega l'AI ai prezzi, Daly vede necessari altri rialzi; il mercato prezza al 100% un rialzo il 9 dicembre",
+   "tz": "PT",
+   "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm",
+   "view": "Il passaggio su r* è il più importante per chi fa leveraged finance: se il tasso neutrale sale, il 'ritorno alla normalità' dei tassi su cui si basano molti piani di rifinanziamento 2027 potrebbe non arrivare.",
+   "why": "Con un rialzo dato per certo e un vicepresidente che lega esplicitamente la spesa AI all'inflazione, il costo del capitale per i deal resta in salita."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY0lYUVVJMG9OdkZQX0p2QXM1SzFwRU94WTB4ejdQRkhkSGZOTDlWTkFhU3VGdExYVTc3OHJMTG5La0Zrd3plY2FGUS0zTExicWg1YlItcU55R1g4eDRYM1hkeHhCWjRoYzdnRGdQSGVla0pLNlRabkdqRW9sbnc4M2hwMVh1QnNJU18wVUNpT1V1SDktd1ZNVXM3VV9fQkQ4QzNOaXNiX1JORHhKMmFWX2s3SQ?oc=5"
+   ],
+   "facts": "Esito da Finimize e Briefs (estratti di ricerca) e dal titolo Bloomberg ('rebuking CEO'); posizioni dei soci da RENX e Bisnow.",
+   "focus": [
+    "pe-private-credit",
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-14-r1-hr-reit-vote",
+   "impact": "Breve periodo: contenzioso sulla penale. Medio periodo: più attenzione alla struttura dei voti 'majority of the minority' nelle operazioni con management coinvolto.",
+   "links": [],
+   "publishedAt": "2026-11-13T21:10Z",
+   "runId": "2026-11-14-r1",
+   "source": "Bloomberg; CoStar; Finimize; Briefs",
+   "summary": "Nell'assemblea straordinaria del 13/11 i titolari di quote di H&R REIT hanno respinto l'operazione da 6,7 miliardi di dollari canadesi: GO Residential REIT avrebbe comprato il portafoglio residenziale USA, mentre il resto sarebbe andato a un gruppo guidato da Blackstone insieme a società legate al CEO Tom Hofstedter. H&R ha risolto subito l'accordo. GO Residential si è rivolta alla Superior Court dell'Ontario per ottenere una penale di 102,1 milioni di dollari canadesi; secondo Finimize H&R ritiene che non sia dovuta alcuna penale al consorzio guidato da Blackstone. H&R ripristinerà le distribuzioni mensili, riprenderà le vendite di asset e avvierà cambi nel consiglio, compresa la successione del CEO. Prima del voto RBC Global Asset Management, Mill Pond e Sandpiper avevano annunciato il voto contrario. L'approvazione richiedeva i due terzi dei voti più la maggioranza delle minoranze.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Canada: i soci di H&R REIT bocciano lo smembramento da 6,7 miliardi di dollari canadesi con Blackstone e GO Residential; H&R chiude l'accordo, GO chiede 102 milioni di penale",
+   "tz": "ET",
+   "url": "https://finimize.com/content/hr-reit-unitholders-voted-down-its-c67-billion-breakup",
+   "view": "La lezione per gli sponsor: quando il management è dalla parte del compratore, prezzo e governance del processo vengono giudicati insieme, e il voto delle minoranze diventa il vero prezzo da pagare.",
+   "why": "È un caso da manuale di take-private bocciato dalle minoranze quando il management è anche compratore."
+  },
+  {
+   "date": "2026-11-14",
+   "facts": "Testo dell'articolo ANSA letto direttamente; nessun comunicato S&P consultato.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-14-r1-italy-sp",
+   "impact": "Breve periodo: nessun effetto sugli spread (già prezzato). Medio periodo: il rialzo resta possibile nel 2027 se deficit e posizione estera migliorano.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-13T21:37Z",
+   "runId": "2026-11-14-r1",
+   "source": "ANSA; Il Sole 24 Ore",
+   "summary": "S&P ha confermato i rating dell'Italia a BBB+/A-2 con outlook positivo, citando l'impegno sui conti pubblici e la stabilizzazione del debito. Secondo l'agenzia la crescita supererà le stime precedenti, grazie all'export netto (energia esclusa) e agli stimoli del PNRR; nel 2027–2029 dovrebbe restare modesta ma stabile. Per un rialzo S&P aveva posto due condizioni a gennaio: un debito estero netto sotto il 150% delle entrate di parte corrente entro il 2028 e la riduzione del deficit per far scendere il rapporto debito/PIL. Il ministro Giorgetti: 'In tempi così difficili una conferma rappresenta un successo'. Lo spread BTP–Bund ha chiuso a 104 punti, con il decennale al 4,41%. Il 17/11 arrivano le previsioni della Commissione europea.",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS); pagina ANSA delle 23:32 ora italiana letta direttamente",
+   "title": "S&P conferma il rating dell'Italia a BBB+/A-2 con outlook positivo: crescita sopra le stime grazie a export netto e PNRR; spread a 104 punti, BTP decennale al 4,41%",
+   "tz": "CET",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/13/sp-conferma-il-rating-sullitalia-la-crescita-superera-le-stime.-giorgetti-e-la-strada-giusta_968a7f83-4609-47b6-b8c7-0b1ab287d3a7.html",
+   "view": "Interpretazione: con il Treasury sopra il 5% e lo spread a 104, il costo del debito in euro per un emittente italiano oggi dipende più da Washington che da Roma.",
+   "why": "Il rating sovrano è il pavimento del costo del debito per banche e corporate italiane, e quindi per i rifinanziamenti e i deal domestici."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS1dDdzB1WGtwQmZrTS1xZ1dhWnZOMndfZUtBbnhRMTQ2X1o3SHJsNHFuNVBHYlhwX3dCbEd6WVR4eTNFWkJSZVBLci1UQVRtZUtWXzdTVXVBUU4xcVNCMXBBNERrTzA2MnpKeFVKeHlWS0VHdWl2Mkt1Z2cxWldXNnRsNFppZjhxYmppampzcXR0YXJWcFM5Q0k4QmdfcEJ6UGdJRUpOdTBEMm5JM1dTaA?oc=5",
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Tb0VsZl9DZ2xkbWhuaWVBejlGcHEwX09zMGhFcFNkejQtMFFRUUphSXl4aEEyaXdmellod3JJb1hlME5JRnlNcC1xZHJlZi1zUlpFQ1JR0gFWQVVfeXFMTVNvRWxmX0NnbGRtaG5pZUF6OUZwcTBfT3MwaEVwU2R6NC0wUVFRSmFJeXhoQTJpd2Z6WWh3cklvWGUwTklGeU1wLXFkcmVmLXNSWkVDUlE?oc=5",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcURfazVsOWRVOEc4dzRZYmI4amd5M2cwZlE3d3d6TG5DSDBUYVFWVUdOSmhwUHpXekpDM1dhTTl6Ukt1ZlZ2ZG9aM3V4ZU9ZTHVnTHJFcTF0TWVQOVVHbS1CdFJtZXJkV0IyRl96c2ZGOTZ5Z3ZLci03NDZaLVlCMkZGN2FiVy03RUZIOEY4REkyQU84SDhQSmt1OFRHWFQtaGlLN3Z4TmprTUE5LS1MREIwM0tqdw?oc=5"
+   ],
+   "facts": "Solo titoli; i dettagli su RealReal (compratori, prezzo) non sono verificabili.",
+   "focus": [
+    "luxury-ma",
+    "luxury-tech-markets"
+   ],
+   "id": "2026-11-14-r1-luxury-signals",
+   "impact": "—",
+   "links": [
+    "pe-private-credit"
+   ],
+   "publishedAt": "2026-11-13T22:37Z",
+   "runId": "2026-11-14-r1",
+   "source": "MarketScreener (Dow Jones); TradingView; TipRanks (Puck); Law360; Business of Fashion",
+   "summary": "MarketScreener (Dow Jones, 22:37 UTC): i titoli dei consumi sono in calo per i segnali di rallentamento del lusso. RealReal, piattaforma USA di rivendita del lusso, è salita su indiscrezioni di acquisizione (TradingView, 21:00 UTC); secondo un titolo di TipRanks, Puck riporta che il private equity sta valutando la società. Law360 (19:34 UTC): un'unità di LVMH ha evitato in tribunale nei Paesi Bassi un divieto di vendita di borse. Business of Fashion pubblica un'analisi sui rischi per il lusso dopo l'uscita di Huang da Nvidia (opinione).",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Lusso, segnali della notte: i titoli dei consumi in calo sui segnali di rallentamento del lusso; RealReal sale su indiscrezioni di interesse del private equity; un'unità di LVMH evita un divieto di vendita di borse in Olanda",
+   "tz": "ET",
+   "url": "https://www.tipranks.com/news/the-fly/realreal-being-circled-by-private-equity-puck-reports",
+   "view": "—",
+   "why": "Il resale è uno dei temi del Focus 'Luxury Tech': un take-private di RealReal sarebbe un test di valutazione per il segmento."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMW5kZ01Wbk9TVFVaV1BrRXYwZEs0RmNORjJySnlqTDR5V2E2dlcwcVFFdHBVbG9nQjBPaXFWUjFpX2ZpR0gwUWE0N1ZBODl0VjFWdVBYLUJUYkFWZThNRmJEenhjbnVKTzA4Tkt6T1lPN1NzcTJPTFVDRFV2VFNrWWJ3ei14Q2JPQmZKd19jSUo2MHlIdVZhR3plaWtnNERYdG0yTi1XZThxLTZoZ0xzZUJ0dmN3OHJERlRuN0ZXSQ?oc=5"
+   ],
+   "facts": "Esclusiva su Teter e Wagonfeld letta nella sintesi della ripresa Yahoo Finance. Il contatto con Haas è solo un titolo che cita altre testate: non confermato. Data dei conti da estratto di ricerca.",
+   "focus": [
+    "ai-finance"
+   ],
+   "id": "2026-11-14-r1-nvidia-update",
+   "impact": "Breve periodo: i conti del 17/11 e le indicazioni sul successore guidano il settore. Medio periodo: possibili cambi nella politica di finanziamento dei clienti.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-14T00:26Z",
+   "runId": "2026-11-14-r1",
+   "source": "Reuters (esclusiva, via Yahoo Finance); Reuters; AP; FT; CNBC",
+   "summary": "Secondo un'esclusiva Reuters (due fonti e corrispondenza interna esaminata dall'agenzia), Jensen Huang ha fuorviato diversi dirigenti, tra cui il direttore legale Tim Teter e la responsabile marketing Alison Wagonfeld, sulla natura della relazione con Alice Huang. Reuters non ha verificato in modo indipendente se lei lavorasse per il governo cinese; Pechino nega che sia una spia. Un altro titolo Reuters (23:11 UTC) riporta, citando altre testate, che Nvidia ha contattato il CEO di Arm, Rene Haas, mentre alcuni dipendenti chiedono il ritorno di Huang. Huang si è affidato allo studio legale Paul Weiss (Reuters). Il segretario al Tesoro Bessent ha attribuito al dipartimento del Commercio di Lutnick la mancata restrizione dell'export (AP). Funzionari USA dicono che Trump non solleverà il tema con Xi (FT, CNBC). I conti del terzo trimestre fiscale sono attesi martedì 17/11 a mercati chiusi.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Caso Nvidia, aggiornamento: Reuters, Huang ha fuorviato il direttore legale sulla relazione con Alice Huang; notizie di contatti con il CEO di Arm, Haas; conti trimestrali il 17/11",
+   "tz": "ET",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/exclusive-ex-nvidia-ceo-misled-002638424.html",
+   "view": "La scelta del CEO conta per i creditori quanto per gli azionisti: un manager esterno di cultura 'Arm' potrebbe essere meno incline a sostenere i clienti con il bilancio.",
+   "why": "La governance di Nvidia è ormai un fattore di rischio per tutta la catena del finanziamento AI (backstop, vendor financing, IPO dei neocloud)."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://startupfortune.com/blackstones-qts-cuts-its-ai-data-center-debt-sale-to-300-million/",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaXI3bWtWc1U5TU9hMko0NmZsRnZhOHhBVmJvRTAwdE9nRDFUWjRjQmM2Yy1tZ3B6UTBocHNvRVJmR2Q0ekhYT0xLanEzUWVId0RGeG15cFRremthZl93TTFHTVBlenE5RW1NV3M1X3N6SUk3TnMySUsteHkwSTNLR2lNaVdCS3lzbEZQWEgxNkV0dzNtd3d0R0w5aTl6TTAwZ2NJb2N3Vmt5cWNXdlE?oc=5"
+   ],
+   "facts": "Dettagli dalla sintesi dell'articolo Bloomberg (estratto di ricerca) e dalle riprese di Startup Fortune e Traders Union; testo integrale Bloomberg non letto.",
+   "focus": [
+    "ai-finance",
+    "pe-private-credit"
+   ],
+   "id": "2026-11-14-r1-qts-debt-cut",
+   "impact": "Breve periodo: pressione sugli spread dei private placement legati ai data center. Medio periodo: più ricorso a term loan bancari e ABS, maggiore diversificazione delle fonti.",
+   "links": [
+    "macro-central-banks"
+   ],
+   "publishedAt": "2026-11-13T21:35Z",
+   "runId": "2026-11-14-r1",
+   "source": "Bloomberg; Startup Fortune; Traders Union",
+   "summary": "Secondo Bloomberg, QTS (data center, controllata da Blackstone) riduce a circa 300 milioni di dollari un collocamento privato di debito che inizialmente puntava a circa 800 milioni, dopo una domanda debole. Alcuni investitori hanno contestato il prezzo offerto; altri avevano raggiunto i propri limiti di esposizione perché QTS è già tornata più volte sul mercato dei private placement. La società non ha voluto pagare rendimenti molto più alti per raccogliere di più. Nel 2026 QTS aveva raccolto domanda per circa 12,5 miliardi su un bond investment grade da 4,6 miliardi (aprile).",
+   "tier": "alta",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Blackstone, QTS taglia di circa il 60% il private placement per i data center: 300 milioni invece di circa 800, rifiuta di pagare rendimenti molto più alti",
+   "tz": "ET",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/blackstone-s-qts-is-cutting-ai-debt-sale-by-more-than-half",
+   "view": "La notizia interessante è la parte sui limiti di concentrazione: quando lo stesso nome ha già saturato i libri dei compratori abituali, il costo marginale sale anche se il credito è buono. Per gli emittenti ricorrenti la diversificazione del pool di investitori è una variabile di pricing.",
+   "why": "È il primo segnale concreto che anche un emittente AI di alta qualità incontra limiti di capacità degli investitori, non solo di prezzo."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/webuild-sale-al-44-di-trevi-dopo-nuovi-acquisti-sul-mercato-271_2026-11-11_TLB.html?lang=it",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ2JpdUxJeWl3Z3VXWGdDd2h0S0hGVWVnMUFZUlFZMThmYlh2dnpLb25tbkFIT0ItTVAzYVk3anlZelkwSVdER2Z2ZmMtY3dQR1BNQ2VHTlBuVFpYRVY0aTRrdVEtTnRXR2FSU0JxTTBGZlpRRldhUHBXbDJoZkZLQzlveU1rdTBOUjM5UWxqMDdzc2RRenhXUEo2N2lBb2l3dWhWMWNOU3NmdnZwZDlF?oc=5"
+   ],
+   "facts": "Data del delisting e quota del 44,99% visti solo nei titoli; dati precedenti di Recordati da Websim e Radiocor (10/11), di Webuild da Teleborsa (10–11/11).",
+   "focus": [
+    "global-ma-ecm",
+    "pe-private-credit"
+   ],
+   "id": "2026-11-14-r1-recordati-webuild",
+   "impact": "Breve periodo: Recordati esce dal FTSE MIB; Trevi verso il controllo di Webuild. Medio periodo: un altro delisting da private equity a Piazza Affari.",
+   "links": [
+    "eu-regulation"
+   ],
+   "publishedAt": "2026-11-13T17:58Z",
+   "runId": "2026-11-14-r1",
+   "source": "SoldiOnline; Websim; Radiocor; la Repubblica; Webuild; Teleborsa",
+   "summary": "SoldiOnline (17:58 UTC del 13/11) titola sui risultati definitivi dell'OPA su Recordati e su un delisting il 24 novembre. Dopo la riapertura dei termini (3–9 novembre, 53 euro per azione), Respighi BidCo (CVC con GBL) era salita al 91,93% del capitale. L'offerente ha confermato la procedura congiunta di acquisto e obbligo di acquisto (articoli 108, comma 2, e 111 del TUF) sul residuo 8,07%; il pagamento delle azioni della riapertura è previsto il 17/11. Webuild sale al 44,99% di Trevi dopo nuovi acquisti sul mercato (la Repubblica, 18:49 UTC; comunicato Webuild). Gli acquisti avvengono a non più di 5,165 euro per azione, il prezzo dell'OPA diventata obbligatoria dopo il superamento del 30% il 30/10.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Piazza Affari: Recordati verso il delisting il 24/11 dopo l'OPA di CVC e GBL (titolo SoldiOnline); Webuild sale al 44,99% di Trevi con acquisti sul mercato",
+   "tz": "CET",
+   "url": "https://www.websim.it/azioni/blue-chip/recordati-respighi-bidco-al-91-9-delisting-in-arrivo/",
+   "view": "Il caso Trevi riprende il tema del 'controllo per accumulo' già segnalato negli insight: comprare sul mercato al prezzo dell'OPA consolida il controllo senza aumentare il corrispettivo.",
+   "why": "Sono due strade al controllo in Borsa: OPA totalitaria con squeeze-out da parte di un fondo, e accumulo sul mercato fino all'OPA obbligatoria."
+  },
+  {
+   "date": "2026-11-14",
+   "facts": "Solo titoli di più testate concordi.",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "id": "2026-11-14-r1-robinhood-scotus",
+   "impact": "—",
+   "links": [],
+   "publishedAt": "2026-11-13T19:00Z",
+   "runId": "2026-11-14-r1",
+   "source": "Reuters; CNBC; Law360; Teleborsa",
+   "summary": "La Corte Suprema degli Stati Uniti ha accettato di esaminare il ricorso di Robinhood contro la causa degli investitori che contestano l'omissione di informazioni finanziarie nel prospetto dell'IPO del 2021 (2,1 miliardi di dollari raccolti, secondo Yahoo Finance).",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "La Corte Suprema USA esaminerà la causa sull'IPO 2021 di Robinhood (omissione di informazioni nel prospetto)",
+   "tz": "ET",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9OSWNHZXlNaDBtejVGV2R4dGtia3l1TmFfZTU2bE1ZVFZjQnBtRHNnVFFTeEJfYmtDaVlaTXpwalhEY1dlb1lTYXI3ams3Um9YTURfMHJ4SU85QlFOLVZqVEFmOV8zWFNKak04RnRPcUFtRl8tbEE1bGZxT0_SAYIBQVVfeXFMT2Ntc2d3QnF5TnFVN1FIRVJqTGZ5cE5ZSFRwVWwtbmZicm14VzlKZFFXZy1KT2g1Y2w1MkNWX2llVXNEZWJFSk5hbGx1Zkk1TjNMaGxJM2tZM0h5MTdVQlViTEtfdU1wSXR5OXVGVEItZTFlTE1pX0l4c3VrYlJWbE1fdw?oc=5",
+   "view": "—",
+   "why": "La decisione può definire gli obblighi di disclosure sui dati infratrimestrali nei prospetti, proprio mentre si quotano Anthropic e Nscale."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxOREM3N2pHRGZ1V1lCTk9qVDVjaURLQTNKaEFsUEtUVEFpOGUzd1BKaXJxbzZOaVVVN1pkOUdLWnVhMmZRR0N2UUFJYU5SNFRWUWRsbm5SQWlEU0E0Q0lhWmJ5R3A5c3VBVnNmeW9CNzlmYkI5Vzlza2Q2Wk1ybVBXWUcwU2ZoSmhBY0sxTTFMcmhrM2RoT2g2N3dmV3V4OXU2bE1TcUY3S0VuWm9FbGh2Vw?oc=5"
+   ],
+   "facts": "Data e luogo dalla pagina ANSA letta direttamente; gli altri dettagli sono titoli.",
+   "focus": [
+    "macro-central-banks",
+    "ai-finance"
+   ],
+   "id": "2026-11-14-r1-trump-xi-putin",
+   "impact": "Breve periodo: attese sul vertice per chip, terre rare e dazi. Medio periodo: effetti su export control (caso Nvidia) e sulla domanda di lusso in Cina.",
+   "links": [
+    "luxury-tech-markets"
+   ],
+   "publishedAt": "2026-11-13T23:50Z",
+   "runId": "2026-11-14-r1",
+   "source": "ANSA; Bloomberg; Reuters; AP; Nikkei Asia; SCMP",
+   "summary": "Secondo la Casa Bianca, Donald Trump, Xi Jinping e Vladimir Putin terranno colloqui trilaterali giovedì prossimo a Shenzhen, a margine del vertice APEC del 18–19 novembre (ANSA). Reuters riporta che Trump solleverà il tema della riduzione degli armamenti nucleari; ANSA riferisce che si parlerà di Iran e non di Ucraina. Elon Musk si unirà al viaggio (MarketScreener). Giovedì 13/11 si è tenuta la prima riunione del Board of Trade USA–Cina (Reuters, SCMP).",
+   "tier": "media",
+   "timeVerified": "orario dalla pagina ANSA (00:50 ora italiana del 14/11) e dal feed",
+   "title": "Asia: la Casa Bianca annuncia colloqui trilaterali Trump–Xi–Putin giovedì 19/11 a Shenzhen, a margine dell'APEC; prima riunione del Board of Trade USA–Cina",
+   "tz": "CET",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/casa-bianca-trump-xi-e-putin-terranno-colloqui-trilaterali-a-shenzhen_1e1dfadf-250d-40b1-b71a-67870c9e5c13.html",
+   "view": "Interpretazione: per il lusso europeo conta più il clima commerciale USA–Cina che il vertice in sé; un'intesa sui dazi aiuterebbe la Cina continentale, che resta il mercato più debole.",
+   "why": "Con i mercati asiatici chiusi nel weekend, è il fatto asiatico più rilevante per la riapertura di lunedì: dazi, export di chip e domanda cinese passano da qui."
+  },
+  {
+   "date": "2026-11-14",
+   "facts": "Livelli dei rendimenti da CNBC (estratto di ricerca); dollaro, oro e bitcoin da titoli di Bloomberg, Kitco, MarketScreener e MarketWatch.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-14-r1-ust-dollar-gold",
+   "impact": "Breve periodo: pressione sulle emissioni high yield e sui private placement. Medio periodo: rifinanziamenti del 2021 molto più cari (vedi KB sui data center).",
+   "links": [
+    "luxury-financing"
+   ],
+   "publishedAt": "2026-11-13T22:46Z",
+   "runId": "2026-11-14-r1",
+   "source": "CNBC; Bloomberg; Kitco; MarketWatch; MarketScreener",
+   "summary": "Il rendimento del Treasury a 10 anni è rimasto sopra il 5% venerdì, tra circa il 5,13% e il 5,17% (massimo di giornata 5,174%), dopo il balzo di oltre 13 punti base di giovedì. Secondo CNBC l'indice del dollaro ha toccato il livello più alto da aprile 2025; Bloomberg titola su 'la migliore settimana da oltre un mese' per il dollaro e riporta che gli investitori ritengono la vendita di obbligazioni non conclusa. Kitco segnala una forte perdita settimanale dell'oro. Bitcoin è sceso sotto 69.000 dollari (MarketScreener, MarketWatch).",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Treasury decennale sopra il 5% (massimo intraday 5,17%), dollaro ai massimi da aprile 2025, oro in forte calo nella settimana; bitcoin sotto 69.000 dollari",
+   "tz": "ET",
+   "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
+   "view": "L'oro in calo è un dettaglio da non trascurare per il lusso: dopo il trimestre di Richemont, un oro più basso alleggerirebbe i costi della gioielleria.",
+   "why": "Un decennale USA stabilmente sopra il 5% è il riferimento per il costo del debito in dollari di qualsiasi operazione."
+  },
+  {
+   "date": "2026-11-14",
+   "extraUrls": [
+    "https://krmg.com/2026/11/13/how-major-us-stock-indexes-fared-friday-11-13-2026/"
+   ],
+   "facts": "Chiusure dalla tabella AP ripresa da Washington Post e KRMG (estratto di ricerca); dato Nvidia dal titolo ANSA.",
+   "focus": [
+    "macro-central-banks",
+    "ai-finance"
+   ],
+   "id": "2026-11-14-r1-wall-street-week",
+   "impact": "Breve periodo: settimana prossima decisiva per il sentiment sull'AI. Medio periodo: la volatilità del settore incide sulle finestre di IPO e sul costo del debito AI.",
+   "links": [
+    "global-ma-ecm"
+   ],
+   "publishedAt": "2026-11-13T22:04Z",
+   "runId": "2026-11-14-r1",
+   "source": "AP (via Washington Post, KRMG); Reuters; ANSA; Yahoo Finance",
+   "summary": "Venerdì 13/11 l'S&P 500 ha perso lo 0,4% a 7.561,67 punti, il Nasdaq Composite lo 0,9% a 25.136,27, mentre il Dow Jones ha guadagnato lo 0,1% a 52.347,55 e il Russell 2000 ha ceduto lo 0,31%. Su base settimanale l'S&P 500 sale del 2,5%, il Dow del 2,1% e il Nasdaq del 2,3%: per AP è la prima settimana positiva da inizio ottobre. A pesare sono stati i titoli dei chip e dei data center dopo l'uscita di Huang da Nvidia; secondo ANSA Nvidia ha chiuso a -2,01% e ha perso quasi il 13% nella settimana.",
+   "tier": "media",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Wall Street chiude venerdì in calo (S&P 500 -0,4%, Nasdaq -0,9%), ma segna la prima settimana positiva da inizio ottobre; Nvidia -2% e circa -13% nella settimana",
+   "tz": "ET",
+   "url": "https://www.washingtonpost.com/business/2026/11/13/wall-street-stocks-dow-nasdaq/f15a10e2-dfa7-11f1-912c-4fbb80d73f7f_story.html",
+   "view": "Indici in rialzo nella settimana con la leadership AI in calo: il mercato si sta allargando oltre i titoli AI, oppure aspetta i due eventi della settimana prossima. Va letto insieme ai Treasury sopra il 5%.",
+   "why": "Fotografa la notte di New York: rimbalzo settimanale fragile, con il settore AI ancora sotto pressione prima dei conti Nvidia (17/11) e del pricing dell'IPO Anthropic (18/11)."
+  },
+  {
+   "date": "2026-11-14",
+   "facts": "Solo titoli; BigGo è una fonte secondaria e il membro del board non è identificato. Il dato dei 500 milioni è un'integrazione alla voce kb-us-yen-intervention-july.",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "id": "2026-11-14-r1-yen-boj",
+   "impact": "—",
+   "links": [],
+   "publishedAt": "2026-11-14T03:36Z",
+   "runId": "2026-11-14-r1",
+   "source": "BigGo Finance; Nikkei Asia",
+   "summary": "BigGo Finance (03:36 UTC del 14/11) riporta il dollaro-yen stabile nella parte alta dell'area 159 dopo commenti accomodanti di un membro del board della Banca del Giappone. Nikkei Asia (21:24 UTC del 13/11) riporta che il Tesoro USA ha comprato quasi 500 milioni di dollari di yen nell'intervento congiunto di luglio, aggiornando la conferma della Fed di New York già riportata il 13/11.",
+   "tier": "monitor",
+   "timeVerified": "orario dal feed (Google News/RSS)",
+   "title": "Yen: dollaro stabile in area 159 dopo commenti accomodanti di un membro del board della BoJ (BigGo, da confermare); Nikkei: il Tesoro USA ha comprato quasi 500 milioni di dollari di yen nell'intervento congiunto di luglio",
+   "tz": "JST",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNazh0dmVpeGhleUh2NGV2OVQ3RGFWVV9NOVFVMjd6RnNKZEZERko5NTN6Z0NCb3hxMUNSeGlOVUtCSWxsQzhrMTBsZDFhU3BkMldxOTNXSy02bHI1RWZjNV9oeDhMLUY2ckw5Tkl6MjFfYjhqYzh4a0dsVXNvdy11VzhjakQ1VlQxTDVHRm5ub3BDU2dGeG5raUNlWF9peVVxZVhTUGJpYW5fbGI0aG5Rc0F1QjJxYWF0S3pnRXVZVUxuN3l2Umc?oc=5",
+   "view": "—",
+   "why": "Il cambio a 160 resta la soglia di intervento e incide sul costo delle coperture per gli investitori giapponesi in Europa."
+  }
+ ],
+ "radar": [
+  {
+   "date": "2026-11-14",
+   "focus": [
+    "luxury-ma",
+    "luxury-financing"
+   ],
+   "note": "Fuori finestra secondo la data della pagina. Regent: la vendita del marchio è avvenuta a valore di mercato con perizia indipendente, prima della moratoria.",
+   "publishedAt": "2026-11-13T14:37Z (data della pagina; il feed indicava 18:05 UTC)",
+   "runId": "2026-11-14-r1",
+   "source": "WWD",
+   "title": "Bally: le società italiane Bally Italia e Bally Studio in liquidazione giudiziale, vendita dello stock nella boutique di Milano; procedura svizzera prorogata a fine febbraio 2027; marchio venduto ad Aare LLC (WWD)",
+   "url": "https://wwd.com/business-news/business-features/bally-italian-liquidation-swiss-restructuring-extended-1239414752/",
+   "id": "2026-11-14-r1-0"
+  },
+  {
+   "date": "2026-11-14",
+   "focus": [
+    "macro-central-banks"
+   ],
+   "note": "Risultati diffusi durante la giornata di Tokyo di venerdì, prima della finestra.",
+   "publishedAt": "2026-11-13 (sessione di Tokyo, ora non verificata; ripresa da Japan Today alle 20:30 UTC)",
+   "runId": "2026-11-14-r1",
+   "source": "Bloomberg; The Edge Malaysia; Japan Today",
+   "title": "Le tre megabanche giapponesi alzano le stime di utile 2026/27 e i buyback: MUFG a 2.800 mld di yen, SMFG a 1.900, Mizuho a 1.600; rischio di rallentamento degli investimenti nei data center",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-13/sumitomo-mitsui-raises-profit-forecast-plans-to-buy-back-shares",
+   "id": "2026-11-14-r1-1"
+  },
+  {
+   "date": "2026-11-14",
+   "focus": [
+    "pe-private-credit",
+    "macro-central-banks"
+   ],
+   "note": "Poco prima della finestra; non coperto dalle esecuzioni del 13/11.",
+   "publishedAt": "2026-11-13T17:00Z",
+   "runId": "2026-11-14-r1",
+   "source": "Borsa Italiana; Milano Finanza; Teleborsa",
+   "title": "Bankitalia, Rapporto sulla stabilità finanziaria: crescono i legami tra private credit e banche ma restano 'rilevanti lacune informative'; possibili minusvalenze per le assicurazioni con i tassi in salita",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNV2JJUkszcXNpOGlFVHp1UWx3cmlBNnVWamxHN0NUZkFTOEttRUM3MjZGTy1fSi13SEpQLUVybDludlpLTjNqeEk5TWdHcl92clFxVUtUeWF6bEYySElvMXNiR3J3bjNYbTdqOTNUSjlfVFRMd2M2RDVRel8takxjRVhuTUZvSjY2V0lQbmpkUGJOamt4Y2JOU01HX0NwZFZUSnJNclBVU1JmaDk3Z2U2ZkFtWnpmR2MtOVdwekVHRnlueFJUX0dQSlVfdGFOdEhFTU5OSTZHTW12b0w5WG1pOVZaQm5Ka2VVUGFHcmZLUnRoRXdIeDdmUU1adC1zYVp3Y3Z6UnBmTXMxT0RMVlA5aDM2dEFuWTh4RlE?oc=5",
+   "id": "2026-11-14-r1-2"
+  },
+  {
+   "date": "2026-11-14",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Solo titolo.",
+   "publishedAt": "2026-11-13T13:21Z",
+   "runId": "2026-11-14-r1",
+   "source": "Yahoo Finance",
+   "title": "Scholt Energy ottiene un prestito di private credit da 475 milioni di euro",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTWV2T3VZNlJNTm0wVWhkSEhpNWZyMVFUWGJveVBnbG1qZ01HUzhYWl9tT19xZGU1dlRwS1VJYktpSFRzM3J3RjdKUmdLMDlwTzVDM3NNdHJONXV2YWxIa01nb0dvd0pZWGI2ZEZRM3VoekdmZkY1UXlqX3JrbVhuYU1UMTdIVTFQTXRIXzZTZklPQQ?oc=5",
+   "id": "2026-11-14-r1-3"
+  },
+  {
+   "date": "2026-11-14",
+   "focus": [
+    "pe-private-credit"
+   ],
+   "note": "Solo titolo.",
+   "publishedAt": "2026-11-13T09:00Z",
+   "runId": "2026-11-14-r1",
+   "source": "South China Morning Post",
+   "title": "Ares: il mercato asiatico del private credit ha ampio spazio di crescita",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNRXJfSnJKVjBkakVLaU90N3dpRXAyZUxZaEpXaHdSZ3ByX2w3QkNuVGJiM0d1VTNDS09lWVRuS05GRW9vWWpMaFNMZEVTTUJFcmVTc09HeVQyX3FROUNmRkdwQ2Nmck5ZVHhxcmhLQjM0THJ6UklNN2hFRFRNUFBiakhETXhCQUloaXJuME1DRG9pb2tsbF9MaV9ramZFYTVIdFRfdE12a2hjaVB4Z1RwZmZtcTNfZ0UycjFOUEJaWEtlWFJWN0hmMEN6U2x3R0FCUXJJcC03ZnEtZw?oc=5",
+   "id": "2026-11-14-r1-4"
+  },
+  {
+   "date": "2026-11-14",
+   "focus": [
+    "global-ma-ecm"
+   ],
+   "note": "Comunicato; contesto per il consolidamento del retail europeo.",
+   "publishedAt": "2026-11-13T16:45Z",
+   "runId": "2026-11-14-r1",
+   "source": "GlobeNewswire",
+   "title": "Fnac Darty: cambi nella governance dopo l'OPA di EP Group (Křetínský)",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNaG9TSFA3Y3NOTmF5TTFlcE9tNllTSFFVdmZpTHhkOXVybklLemIzbXlkUEtWdVJrVWpmanBVVkdhcmc2bDlRRkczYW9RTmx6aWZxS3U0bTV2RGx5MHJLQlQ2MmoxQXRZekt2czRneUUwVy1mWWFxZ09CVENwRnA2aXRpeW9OUzBZcFpyT3hOM18tNUVFaVdNdTU1NGRpcURKZ0ZoMU5PUzFyODV6STRGOEJDRFBoRFhkVTczWXBsZDFoRWtLelFjVE0yVVhQaWVVclkxSndmX2NpMVk0YUZRU0JHT0wzZDJUZm4zVGNLMA?oc=5",
+   "id": "2026-11-14-r1-5"
+  },
+  {
+   "date": "2026-11-14",
+   "focus": [
+    "luxury-tech-markets"
+   ],
+   "note": "Rilevanza bassa.",
+   "publishedAt": "2026-11-13T17:15Z",
+   "runId": "2026-11-14-r1",
+   "source": "WWD",
+   "title": "Burberry apre un temporary store al The Mark per le feste (WWD, esclusiva)",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaTBEWGUyd1lVMVpqbi1vclRkazY4eWlHQnN0VHQ5SnVPczU4QlpCWVVhTHBMSjJHcGJGWXdhT3ZrNTNpRDZhNmRGNDN1TC1SdFlrM3ZhV1VxOEViTEI5OUdWQVZYTk9Hc2ZzTXVTdGdBSEZoQWVFYzlhUmpqd0ZVejhoZ0h5OEsyS19MVTVyNzJMZmUwbEE?oc=5",
+   "id": "2026-11-14-r1-6"
+  }
+ ],
+ "excluded": [
+  {
+   "reason": "Risultati del 10/11 già esclusi in r1 del 13/11: ripresa fuori finestra.",
+   "title": "SoftBank, perdita di 7 miliardi (WSJ, 05:10 UTC del 14/11)"
+  },
+  {
+   "reason": "Annuncio dell'11/11 (oltre 36 ore): rubrica settimanale che riprende notizie precedenti.",
+   "title": "Capri Holdings nomina Justin Boxford CEO (WWD 'Shuffle Board', 19:10 UTC)"
+  },
+  {
+   "reason": "Chiusura finanziaria annunciata da RWE l'11/11: fuori finestra.",
+   "title": "KKR e RWE investono 16 miliardi di dollari nell'eolico offshore britannico (WSJ, 02:54 UTC)"
+  },
+  {
+   "reason": "Non verificabile come misura nuova: la ricerca indica l'aumento del coefficiente di riserva in valuta dal 4% al 6% annunciato il 3/11 (in vigore dal 15/11).",
+   "title": "La banca centrale cinese modifica le regole sulle riserve in valuta per stabilizzare lo yuan (WSJ, 21:23 UTC)"
+  },
+  {
+   "reason": "Il deposito pubblico risale al 31/8; nessun nuovo termine verificabile.",
+   "title": "Wella presenta domanda di IPO al NYSE (Investing.com, 19:11 UTC)"
+  },
+  {
+   "reason": "Fonte secondaria non affidabile, nessuna conferma su testate primarie.",
+   "title": "Alibaba -15% per un'indagine sui chip; la PBoC smette di promettere stimoli (Growth Dragons)"
+  },
+  {
+   "reason": "In contrasto con il calendario noto (pricing il 18/11): titolo fuorviante. Nota di trasparenza: Claude è sviluppato da Anthropic.",
+   "title": "Anthropic fissa il prezzo a 78 dollari (Economic Times)"
+  },
+  {
+   "reason": "Fonte di settore non finanziaria, nessuna conferma; fuori dai Focus.",
+   "title": "Savvy Games: la Cina approva l'acquisizione di MOONTON per 6 miliardi (Esports.gg)"
+  },
+  {
+   "reason": "Il paper (QEF n. 1061) è di ottobre: ripresa fuori finestra.",
+   "title": "Bankitalia, 'Il capitale per crescere': i fondi pensione investono poco in private equity (LaMiaFinanza, 05:08 UTC)"
+  },
+  {
+   "reason": "Già riportato in r1 del 13/11.",
+   "title": "Fed, calendario 2027 senza voto sui tassi a ottobre (The Hill, 22:44 UTC)"
+  },
+  {
+   "reason": "Già riportato in r3 del 13/11.",
+   "title": "BCP Investment–ICMB, accordo di fusione (TipRanks, 18:47 UTC)"
+  },
+  {
+   "reason": "Fuori dai Focus; impatto sui mercati non misurabile.",
+   "title": "Blocco dei voli negli USA e guasto Microsoft (Duffy, CNBC, AP)"
+  },
+  {
+   "reason": "Fonte secondaria, dettagli non verificabili.",
+   "title": "Giorgetti: il governo lavora sull'exit tax (Epoch Times, citando ANSA)"
+  },
+  {
+   "reason": "Schede di database, non notizie.",
+   "title": "Webuild, PitchBook company profile e schede fondi (decine di elementi PitchBook in lista)"
+  }
+ ],
+ "kb": [],
+ "posts": [
+  {
+   "audience": "Lender, private credit e leveraged finance; chi struttura project finance su infrastrutture digitali.",
+   "body": "The Fed just put a number on the AI buildout's hidden leverage. It is not the debt.\n\nIn its November Financial Stability Report, the Fed estimates that debt linked to advanced computing passed $680bn of issuance by October 2026, five times the 2023 level. Public debt outstanding is above $1.1tn.\n\nThe bigger figure sits off balance sheet. For seven large tech firms, leases not yet started exceed $1tn, and take-or-pay contracts and residual value guarantees exceed $2tn (undiscounted).\n\nMy reading: the risk is moving from strong balance sheets to weaker vehicles through contracts. The subordinated tranches of those SPEs sit with high-yield funds, life insurers and BDCs.\n\nFor anyone who structures or lends to infrastructure, this changes the credit question:\n→ The asset matters less than the lease behind it.\n→ Termination rights and step-down clauses are the real collateral.\n→ A residual value guarantee is only as good as the guarantor's next five years.\n\n[Spazio per la tua esperienza: come si valuta in un modello di leveraged finance un contratto con un cliente \"anchor\" in un'infrastruttura in fibra, in forma generica.]\n\nWhen you lend to a project backed by a big-tech lease, do you underwrite the project or the contract?\n\n#ProjectFinance #PrivateCredit #DataCenters #LeveragedFinance",
+   "date": "2026-11-14",
+   "focus": [
+    "ai-finance",
+    "pe-private-credit"
+   ],
+   "hook": "The Fed just put a number on the AI buildout's hidden leverage. It is not the debt.",
+   "id": "2026-11-14-p1",
+   "lang": "EN",
+   "message": "La vera leva del ciclo AI è nei contratti, non nei bilanci.",
+   "question": "When you lend to a project backed by a big-tech lease, do you underwrite the project or the contract?",
+   "runId": "2026-11-14-r1",
+   "sourceName": "Federal Reserve Board, Financial Stability Report (13/11/2026)",
+   "sourceUrl": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+   "status": "bozza",
+   "thesis": "Il rapporto della Fed misura per la prima volta gli impegni fuori bilancio degli hyperscaler: sono quasi il triplo del debito. Chi presta ai veicoli più piccoli sta prestando, in realtà, contro la qualità di quei contratti.",
+   "topic": "Off-balance-sheet leverage in the AI buildout (Fed Financial Stability Report)",
+   "type": "Cambiamento in atto"
+  },
+  {
+   "audience": "CFO, tesorieri e professionisti del debt capital markets; sponsor che rifinanziano spesso.",
+   "body": "A Blackstone-backed data center company just cut a debt deal by 60% instead of paying more. That is discipline, and a warning.\n\nAccording to Bloomberg, QTS reduced a private placement to about $300m from roughly $800m. Some investors pushed back on price. Others had simply hit their limits, because QTS had already come to the private placement market several times. QTS chose not to pay much higher yields.\n\nTwo lessons for anyone who runs a financing.\n\nFirst, capacity is a price variable. A borrower can be a good credit and still exhaust the books of its usual buyers. After that point, every extra dollar costs more.\n\nSecond, saying no is a strategy. Cutting the size keeps the price signal clean for the next deal. Paying up would have reset the curve for every future issue.\n\nWhat I take for refinancing plans:\n→ Map your investor base before you need it, not during the bookbuild.\n→ Keep a second channel open (bank term loan, ABS, private credit).\n→ Decide your walk-away price in advance.\n\n[Spazio per la tua esperienza: come avete diversificato le fonti di finanziamento in un rifinanziamento infrastrutturale, in forma generica.]\n\nHow many times can you go back to the same lenders before the price starts to move against you?\n\n#DebtCapitalMarkets #PrivatePlacement #DataCenters #CorporateFinance",
+   "date": "2026-11-14",
+   "focus": [
+    "ai-finance",
+    "pe-private-credit"
+   ],
+   "hook": "A Blackstone-backed data center company just cut a debt deal by 60% instead of paying more. That is discipline, and a warning.",
+   "id": "2026-11-14-p2",
+   "lang": "EN",
+   "message": "Anche un buon credito incontra un limite: la capacità del proprio pool di investitori.",
+   "question": "How many times can you go back to the same lenders before the price starts to move against you?",
+   "runId": "2026-11-14-r1",
+   "sourceName": "Bloomberg (13/11/2026)",
+   "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-13/blackstone-s-qts-is-cutting-ai-debt-sale-by-more-than-half",
+   "status": "bozza",
+   "thesis": "Il taglio di QTS non è un segnale di stress del credito ma di concentrazione: chi torna troppo spesso dagli stessi investitori paga un costo marginale crescente.",
+   "topic": "QTS cuts a private placement rather than pay up",
+   "type": "Lezione da un caso"
+  },
+  {
+   "audience": "Professionisti M&A e private equity in Italia; CFO di società quotate a controllo familiare.",
+   "body": "Nella stessa settimana Piazza Affari mostra due modi molto diversi di prendere il controllo di una società.\n\nRecordati. Respighi BidCo (CVC con GBL) ha offerto 53 euro per azione. Dopo la riapertura dei termini è al 91,93% del capitale e userà la procedura di squeeze-out del TUF sul residuo 8%. Il delisting è indicato per il 24 novembre.\n\nTrevi. Webuild ha superato il 30% a fine ottobre, l'OPA è diventata obbligatoria e da allora compra sul mercato a non più di 5,165 euro, il prezzo dell'offerta. È salita al 44,99%.\n\nIl primo è un modello \"premio unico\": si paga una volta, si esce dalla Borsa, si ha il pieno controllo dei flussi per servire il debito di acquisizione.\n\nIl secondo è un modello \"accumulo\": il controllo si costruisce un pacchetto alla volta, senza rilanciare, e la società resta quotata.\n\nLa mia lettura: per un fondo con debito di acquisizione la prima strada è quasi obbligata, perché servono il 100% dei flussi e la possibilità di fondere la holding con la target. Per un industriale la seconda è più efficiente, ma le minoranze restano con meno potere negoziale.\n\n[Spazio per la tua esperienza: in una valutazione di un target, come cambia la struttura se il controllo è al 51% o al 100%, in forma generica.]\n\nPer un fondo o un industriale, conviene di più pagare un premio una volta sola o costruire il controllo un pacchetto alla volta?\n\n#MandA #PrivateEquity #PiazzaAffari #OPA",
+   "date": "2026-11-14",
+   "focus": [
+    "global-ma-ecm",
+    "pe-private-credit"
+   ],
+   "hook": "Nella stessa settimana Piazza Affari mostra due modi molto diversi di prendere il controllo di una società.",
+   "id": "2026-11-14-p3",
+   "lang": "IT",
+   "message": "OPA totalitaria con squeeze-out e accumulo sul mercato sono due modelli diversi di costo del controllo.",
+   "question": "Per un fondo o un industriale, conviene di più pagare un premio una volta sola o costruire il controllo un pacchetto alla volta?",
+   "runId": "2026-11-14-r1",
+   "sourceName": "Websim, Radiocor, SoldiOnline, la Repubblica, Teleborsa (10–13/11/2026)",
+   "sourceUrl": "https://www.websim.it/azioni/blue-chip/recordati-respighi-bidco-al-91-9-delisting-in-arrivo/",
+   "status": "bozza",
+   "thesis": "CVC e GBL pagano un premio unico per uscire dalla Borsa; Webuild compra sul mercato al prezzo dell'OPA e consolida il controllo senza rilanciare. Il secondo modello costa meno, ma lascia le minoranze in una posizione diversa.",
+   "topic": "Due strade per il controllo a Piazza Affari: Recordati e Trevi",
+   "type": "Confronto tra modelli"
+  },
+  {
+   "audience": "Leveraged finance, private credit, CFO di aziende italiane con debito da rifinanziare nel 2027.",
+   "body": "Italy kept its positive outlook last night. For Italian borrowers, it was not the most important number of the day.\n\nThe facts: S&P confirmed Italy at BBB+ with a positive outlook. The BTP–Bund spread closed at 104 bp, the Italian 10-year at 4.41%. In the US, the 10-year Treasury stayed above 5%, and futures price a Fed hike on 9 December at 100% (CME FedWatch via CNBC). Fed Vice Chair Jefferson said inflation is now \"the more important signal\", and that AI could push the neutral rate higher.\n\nThree scenarios for anyone refinancing in 2027:\n\n1. Higher for longer. The neutral rate moves up, as Jefferson suggests. Base rates stay high, and leverage sustainable today becomes the ceiling, not the floor.\n\n2. Growth scare. AI equity correction (the Fed's top-cited risk) pushes yields down but widens credit spreads. Cheaper base rate, more expensive margin, fewer lenders.\n\n3. Soft landing. Inflation eases with energy, the spread compresses after a 2027 upgrade. The best case, and the one most plans already assume.\n\nMy view: a plan that works only in scenario 3 is a hope, not a plan. Stress the margin, not just the base rate.\n\n[Spazio per la tua esperienza: come imposti uno stress test sui tassi in un modello di leveraged finance, in forma generica.]\n\nWhich scenario is your 2027 refinancing plan built on, and what happens to it in the other two?\n\n#LeveragedFinance #InterestRates #Refinancing #CFO",
+   "date": "2026-11-14",
+   "focus": [
+    "macro-central-banks",
+    "pe-private-credit"
+   ],
+   "hook": "Italy kept its positive outlook last night. For Italian borrowers, it was not the most important number of the day.",
+   "id": "2026-11-14-p4",
+   "lang": "EN",
+   "message": "Il costo del debito in euro per un emittente italiano oggi dipende più da Washington che da Roma.",
+   "question": "Which scenario is your 2027 refinancing plan built on, and what happens to it in the other two?",
+   "runId": "2026-11-14-r1",
+   "sourceName": "ANSA (S&P, 13/11/2026); CNBC; Federal Reserve Board (Jefferson, 13/11/2026)",
+   "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm",
+   "status": "bozza",
+   "thesis": "S&P conferma l'Italia con outlook positivo, ma lo spread fermo a 104 conta meno del Treasury sopra il 5%. Tre scenari per il 2027 e cosa implicano per chi rifinanzia.",
+   "topic": "European refinancing with the US 10-year above 5% and a December Fed hike fully priced",
+   "type": "Scenario futuro"
+  }
+ ],
+ "insights": []
+}

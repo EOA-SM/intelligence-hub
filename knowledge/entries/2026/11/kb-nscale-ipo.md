@@ -17,4 +17,4 @@ Perdita un anno prima 433,3 mln. Dubbi sulla continuità aziendale già nel prim
 
 **Concetti chiave:** neocloud, going concern, vendor financing
 
-**Aggiornamenti:** —
+**Aggiornamenti:** 14/11/2026 (r1): Axios (titolo) riporta debito in forte crescita e la necessità di altro capitale prima dell'IPO; Barron's: i legami con Nvidia rendono l'IPO più incerta.

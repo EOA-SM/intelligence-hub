@@ -17,4 +17,4 @@ Bloomberg (fonti, 12–13/11): accordo possibile nelle prossime settimane, nessu
 
 **Concetti chiave:** M&A cross-border, infrastruttura AI, raffreddamento
 
-**Aggiornamenti:** —
+**Aggiornamenti:** 14/11/2026 (r2): Bloomberg (titolo, 23:03 UTC 13/11): maggior rialzo del titolo Modine in sei anni; TradingView (titolo): Jana Partners aveva costruito una nuova quota prima del balzo. Nessuna conferma delle società: resta da verificare.
