@@ -17,4 +17,4 @@ Visto solo nei titoli. Contesto: la RBI dal 2025 spinge i gruppi a semplificare 
 
 **Concetti chiave:** regolazione private equity, credito non bancario
 
-**Aggiornamenti:** Riverifica 14/11/2026 (r1): nessuna conferma su fonti diverse dall'esclusiva originale; trovate solo norme RBI precedenti su AIF e partecipazioni bancarie. Resta da verificare. Riverifica 14/11/2026 (r2): ETLegalWorld (06:27 UTC) ripubblica la stessa esclusiva Reuters; nessuna conferma indipendente. Resta da verificare.
+**Aggiornamenti:** Riverifica 14/11/2026 (r1): nessuna conferma su fonti diverse dall'esclusiva originale; trovate solo norme RBI precedenti su AIF e partecipazioni bancarie. Resta da verificare. Riverifica 14/11/2026 (r2): ETLegalWorld (06:27 UTC) ripubblica la stessa esclusiva Reuters; nessuna conferma indipendente. Resta da verificare. Riverifica 15/11/2026 (r2): nessuna conferma; trovate solo le norme RBI sull'acquisizione di controllo di NBFC (approvazione preventiva oltre il 26%, novembre 2025) e le modifiche di aprile 2026 sull'aggregazione degli attivi di gruppo. Resta da verificare.

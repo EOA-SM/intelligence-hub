@@ -17,4 +17,4 @@ Verificato: Q3 2026 (22/10) ricavi 3,345 mld € (stabili, -1% like-for-like), G
 
 **Concetti chiave:** guidance, turnaround, Gucci
 
-**Aggiornamenti:** 12/11/2026 (r2): confermati i dati del Q3 da FashionNetwork e MarketScreener; resta da verificare la parte sulla guidance.
+**Aggiornamenti:** 12/11/2026 (r2): confermati i dati del Q3 da FashionNetwork e MarketScreener; resta da verificare la parte sulla guidance. Riverifica 15/11/2026 (r2): la copertura del Q3 (FashionUnited, The Impression, Retail Insight Network) riporta che Kering ha ribadito l'obiettivo di migliorare il margine operativo ricorrente nel 2026 e prevede almeno 125 chiusure nette di negozi; l'obiettivo di ritorno alla crescita fissato a febbraio non risulta ribadito, ma nessuna fonte riporta un ritiro esplicito. Resta da verificare.
