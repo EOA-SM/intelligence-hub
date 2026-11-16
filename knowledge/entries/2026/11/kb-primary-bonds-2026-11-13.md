@@ -17,4 +17,4 @@ Dettagli non verificati (solo titoli).
 
 **Concetti chiave:** mercato primario, costo della raccolta
 
-**Aggiornamenti:** —
+**Aggiornamenti:** Riverifica 16/11/2026 (r2): nessuna fonte trovata per un bond UniCredit da 3,5 mld $ né per un green bond E.ON da 1,8 mld € del 13/11 (i risultati riguardano emissioni del 2023–2024 e un AT1 UniCredit di settembre 2026 con domanda di 3,5 mld). Resta da verificare.

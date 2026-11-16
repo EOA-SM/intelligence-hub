@@ -17,4 +17,4 @@ Solo titolo Reuters del 13/11. Contesto: causa da circa 14 mld € contro LVMH e
 
 **Concetti chiave:** governance familiare, contenzioso
 
-**Aggiornamenti:** —
+**Aggiornamenti:** Riverifica 16/11/2026 (r2): nessuna conferma primaria dell'accertamento cognitivo; il fatto è ripreso solo da una fonte debole (Informat.ro, 16/11). Ultime fonti solide: documenti giudiziari rivelati da Reuters il 17/9/2026 e causa civile contro LVMH e Arnault. Resta da verificare.

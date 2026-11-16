@@ -17,4 +17,4 @@ Fonti anonime; stesso approccio dell'IPO SpaceX. Il prospetto non indicherebbe r
 
 **Concetti chiave:** IPO, allocazione, sicurezza nazionale
 
-**Aggiornamenti:** —
+**Aggiornamenti:** Riverifica 16/11/2026 (r1): nuove riprese (Chosunbiz, 16/11: IPO che esclude investitori di Cina e Hong Kong; Affaritaliani, 15/11; Nikkei Asia, 15/11: investitori asiatici cercano quote indirette con premi fino al 30%). Tutte derivano da fonti anonime citate da Bloomberg; nessun documento dei coordinatori o del prospetto. Resta da verificare.

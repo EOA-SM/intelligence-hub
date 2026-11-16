@@ -17,4 +17,4 @@ Credito alle PMI thailandesi in calo da 16 trimestri (Q2 2026). Japan Post Bank 
 
 **Concetti chiave:** rotazione settoriale, costo della raccolta
 
-**Aggiornamenti:** —
+**Aggiornamenti:** Riverifica 16/11/2026 (r1): nessuna fonte primaria (comunicati Japan Post Bank, statistiche BoJ) conferma il tasso dell'1% sui depositi a 3 anni. Resta da verificare.

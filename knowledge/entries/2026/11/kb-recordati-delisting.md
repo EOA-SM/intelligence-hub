@@ -13,8 +13,8 @@ links: []
 
 **Stato:** Attualmente valida
 
-Prezzo 53 euro; riapertura 3–9/11; pagamento il 17/11; residuo 8,07%. La data del 24/11 compare solo nel titolo SoldiOnline.
+Prezzo 53 euro; riapertura 3–9/11; pagamento il 17/11; residuo 8,07%. La data del 24/11 compare solo nel titolo SoldiOnline. 16/11: Milano Finanza conferma la revoca dalle negoziazioni dal 24/11, con Respighi BidCo e CVC al 91,923%.
 
 **Concetti chiave:** OPA, squeeze-out, delisting
 
-**Aggiornamenti:** —
+**Aggiornamenti:** 16/11/2026 (r2): data di revoca del 24/11 confermata da una seconda fonte (Milano Finanza).

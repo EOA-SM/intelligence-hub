@@ -17,4 +17,4 @@ Offerta interamente secondaria secondo i report di ottobre; possibile lancio a d
 
 **Concetti chiave:** IPO, India, Carlsberg
 
-**Aggiornamenti:** —
+**Aggiornamenti:** Riverifica 16/11/2026 (r2): confermati da più fonti il deposito riservato del prospetto a SEBI (1/7/2026), l'offerta interamente secondaria e la dimensione fino a 700 mln $ con Kotak, JPMorgan e Citi; nessuna conferma della cifra di 600 mln del 13/11 né della data di lancio. Resta da verificare.
